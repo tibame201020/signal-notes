@@ -1,0 +1,31 @@
+---
+import type {Post} from '../lib/content';
+import {withBase} from '../lib/urls';
+
+interface Props {
+  post: Post;
+}
+
+const {post} = Astro.props;
+const {title, slug, description, publishedAt, category, tags} = post.data;
+const date = new Intl.DateTimeFormat('zh-TW', {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+});
+---
+<article class="post-card">
+  <div class="post-card-meta">
+    <a href={withBase(`/categories/${category.slug}/`)}>{category.name}</a>
+    <time datetime={publishedAt.toISOString()}>{date.format(publishedAt)}</time>
+  </div>
+  <h2><a href={withBase(`/articles/${slug}/`)}>{title}</a></h2>
+  <p>{description}</p>
+  {tags.length > 0 && (
+    <div class="tag-row">
+      {tags.slice(0, 4).map((tag) => (
+        <a class="tag" href={withBase(`/tags/${tag.slug}/`)}>#{tag.name}</a>
+      ))}
+    </div>
+  )}
+</article>

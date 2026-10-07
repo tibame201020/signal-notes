@@ -1,33 +1,61 @@
 ---
-const posts = Object.entries(import.meta.glob('./posts/*.md', {eager: true}))
-  .map(([path, mod]) => ({
-    slug: path.split('/').pop()?.replace(/\.md$/, '') ?? '',
-    title: mod.frontmatter?.title ?? path,
-    date: mod.frontmatter?.date ?? '',
-    description: mod.frontmatter?.description ?? '',
-  }))
-  .sort((a, b) => String(b.date).localeCompare(String(a.date)));
-const base = import.meta.env.BASE_URL;
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import {getPublishedPosts, uniqueCategories, uniqueTags} from '../lib/content';
+import {withBase} from '../lib/urls';
+
+const posts = await getPublishedPosts();
+const latest = posts.slice(0, 6);
+const categories = uniqueCategories(posts);
+const tags = uniqueTags(posts).slice(0, 16);
 ---
-<html lang="zh-Hant">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Articles</title>
-  </head>
-  <body>
-    <main>
-      <h1>Articles</h1>
-      {posts.length === 0 ? <p>No published articles yet.</p> : (
-        <ul>
-          {posts.map((post) => (
-            <li>
-              <a href={`${base}posts/${post.slug}/`}>{post.title}</a>
-              {post.description && <p>{post.description}</p>}
-            </li>
-          ))}
-        </ul>
-      )}
-    </main>
-  </body>
-</html>
+<BaseLayout>
+  <section class="hero">
+    <div class="kicker">Essays / Research / Notes</div>
+    <h1>文章與研究</h1>
+    <p>以靜態 Markdown 與資源檔管理。每篇文章獨立版本化，並由 GitHub Pages 發布。</p>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>最新文章</h2>
+      <a href={withBase('/articles/')}>全部文章 →</a>
+    </div>
+    <div class="post-list">
+      {latest.length > 0
+        ? latest.map((post) => <PostCard post={post} />)
+        : <p>尚未發布文章。</p>}
+    </div>
+  </section>
+
+  {categories.length > 0 && (
+    <section class="section">
+      <div class="section-head">
+        <h2>分類</h2>
+        <a href={withBase('/categories/')}>全部分類 →</a>
+      </div>
+      <div class="taxonomy-grid">
+        {categories.map((category) => (
+          <a class="taxonomy-card" href={withBase(`/categories/${category.slug}/`)}>
+            <span>{category.name}</span>
+            <span>{category.count}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {tags.length > 0 && (
+    <section class="section">
+      <div class="section-head">
+        <h2>標籤</h2>
+        <a href={withBase('/tags/')}>全部標籤 →</a>
+      </div>
+      <div class="tag-row">
+        {tags.map((tag) => (
+          <a class="tag" href={withBase(`/tags/${tag.slug}/`)}>#{tag.name} · {tag.count}</a>
+        ))}
+      </div>
+    </section>
+  )}
+</BaseLayout>

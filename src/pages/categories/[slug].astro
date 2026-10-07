@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import {getPublishedPosts, uniqueCategories} from '../../lib/content';
+
+export async function getStaticPaths() {
+  const posts = await getPublishedPosts();
+  return uniqueCategories(posts).map((category) => ({
+    params: {slug: category.slug},
+    props: {
+      category,
+      posts: posts.filter((post) => post.data.category.slug === category.slug),
+    },
+  }));
+}
+
+const {category, posts} = Astro.props;
+---
+<BaseLayout title={category.name} description={`${category.name} 分類文章。`}>
+  <section class="hero">
+    <div class="kicker">Category</div>
+    <h1>{category.name}</h1>
+    <p>{category.count} 篇文章</p>
+  </section>
+  <section class="section">
+    <div class="post-list">
+      {posts.map((post) => <PostCard post={post} />)}
+    </div>
+  </section>
+</BaseLayout>

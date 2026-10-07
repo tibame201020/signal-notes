@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {withBase} from '../lib/urls';
+---
+<BaseLayout title="找不到頁面">
+  <section class="hero">
+    <div class="kicker">404</div>
+    <h1>找不到這個頁面</h1>
+    <p><a href={withBase('/')}>回首頁</a></p>
+  </section>
+</BaseLayout>

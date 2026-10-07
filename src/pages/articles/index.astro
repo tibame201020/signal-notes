@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import {getPublishedPosts} from '../../lib/content';
+
+const posts = await getPublishedPosts();
+---
+<BaseLayout title="全部文章" description="全部已發布文章。">
+  <section class="hero">
+    <div class="kicker">Archive</div>
+    <h1>全部文章</h1>
+    <p>依發布時間排序。文章、分類與標籤全部在 build 時產生為靜態頁面。</p>
+  </section>
+
+  <section class="section">
+    <div class="post-list">
+      {posts.map((post) => <PostCard post={post} />)}
+    </div>
+  </section>
+</BaseLayout>
