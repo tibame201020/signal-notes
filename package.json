@@ -1,0 +1,7 @@
+{
+  "name":"content-production-blog",
+  "private":true,
+  "version":"0.1.0",
+  "scripts":{"dev":"astro dev","build":"astro build"},
+  "dependencies":{"@astrojs/mdx":"^4.3.6","astro":"^5.13.7"}
+}
