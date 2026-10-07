@@ -12,6 +12,8 @@ tags:
 draft: false
 featured: false
 ---
+
+> 閱讀方式：每個重要「觀察／推論」都附上 **依據** 與 **為什麼這樣判斷**。來源放在結論附近，文末來源區保留作完整索引。
 > 比較：昨天10/07、近3天10/05–10/07、近7天10/01–10/07。
 
 ## 主線
@@ -24,6 +26,10 @@ featured: false
 北韓同日批評美國對台軍事支持，並再次表態支持俄羅斯。
 
 **推論：** 歐洲與東北亞安全議題的政治連結正在加深，能源、軍工與航運更容易受到跨區域事件影響。
+
+**依據：** [Reuters｜烏克蘭 10/7 攻擊](https://www.reuters.com/world/europe/russia-strikes-ukraines-kyiv-fresh-wave-attacks-2026-10-07/)、[Reuters｜IMF 全球風險](https://www.reuters.com/world/asia-pacific/imf-chief-warns-energy-shock-growing-debt-ai-risks-threaten-global-growth-2026-10-07/)、[Reuters｜北韓與台海](https://www.reuters.com/business/aerospace-defense/north-korea-warns-us-over-taiwan-while-kim-pledges-support-russia-2026-10-06/)
+
+**為什麼這樣判斷：** IMF 把能源、債務與 AI 投資放在同一個全球風險框架，而俄烏攻擊持續影響能源與財政支出，所以我把戰事、能源、利率與債務視為同一條傳導鏈；北韓同時連結台海與俄羅斯，則顯示安全議題正在跨區域政治化。
 
 ## 來源
 - [Reuters｜烏克蘭局勢](https://www.reuters.com/world/europe/russia-strikes-ukraines-kyiv-fresh-wave-attacks-2026-10-07/)
