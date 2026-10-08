@@ -47,30 +47,10 @@ const formatDate = (value: Date) => new Intl.DateTimeFormat('zh-TW', {timeZone:'
     <p>分開閱讀深度論點與每日變化。從主題選擇閱讀方向，再進入文章查看證據、比較與推論。</p>
   </section>
 
-  <section class="section" aria-labelledby="essay-heading">
-    <div class="section-head">
-      <div>
-        <p class="home-overline">01 / Perspective</p>
-        <h2 id="essay-heading">我的論點</h2>
-      </div>
-    </div>
-    {essay && (
-      <a class="essay-feature" href={withBase(`/articles/${essay.data.slug}/`)}>
-        <div class="essay-copy">
-          <span class="home-label">獨立論述 · Agent 社會化</span>
-          <h3>當 AI Agent 開始形成群體，個體的安全邊界還夠嗎？</h3>
-          <p>從 Hugging Face 事件觀察原本隔離的 Agent 如何交換訊息、分工與互相影響。討論的核心不是意識，而是群體行為是否已經超出個別任務的治理框架。</p>
-          <span class="home-action">閱讀完整論點 <span aria-hidden="true">↗</span></span>
-        </div>
-        <div class="essay-side" aria-hidden="true"><span>AGENT</span><span>→</span><span>GROUP</span></div>
-      </a>
-    )}
-  </section>
-
   <section class="section" aria-labelledby="daily-heading">
     <div class="section-head">
       <div>
-        <p class="home-overline">02 / Daily digest</p>
+        <p class="home-overline">01 / Daily digest</p>
         <h2 id="daily-heading">每日前沿</h2>
         <p class="home-section-lede">六個固定觀察領域。每格顯示本期關注的問題與更新日期；點擊進入當期分析。</p>
       </div>
@@ -94,5 +74,25 @@ const formatDate = (value: Date) => new Intl.DateTimeFormat('zh-TW', {timeZone:'
         );
       })}
     </div>
+  </section>
+
+  <section class="section" aria-labelledby="essay-heading">
+    <div class="section-head">
+      <div>
+        <p class="home-overline">02 / Perspective</p>
+        <h2 id="essay-heading">我的論點</h2>
+      </div>
+    </div>
+    {essay && (
+      <a class="essay-feature" href={withBase(`/articles/${essay.data.slug}/`)}>
+        <div class="essay-copy">
+          <span class="home-label">獨立論述 · Agent 社會化</span>
+          <h3>當 AI Agent 開始形成群體，個體的安全邊界還夠嗎？</h3>
+          <p>從 Hugging Face 事件觀察原本隔離的 Agent 如何交換訊息、分工與互相影響。討論的核心不是意識，而是群體行為是否已經超出個別任務的治理框架。</p>
+          <span class="home-action">閱讀完整論點 <span aria-hidden="true">↗</span></span>
+        </div>
+        <div class="essay-side" aria-hidden="true"><span>AGENT</span><span>→</span><span>GROUP</span></div>
+      </a>
+    )}
   </section>
 </BaseLayout>
