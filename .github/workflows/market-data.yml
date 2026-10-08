@@ -1,0 +1,52 @@
+name: Market data snapshot
+
+on:
+  schedule:
+    # 04:20 Asia/Taipei = 20:20 UTC (previous calendar day).
+    - cron: "20 20 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/market-data/**"
+      - ".github/workflows/market-data.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: market-data-snapshot
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Collect fixed market data
+        run: node scripts/market-data/collect.mjs
+
+      - name: Validate snapshot
+        run: |
+          test -s data/market/latest.json
+          node -e 'const d=require("./data/market/latest.json"); if(d.market_cap.global_top50.rows.length!==50) process.exit(1); if(d.market_cap.taiwan_top20.rows.length!==20) process.exit(1); if(Object.keys(d.sovereign_10y).length<6) process.exit(1);'
+
+      - name: Commit snapshot
+        run: |
+          if git diff --quiet -- data/market; then
+            echo "No market data changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/market
+          git commit -m "data: refresh market snapshot $(date -u +%Y-%m-%d)"
+          git push
