@@ -65,3 +65,7 @@ Article content and assets are Git-versioned. SQLite records paths and publicati
 The root `content-production` repository remains the local source repository.
 
 Only the `blog/` subtree should be pushed to the dedicated GitHub Pages repository. That keeps video/n8n/local-service code out of the public publishing repository.
+
+## Investment Outlook evidence-first method
+
+Read [the independent investment methodology](docs/investment-outlook-method.md) before publishing company or skill recommendations. Do not seed candidate lists from conversation examples or past picks. From 2026-10-09 create a dated screening manifest under data/investment/screenings/ before publication.

@@ -41,7 +41,7 @@ function focus(post: (typeof posts)[number] | undefined): string {
 const formatDate = (value: Date) => new Intl.DateTimeFormat('zh-TW', {timeZone:'Asia/Taipei', year:'numeric',month:'2-digit',day:'2-digit'}).format(value);
 const investmentPosts = posts.filter(post => post.data.category.slug === 'investment-outlook');
 const investmentCards = [
-  {tag:'company-investment',name:'公司布局',scope:'企業護城河・市場估值・情境推算',purpose:'兩家具體公司，對照市場定價與自行估值，尋找可能尚未充分反映的變化。'},
+  {tag:'company-investment',name:'公司布局',scope:'企業護城河・市場估值・情境推算',purpose:'從當日前沿建立候選池，再比較市場估值與自己的估值；台灣公司優先。'},
   {tag:'skill-investment',name:'投資自己',scope:'高價值能力・學習路徑・可交付成果',purpose:'兩項具體且可遷移的能力，說清楚需要學到什麼、如何衡量投入價值。'},
 ];
 const latestInvestment = (tag: string) => investmentPosts.find(post => post.data.tags.some(item => item.slug === tag));
@@ -53,7 +53,7 @@ const latestInvestmentDate = investmentPosts.length ? investmentPosts[0].data.pu
       <div>
         <p class="home-overline">01 / Investment Outlook</p>
         <h2 id="investment-heading">現在值得做什麼</h2>
-        <p class="home-section-lede">以我的長期論點和每日前沿為出發點。公司要對比市場定價與自行估值；技能要說清楚具體方法和可累積的成果。</p>
+        <p class="home-section-lede">以當日六類前沿為起點，對照已發表論點與市場估值，跨產業比較候選；不預設軟體或硬體優先。</p>
       </div>
       <a href={withBase('/categories/investment-outlook/')}>歷期布局分析 →</a>
     </div>
