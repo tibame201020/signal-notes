@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-05",
+  "collected_at": "2026-10-08T02:00:00.000Z",
+  "backfilled": true,
+  "backfill_note": "Historical sovereign yields backfilled from Investing.com; 2026-10-07 market caps restored from the already-published CompaniesMarketCap baseline CSV.",
+  "sovereign_10y": {
+    "US": {
+      "country": "美國",
+      "yield_pct": 5.311,
+      "source_date": "2026-10-05",
+      "source": {
+        "provider": "Investing.com historical data",
+        "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data"
+      }
+    },
+    "AU": {
+      "country": "澳洲",
+      "yield_pct": 5.346,
+      "source_date": "2026-10-05",
+      "source": {
+        "provider": "Investing.com historical data",
+        "url": "https://www.investing.com/rates-bonds/australia-10-year-bond-yield-historical-data"
+      }
+    },
+    "JP": {
+      "country": "日本",
+      "yield_pct": 3.088,
+      "source_date": "2026-10-05",
+      "source": {
+        "provider": "Investing.com historical data",
+        "url": "https://www.investing.com/rates-bonds/japan-10-year-bond-yield-historical-data"
+      }
+    },
+    "DE": {
+      "country": "德國",
+      "yield_pct": 3.4922,
+      "source_date": "2026-10-05",
+      "source": {
+        "provider": "Investing.com historical data",
+        "url": "https://www.investing.com/rates-bonds/germany-10-year-bond-yield-historical-data"
+      }
+    },
+    "FR": {
+      "country": "法國",
+      "yield_pct": 4.865,
+      "source_date": "2026-10-05",
+      "source": {
+        "provider": "Investing.com historical data",
+        "url": "https://www.investing.com/rates-bonds/france-10-year-bond-yield-historical-data"
+      }
+    },
+    "GB": {
+      "country": "英國",
+      "yield_pct": 5.4263,
+      "source_date": "2026-10-05",
+      "source": {
+        "provider": "Investing.com historical data",
+        "url": "https://www.investing.com/rates-bonds/uk-10-year-bond-yield-historical-data"
+      }
+    },
+    "CN": {
+      "country": "中國",
+      "yield_pct": 1.683,
+      "source_date": "2026-09-30",
+      "source": {
+        "provider": "Investing.com historical data",
+        "url": "https://www.investing.com/rates-bonds/china-10-year-bond-yield-historical-data"
+      }
+    }
+  }
+}

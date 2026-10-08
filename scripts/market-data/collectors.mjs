@@ -1,3 +1,5 @@
+import { sectorForCompany } from "./taxonomy.mjs";
+
 const DEFAULT_HEADERS = {
   "user-agent": "signal-notes-market-data/1.0 (+https://github.com/tibame201020/signal-notes)",
   "accept-language": "en-US,en;q=0.9",
@@ -101,6 +103,7 @@ function parseCompanyRows(html, limit) {
     const rankIndex = cells.indexOf(rankCell);
     const fallbackNameCell = cells[rankIndex + 1] ?? "";
     const name = nameMatch ? stripTags(nameMatch[1]) : fallbackNameCell;
+    const sector = sectorForCompany(name);
     const ticker = codeMatch ? stripTags(codeMatch[1]) : null;
 
     const capIndex = cells.indexOf(capCell);
@@ -116,7 +119,8 @@ function parseCompanyRows(html, limit) {
       market_cap_display: capCell,
       price_display: priceCell,
       daily_price_change_pct: todayCell ? parsePercent(todayCell) : null,
-      country
+      country,
+      sector
     });
   }
 

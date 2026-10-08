@@ -5,6 +5,7 @@ import {
   getTaiwanTopCompanies,
   getSovereign10YYields
 } from "./collectors.mjs";
+import { canonicalCompanyName } from "./taxonomy.mjs";
 
 const ROOT = process.cwd();
 const DATA_DIR = path.join(ROOT, "data", "market");
@@ -39,7 +40,9 @@ async function loadSnapshots() {
 }
 
 function findComparisonSnapshot(snapshots, asOf, daysBack) {
-  const target = new Date(`${asOf}T00:00:00+08:00`);
+  // Date-only snapshots are Asia/Taipei calendar dates. Treat the string as
+  // a UTC date container so subtracting N days cannot shift because of +08:00.
+  const target = new Date(`${asOf}T00:00:00Z`);
   target.setUTCDate(target.getUTCDate() - daysBack);
   const targetDate = target.toISOString().slice(0, 10);
 
@@ -66,7 +69,7 @@ function bondComparisons(current, snapshots) {
 }
 
 function companyIndex(rows) {
-  return new Map(rows.map(row => [row.ticker || row.name, row]));
+  return new Map(rows.map(row => [row.ticker || canonicalCompanyName(row.name), row]));
 }
 
 function marketCapComparisons(currentRows, priorRows) {
@@ -74,7 +77,7 @@ function marketCapComparisons(currentRows, priorRows) {
   const prior = companyIndex(priorRows);
   const matched = currentRows
     .map(row => {
-      const old = prior.get(row.ticker || row.name);
+      const old = prior.get(row.ticker || canonicalCompanyName(row.name));
       if (!old || !old.market_cap_usd) return null;
       return {
         rank: row.rank,
