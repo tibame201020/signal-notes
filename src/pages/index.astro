@@ -25,7 +25,7 @@ function focus(post: (typeof posts)[number] | undefined): string {
   const marker = lines.findIndex(line => /^## (主線|一句話|全球|全球｜)/.test(line));
   const bodyLines = lines.slice(marker >= 0 ? marker + 1 : 0);
   const analysisLine = post.data.tags.some(tag => tag.slug === "finance")
-    ? lines.find(line => /^\\*\\*(觀察|推論)：\\*\\*/.test(line))
+    ? lines.find(line => line.startsWith("**觀察：**") || line.startsWith("**推論：**"))
     : undefined;
   const clean = (line: string) => line
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
