@@ -30,6 +30,18 @@ featured: false
 
 市值資料沿用前一日同口徑快照；今天未取得完整50家公司同口徑即時值，因此不偽造日變化。
 
+
+### 圖表｜最近可比估值基準
+
+> 圖表基準日：**2026-10-07**。10/08 尚未取得完整 50 家公司同口徑快照，因此今天沿用昨日基準，不把舊資料冒充成今日即時值。
+
+![全球前十大企業市值｜基準日 2026-10-07](./global-top10-marketcap-baseline-2026-10-07.svg)
+
+![全球前五十大企業產業市值占比｜基準日 2026-10-07](./global-top50-sector-share-baseline-2026-10-07.svg)
+
+[下載全球前 50 大企業基準資料 CSV](./global-top50-baseline-2026-10-07.csv)
+
+
 **依據：** [Reuters｜全球股票基金流](https://www.reuters.com/world/china/global-markets-flows-graphic-2026-10-02/)、[CompaniesMarketCap｜全球市值基準](https://companiesmarketcap.com/)
 
 **為什麼這樣判斷：** 基金仍淨流入但速度下降，而大型科技市值占比仍高，所以目前是「錢仍在科技，但新增資金追價速度變慢」，不是全面撤出股票。
@@ -52,6 +64,18 @@ featured: false
 前一日同口徑快照：前20大企業合計市值約3.836兆美元，台積電約占65.2%。10月7日外資淨賣超約130億元。
 
 **觀察：** 最大風險仍是集中度，而不是單日資金流。
+
+
+### 圖表｜台灣估值集中度基準
+
+> 圖表基準日：**2026-10-07**。此處用來觀察結構性集中，不把昨日快照當成 10/08 即時估值。
+
+![台灣前十大企業市值｜基準日 2026-10-07](./taiwan-top10-marketcap-baseline-2026-10-07.svg)
+
+![台灣前二十大企業產業市值占比｜基準日 2026-10-07](./taiwan-top20-sector-share-baseline-2026-10-07.svg)
+
+[下載台灣前 20 大企業基準資料 CSV](./taiwan-top20-baseline-2026-10-07.csv)
+
 
 **依據：** [中央社｜外資與台股](https://focustaiwan.tw/business/202610070018)、[CompaniesMarketCap｜台灣市值基準](https://companiesmarketcap.com/taiwan/largest-companies-in-taiwan-by-market-cap/)
 
