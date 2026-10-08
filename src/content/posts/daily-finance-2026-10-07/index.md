@@ -74,6 +74,8 @@ featured: false
 
 **依據：** [日本歷史殖利率](https://www.investing.com/rates-bonds/japan-10-year-bond-yield-historical-data)、[Reuters｜日本央行](https://www.reuters.com/technology/boj-says-ai-boom-may-have-eased-financial-conditions-warns-market-risks-2026-10-05/)
 
+**為什麼這樣判斷：** 日本 10 年債一週仍上升 4.4 bp，但 10/07 當日只小幅回落 0.2 bp，顯示政策正常化是中期趨勢，並非當日急速重新定價。
+
 ## 歐洲
 
 法國 10 年債 **4.869%**、單日 +11.8 bp；德國則約 **3.481%**、幾乎不變。
