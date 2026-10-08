@@ -33,7 +33,7 @@ function stacks(date,now,old,kind){
  const line=(distribution,y,label)=>{let p=250;inner+=t(225,y+28,label,16,"#263238","end");for(let i=0;i<keys.length;i++){const w=750*(distribution[keys[i]]||0)/100;inner+=rect(p,y,w,38,colors[i%colors.length]);p+=w;}};
  if(old.length)line(b,120,"前期");line(a,old.length?205:135,"本期");
  let start=old.length?290:225;
- keys.forEach((k,i)=>{const y=start+i*26;inner+=rect(55,y-12,15,15,colors[i%colors.length])+t(82,y,k,14)+t(830,y,(b[k]??0).toFixed(2)+"% → "+(a[k]??0).toFixed(2)+"%"+(old.length?" ("+((a[k]??0)-(b[k]??0)>=0?"+":"")+((a[k]??0)-(b[k]??0)).toFixed(2)+" pp)":"")),13);});
+ keys.forEach((k,i)=>{const y=start+i*26;const oldPct=(b[k]??0),newPct=(a[k]??0),diff=newPct-oldPct;inner+=rect(55,y-12,15,15,colors[i%colors.length])+t(82,y,k,14)+t(830,y,oldPct.toFixed(2)+"% → "+newPct.toFixed(2)+"%"+(old.length?" ("+(diff>=0?"+":"")+diff.toFixed(2)+" pp)":"")+"",13);});
  return svg(kind+" Top 產業占比變化｜"+date,inner,Math.max(460,start+keys.length*26+25));
 }
 function yields(date){
