@@ -113,6 +113,45 @@ nav a { font-size: .92rem; color: var(--muted); text-decoration: none; font-weig
 .prose hr { border: 0; border-top: 1px solid var(--line); margin: 3em 0; }
 .prose li + li { margin-top: .38em; }
 
+
+/* Article tables: readable cell boundaries without dominating the prose. */
+.prose table {
+  width: 100%;
+  margin: 1.5em 0;
+  border: 1px solid #d7ded8;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  background: var(--surface);
+  font-size: .94em;
+  line-height: 1.6;
+}
+.prose table :is(th, td) {
+  padding: .66em .75em;
+  border-right: 1px solid #e3e8e3;
+  border-bottom: 1px solid #dce3dc;
+  text-align: left;
+  vertical-align: top;
+}
+.prose table thead th {
+  background: #edf3ef;
+  color: #203b31;
+  font-weight: 700;
+}
+.prose table tr > :last-child { border-right: 0; }
+.prose table tr:last-child > * { border-bottom: 0; }
+.prose table tbody tr:nth-child(even) > * { background: #f9fbf9; }
+@media (max-width: 640px) {
+  .prose table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  .prose table:has(tr > :nth-child(4)) :is(th, td) { min-width: 9.5rem; }
+}
+
 .pagination { display: flex; justify-content: space-between; gap: 16px; padding-top: 26px; }
 .pagination a { font-weight: 650; }
 
