@@ -48,12 +48,6 @@ const latestInvestment = (tag: string) => investmentPosts.find(post => post.data
 const latestInvestmentDate = investmentPosts.length ? investmentPosts[0].data.publishedAt : null;
 ---
 <BaseLayout>
-  <section class="hero home-hero">
-    <div class="kicker">Independent perspective / Daily signals</div>
-    <h1>觀點與前沿觀察</h1>
-    <p>相信什麼，觀察到了什麼，接下來值得投資什麼。先看布局，再讀前沿與我的論點。</p>
-  </section>
-
   <section class="section investment-section" aria-labelledby="investment-heading">
     <div class="section-head">
       <div>
@@ -67,7 +61,7 @@ const latestInvestmentDate = investmentPosts.length ? investmentPosts[0].data.pu
       {investmentCards.map((card, i) => {
         const post = latestInvestment(card.tag);
         return (
-          <article class="home-topic investment-overview-card">
+          <article class="home-topic">
             <div class="home-topic-top">
               <span class="home-topic-index">{String(i+1).padStart(2,'0')}</span>
               <span class="home-topic-date">{post ? formatDate(post.data.publishedAt) : '尚未發布'}</span>

@@ -165,10 +165,7 @@ nav a { font-size: .92rem; color: var(--muted); text-decoration: none; font-weig
 /* Investment Outlook overview – two article gateways, not recommendations crammed into cards. */
 .investment-section { padding-top: 20px; }
 .investment-overview { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; }
-.investment-overview-card { border-top: 3px solid #347665; padding: 25px 27px; }
-.investment-overview-card .home-topic-current p { font-size: 1rem; line-height: 1.8; }
 .investment-date-note { color: var(--muted); font-size: .8rem; margin: 12px 0 0; }
 @media (max-width: 640px) {
  .investment-overview { grid-template-columns: 1fr; }
- .investment-overview-card { padding: 21px; }
-}
+ }
