@@ -28,11 +28,11 @@ featured: false
 
 ## 全球企業估值
 
-![全球前十大企業市值](./global-top10-marketcap.svg)
+![全球前十大企業市值](./trend-global-top10.svg)
 
 資料：CompaniesMarketCap，固定快照基準日 2026-10-07。
 
-![全球前五十大企業產業占比](./global-top50-sector-share.svg)
+![全球前五十大企業產業占比](./trend-global-sectors.svg)
 
 **觀察：** 全球大型企業估值仍由 AI、半導體與大型平台主導。
 
@@ -42,9 +42,9 @@ featured: false
 
 ## 台灣估值集中度
 
-![台灣前十大企業市值](./taiwan-top10-marketcap.svg)
+![台灣前十大企業市值](./trend-taiwan-top10.svg)
 
-![台灣前二十大企業產業占比](./taiwan-top20-sector-share.svg)
+![台灣前二十大企業產業占比](./trend-taiwan-sectors.svg)
 
 **觀察：** 台灣的集中度比全球更高，主要風險仍是半導體週期與台積電權重，而不是單一日外資買賣超。
 
@@ -54,7 +54,7 @@ featured: false
 
 ## 全球主權債｜高利率，但不是所有國家同步往上
 
-![主要國家10年期公債殖利率](./sovereign-10y-2026-10-07.svg)
+![主要國家10年期公債殖利率](./trend-sovereign-10y.svg)
 
 | 國家 | 10年債 | 1日 | 3日 | 7日 |
 | --- | ---: | ---: | ---: | ---: |
@@ -83,6 +83,14 @@ featured: false
 **依據：** [Reuters｜全球股票基金流](https://www.reuters.com/world/china/global-markets-flows-graphic-2026-10-02/)
 
 **為什麼這樣判斷：** 淨流入仍為正，但增量下降；同時大型科技市值集中度仍高。這比較像「資金仍在科技，但追價速度下降」，不是全面風險撤退。
+
+<!-- trend-totals -->
+
+## 全球與台灣總市值變化圖
+
+![全球與台灣總市值跨日比較](./trend-marketcap-totals.svg)
+
+> 市值差額是估值變化，不等於真實資金淨流入。
 
 ## 資料
 

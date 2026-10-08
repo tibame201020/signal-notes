@@ -30,11 +30,11 @@ featured: false
 
 > Top 50 名單有 1 家成分變動，49 家可逐家公司直接配對；因此總市值變化包含少量成分更替影響，不等同固定成分指數報酬。
 
-![全球前十大企業市值](./global-top10-marketcap-2026-10-08.svg)
+![全球前十大企業市值](./trend-global-top10.svg)
 
 資料：CompaniesMarketCap 固定快照，2026-10-08 09:43（台北時間）。
 
-![全球前五十大企業產業占比](./global-top50-sector-share-2026-10-08.svg)
+![全球前五十大企業產業占比](./trend-global-sectors.svg)
 
 科技相關市值占比約 **68.0%**，昨日約 **68.5%**。
 
@@ -48,9 +48,9 @@ featured: false
 
 合計市值約 **3.772 兆美元**，較 10/07 下降約 **63.8 億美元**（**-1.664%**）。
 
-![台灣前十大企業市值](./taiwan-top10-marketcap-2026-10-08.svg)
+![台灣前十大企業市值](./trend-taiwan-top10.svg)
 
-![台灣前二十大企業產業占比](./taiwan-top20-sector-share-2026-10-08.svg)
+![台灣前二十大企業產業占比](./trend-taiwan-sectors.svg)
 
 半導體占比仍約 **78.0%**；台積電市值由約 2.501 兆美元降到 2.449 兆美元，約 **-2.08%**。
 
@@ -62,7 +62,7 @@ featured: false
 
 ## 全球主權債｜水準很高，但短線方向已分化
 
-![主要國家10年期公債殖利率](./sovereign-10y-2026-10-08.svg)
+![主要國家10年期公債殖利率](./trend-sovereign-10y.svg)
 
 | 國家 | 10年債 | 1日 | 3日 | 7日 |
 | --- | ---: | ---: | ---: | ---: |
@@ -114,6 +114,14 @@ featured: false
 **依據：** [Reuters｜全球股票基金流](https://www.reuters.com/world/china/global-markets-flows-graphic-2026-10-02/)、[固定債率快照](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-08.json)
 
 **為什麼這樣判斷：** 新增股票資金仍為正，但流入速度變慢；同時美國、澳洲、英國長債都在 5% 以上。這會提高股票的比較門檻。
+
+<!-- trend-totals -->
+
+## 全球與台灣總市值變化圖
+
+![全球與台灣總市值跨日比較](./trend-marketcap-totals.svg)
+
+> 市值差額是估值變化，不等於真實資金淨流入。
 
 ## 資料下載
 
