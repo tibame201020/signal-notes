@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build"
+    "build": "astro build",
+    "validate:investment": "node scripts/validate-investment-research.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.6",

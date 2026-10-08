@@ -30,6 +30,9 @@ jobs:
       - name: Install
         run: npm ci
 
+      - name: Validate investment provenance
+        run: npm run validate:investment
+
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
