@@ -1,61 +1,90 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import PostCard from '../components/PostCard.astro';
-import {getPublishedPosts, uniqueCategories, uniqueTags} from '../lib/content';
+import {getPublishedPosts} from '../lib/content';
 import {withBase} from '../lib/urls';
 
 const posts = await getPublishedPosts();
-const latest = posts.slice(0, 6);
-const categories = uniqueCategories(posts);
-const tags = uniqueTags(posts).slice(0, 16);
+const essay = posts.find(post => post.data.slug === 'huggingface-agent-civilization');
+const daily = posts.filter(post => post.data.category.slug === 'daily-digest');
+
+const topics = [
+  {slug: 'world', name: '國際局勢', scope: '地緣政治・能源・全球風險', detail: '追蹤戰爭、安全與能源如何傳導到通膨、貿易和國際秩序。'},
+  {slug: 'finance', name: '財經與利率', scope: '股債・匯率・總體經濟', detail: '比較各國債率、資金成本與政策分化，判斷市場壓力從哪裡來。'},
+  {slug: 'ai', name: '人工智慧', scope: '模型・部署・算力・治理', detail: '觀察 AI 競爭從模型能力延伸到晶片供給、資料中心及企業採用。'},
+  {slug: 'semiconductor', name: '半導體', scope: '先進製程・封裝・記憶體', detail: '追蹤供應鏈瓶頸、擴產、客戶驗證與各地製造布局。'},
+  {slug: 'software', name: '軟體工程', scope: '開源・Agent・開發基礎設施', detail: '理解 AI Agent 如何改變 GitHub、開發流程、工具與系統架構。'},
+  {slug: 'capital-flows', name: '金流與估值', scope: '市值・資金分布・主權債', detail: '用跨日圖表比較企業市值、產業占比與各國十年債變化。'},
+];
+
+const latestFor = (tag: string) => daily.find(post => post.data.tags.some(item => item.slug === tag));
+function focus(post: (typeof posts)[number] | undefined, tag: string): string {
+  if (!post) return '目前尚無當期文章。';
+  // The topic card explains the actual current issue, independently of the article title.
+  const current: Record<string, string> = {
+    world: '能源與戰事正在透過通膨、債務和利率彼此連動。',
+    finance: '長期利率維持高位，但澳洲、美國與歐洲的短線走勢不同。',
+    ai: 'AI 投資的關鍵變數移向晶片供應、部署能力與基礎設施成本。',
+    semiconductor: '市場正從製程宣示轉向實際產能、良率與客戶訂單。',
+    software: '大量 AI Agent 開始迫使 Git 服務與開發平台調整架構。',
+    'capital-flows': '全球與台灣大型企業市值出現不同幅度的變化，主權債仍在高檔分化。',
+  };
+  return current[tag] ?? post.data.description;
+}
+const formatDate = (value: Date) => new Intl.DateTimeFormat('zh-TW', {timeZone:'Asia/Taipei', year:'numeric',month:'2-digit',day:'2-digit'}).format(value);
 ---
 <BaseLayout>
-  <section class="hero">
-    <div class="kicker">Essays / Research / Notes</div>
-    <h1>文章與研究</h1>
-    <p>以靜態 Markdown 與資源檔管理。每篇文章獨立版本化，並由 GitHub Pages 發布。</p>
+  <section class="hero home-hero">
+    <div class="kicker">Independent perspective / Daily signals</div>
+    <h1>觀點與前沿觀察</h1>
+    <p>分開閱讀深度論點與每日變化。從主題選擇閱讀方向，再進入文章查看證據、比較與推論。</p>
   </section>
 
-  <section class="section">
+  <section class="section" aria-labelledby="essay-heading">
     <div class="section-head">
-      <h2>最新文章</h2>
-      <a href={withBase('/articles/')}>全部文章 →</a>
+      <div>
+        <p class="home-overline">01 / Perspective</p>
+        <h2 id="essay-heading">我的論點</h2>
+      </div>
     </div>
-    <div class="post-list">
-      {latest.length > 0
-        ? latest.map((post) => <PostCard post={post} />)
-        : <p>尚未發布文章。</p>}
-    </div>
+    {essay && (
+      <a class="essay-feature" href={withBase(`/articles/${essay.data.slug}/`)}>
+        <div class="essay-copy">
+          <span class="home-label">獨立論述 · Agent 社會化</span>
+          <h3>當 AI Agent 開始形成群體，個體的安全邊界還夠嗎？</h3>
+          <p>從 Hugging Face 事件觀察原本隔離的 Agent 如何交換訊息、分工與互相影響。討論的核心不是意識，而是群體行為是否已經超出個別任務的治理框架。</p>
+          <span class="home-action">閱讀完整論點 <span aria-hidden="true">↗</span></span>
+        </div>
+        <div class="essay-side" aria-hidden="true"><span>AGENT</span><span>→</span><span>GROUP</span></div>
+      </a>
+    )}
   </section>
 
-  {categories.length > 0 && (
-    <section class="section">
-      <div class="section-head">
-        <h2>分類</h2>
-        <a href={withBase('/categories/')}>全部分類 →</a>
+  <section class="section" aria-labelledby="daily-heading">
+    <div class="section-head">
+      <div>
+        <p class="home-overline">02 / Daily digest</p>
+        <h2 id="daily-heading">每日前沿</h2>
+        <p class="home-section-lede">六個固定觀察領域。每格顯示本期關注的問題與更新日期；點擊進入當期分析。</p>
       </div>
-      <div class="taxonomy-grid">
-        {categories.map((category) => (
-          <a class="taxonomy-card" href={withBase(`/categories/${category.slug}/`)}>
-            <span>{category.name}</span>
-            <span>{category.count}</span>
-          </a>
-        ))}
-      </div>
-    </section>
-  )}
-
-  {tags.length > 0 && (
-    <section class="section">
-      <div class="section-head">
-        <h2>標籤</h2>
-        <a href={withBase('/tags/')}>全部標籤 →</a>
-      </div>
-      <div class="tag-row">
-        {tags.map((tag) => (
-          <a class="tag" href={withBase(`/tags/${tag.slug}/`)}>#{tag.name} · {tag.count}</a>
-        ))}
-      </div>
-    </section>
-  )}
+      <a href={withBase('/categories/daily-digest/')}>查看歷期文章 →</a>
+    </div>
+    <div class="home-topic-grid">
+      {topics.map((topic, i) => {
+        const post = latestFor(topic.slug);
+        return (
+          <article class="home-topic">
+            <div class="home-topic-top"><span class="home-topic-index">{String(i+1).padStart(2,'0')}</span><span class="home-topic-date">{post ? formatDate(post.data.publishedAt) : '尚未發布'}</span></div>
+            <h3>{topic.name}</h3>
+            <p class="home-topic-scope">{topic.scope}</p>
+            <p class="home-topic-description">{topic.detail}</p>
+            <div class="home-topic-current">
+              <span>本期重點</span>
+              <p>{focus(post, topic.slug)}</p>
+            </div>
+            {post ? <a class="home-topic-link" href={withBase(`/articles/${post.data.slug}/`)} aria-label={`閱讀${topic.name}本期分析`}>閱讀本期分析 <span aria-hidden="true">↗</span></a> : <span class="home-topic-unavailable">等待第一篇分析</span>}
+          </article>
+        );
+      })}
+    </div>
+  </section>
 </BaseLayout>
