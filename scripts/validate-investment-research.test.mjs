@@ -32,7 +32,7 @@ test('passes evidence-led selection across independent signals',()=>{
  const f=setup();try{const r=run(f.root);assert.equal(r.status,0,r.stderr);assert.match(r.stdout,/PASS/);}finally{rmSync(f.root,{recursive:true,force:true});}
 });
 test('rejects single-frontier anchoring',()=>{
- const f=setup();try{f.doc.signals[1].post=f.doc.signals[0].post;f.save(f.manifest,JSON.stringify(f.doc));const r=run(f.root);assert.notEqual(r.status,0);assert.match(r.stderr,/two distinct/);}finally{rmSync(f.root,{recursive:true,force:true});}
+ const f=setup();try{f.doc.signals[1].post=f.doc.signals[0].post;f.save(f.manifest,JSON.stringify(f.doc));const r=run(f.root);assert.notEqual(r.status,0);assert.match(r.stderr,/at least two/);}finally{rmSync(f.root,{recursive:true,force:true});}
 });
 test('rejects missing screening manifest',()=>{
  const f=setup();try{rmSync(path.join(f.root,f.manifest));const r=run(f.root);assert.notEqual(r.status,0);assert.match(r.stderr,/manifest required/);}finally{rmSync(f.root,{recursive:true,force:true});}
