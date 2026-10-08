@@ -17,18 +17,23 @@ const topics = [
 ];
 
 const latestFor = (tag: string) => daily.find(post => post.data.tags.some(item => item.slug === tag));
-function focus(post: (typeof posts)[number] | undefined, tag: string): string {
+function focus(post: (typeof posts)[number] | undefined): string {
   if (!post) return '目前尚無當期文章。';
-  // The topic card explains the actual current issue, independently of the article title.
-  const current: Record<string, string> = {
-    world: '能源與戰事正在透過通膨、債務和利率彼此連動。',
-    finance: '長期利率維持高位，但澳洲、美國與歐洲的短線走勢不同。',
-    ai: 'AI 投資的關鍵變數移向晶片供應、部署能力與基礎設施成本。',
-    semiconductor: '市場正從製程宣示轉向實際產能、良率與客戶訂單。',
-    software: '大量 AI Agent 開始迫使 Git 服務與開發平台調整架構。',
-    'capital-flows': '全球與台灣大型企業市值出現不同幅度的變化，主權債仍在高檔分化。',
-  };
-  return current[tag] ?? post.data.description;
+  // Extract the first substantive argument from the published Markdown.
+  // This updates whenever a new daily article is published; never copy its title.
+  const lines = post.body.split(/\r?\n/);
+  const marker = lines.findIndex(line => /^## (主線|一句話|全球|全球｜)/.test(line));
+  const bodyLines = lines.slice(marker >= 0 ? marker + 1 : 0);
+  const clean = (line: string) => line
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/[*_`>#]/g, '')
+    .trim();
+  const value = bodyLines.map(clean).find(line =>
+    line.length > 20 &&
+    !/^(依據：|為什麼這樣判斷：|觀察：|推論：|閱讀方式：|比較：|資料：)/.test(line) &&
+    !/^(https?:\/\/|\|)/.test(line)
+  );
+  return value ? (value.length > 96 ? value.slice(0, 95) + '…' : value) : post.data.description;
 }
 const formatDate = (value: Date) => new Intl.DateTimeFormat('zh-TW', {timeZone:'Asia/Taipei', year:'numeric',month:'2-digit',day:'2-digit'}).format(value);
 ---
@@ -79,7 +84,7 @@ const formatDate = (value: Date) => new Intl.DateTimeFormat('zh-TW', {timeZone:'
             <p class="home-topic-description">{topic.detail}</p>
             <div class="home-topic-current">
               <span>本期重點</span>
-              <p>{focus(post, topic.slug)}</p>
+              <p>{focus(post)}</p>
             </div>
             {post ? <a class="home-topic-link" href={withBase(`/articles/${post.data.slug}/`)} aria-label={`閱讀${topic.name}本期分析`}>閱讀本期分析 <span aria-hidden="true">↗</span></a> : <span class="home-topic-unavailable">等待第一篇分析</span>}
           </article>
