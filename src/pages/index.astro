@@ -2,7 +2,6 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {getPublishedPosts} from '../lib/content';
 import {withBase} from '../lib/urls';
-import actionBrief from '../data/action-brief.json';
 
 const posts = await getPublishedPosts();
 const essay = posts.find(post => post.data.slug === 'huggingface-agent-civilization');
@@ -40,65 +39,54 @@ function focus(post: (typeof posts)[number] | undefined): string {
   return value ? (value.length > 96 ? value.slice(0, 95) + '…' : value) : post.data.description;
 }
 const formatDate = (value: Date) => new Intl.DateTimeFormat('zh-TW', {timeZone:'Asia/Taipei', year:'numeric',month:'2-digit',day:'2-digit'}).format(value);
-const actionEvidence = actionBrief.items.map(item => item.evidenceTags.map(tag => ({
-  post: latestFor(tag),
-  topic: topics.find(topic => topic.slug === tag)?.name ?? tag,
-  tag,
-})).filter(({post}) => Boolean(post)));
-const evidenceDates = actionEvidence.flat().map(({post}) => post?.data.publishedAt.getTime() ?? 0);
-const latestEvidence = evidenceDates.length ? new Date(Math.max(...evidenceDates)) : null;
+const investmentPosts = posts.filter(post => post.data.category.slug === 'investment-outlook');
+const investmentCards = [
+  {tag:'company-investment',name:'公司布局',scope:'企業護城河・市場估值・情境推算',purpose:'兩家具體公司，對照市場定價與自行估值，尋找可能尚未充分反映的變化。'},
+  {tag:'skill-investment',name:'投資自己',scope:'高價值能力・學習路徑・可交付成果',purpose:'兩項具體且可遷移的能力，說清楚需要學到什麼、如何衡量投入價值。'},
+];
+const latestInvestment = (tag: string) => investmentPosts.find(post => post.data.tags.some(item => item.slug === tag));
+const latestInvestmentDate = investmentPosts.length ? investmentPosts[0].data.publishedAt : null;
 ---
 <BaseLayout>
   <section class="hero home-hero">
     <div class="kicker">Independent perspective / Daily signals</div>
     <h1>觀點與前沿觀察</h1>
-    <p>我的論點是長期看法；每日前沿提供新資訊。兩者一起幫助我思考公司與技能的投資布局。</p>
+    <p>相信什麼，觀察到了什麼，接下來值得投資什麼。先看布局，再讀前沿與我的論點。</p>
   </section>
 
-  <section class="section decision-section" aria-labelledby="decision-heading">
-    <div class="section-head decision-head">
+  <section class="section investment-section" aria-labelledby="investment-heading">
+    <div class="section-head">
       <div>
-        <p class="home-overline">01 / Investment outlook</p>
-        <h2 id="decision-heading">現在值得做什麼</h2>
-        <p class="home-section-lede">從我相信的未來與近期前沿訊號，整理值得留意的公司，以及值得累積的個人技能。</p>
+        <p class="home-overline">01 / Investment Outlook</p>
+        <h2 id="investment-heading">現在值得做什麼</h2>
+        <p class="home-section-lede">以我的長期論點和每日前沿為出發點。公司要對比市場定價與自行估值；技能要說清楚具體方法和可累積的成果。</p>
       </div>
-      {latestEvidence && <span class="decision-datestamp">前沿資料截至 {formatDate(latestEvidence)}</span>}
+      <a href={withBase('/categories/investment-outlook/')}>歷期布局分析 →</a>
     </div>
-    {[
-      {kind:'company',title:'上市公司布局',description:'哪些企業可能捕捉到這個趨勢帶來的價值？'},
-      {kind:'skill',title:'投資自己',description:'哪些能力值得花時間深入，讓自己有機會參與這個趨勢？'},
-    ].map(group => (
-      <div class="investment-group">
-        <div class="investment-group-head">
-          <h3>{group.title}</h3>
-          <p>{group.description}</p>
-        </div>
-        <div class="decision-grid">
-          {actionBrief.items.filter(item => item.kind === group.kind).map(item => {
-            const evidence = actionEvidence[actionBrief.items.indexOf(item)] ?? [];
-            return (
-              <article class="decision-item">
-                <div class="decision-item-top">
-                  <span class="decision-priority">{item.priority}</span>
-                  <span class="decision-ticker">{item.ticker}</span>
-                </div>
-                <h4>{item.title}</h4>
-                <p class="decision-rationale">{item.rationale}</p>
-                <p class="decision-action"><strong>布局方向：</strong>{item.action}</p>
-                <p class="decision-watch"><strong>後續關注：</strong>{item.watch}</p>
-                <div class="decision-links">
-                  {essay && <a href={withBase('/articles/' + essay.data.slug + '/')}>我的論點 ↗</a>}
-                  {evidence.map(({post, topic}) => post && (
-                    <a href={withBase('/articles/' + post.data.slug + '/')}>{topic} · {formatDate(post.data.publishedAt)} ↗</a>
-                  ))}
-                </div>
-              </article>
-            );
-          })}
-        </div>
-      </div>
-    ))}
-    <p class="decision-footnote">以上是基於目前資料的布局想法，不是保證正確的預測。公司方向不代表即時買賣訊號；新資料出現時可調整優先順序。</p>
+    <div class="investment-overview">
+      {investmentCards.map((card, i) => {
+        const post = latestInvestment(card.tag);
+        return (
+          <article class="home-topic investment-overview-card">
+            <div class="home-topic-top">
+              <span class="home-topic-index">{String(i+1).padStart(2,'0')}</span>
+              <span class="home-topic-date">{post ? formatDate(post.data.publishedAt) : '尚未發布'}</span>
+            </div>
+            <h3>{card.name}</h3>
+            <p class="home-topic-scope">{card.scope}</p>
+            <p class="home-topic-description">{card.purpose}</p>
+            <div class="home-topic-current">
+              <span>今日布局摘要</span>
+              <p>{post?.data.description ?? '尚未有當期布局報告。'}</p>
+            </div>
+            {post
+              ? <a class="home-topic-link" href={withBase('/articles/' + post.data.slug + '/')}>閱讀詳細布局論述 ↗</a>
+              : <span class="home-topic-unavailable">等待當期分析</span>}
+          </article>
+        );
+      })}
+    </div>
+    {latestInvestmentDate && <p class="investment-date-note">最近報告日期：{formatDate(latestInvestmentDate)}。市場資料與估值依文章註明的日期，不表示即時買賣價格。</p>}
   </section>
 
   <section class="section" aria-labelledby="daily-heading">

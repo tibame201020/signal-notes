@@ -161,30 +161,14 @@ nav a { font-size: .92rem; color: var(--muted); text-decoration: none; font-weig
 @media (max-width: 640px) { .essay-feature { grid-template-columns: 1fr; } .essay-side { display: none; } .home-topic-grid { grid-template-columns: 1fr; } .section-head { align-items: flex-start; } .home-topic { padding: 21px; } }
 
 
-/* Two investment tracks: public companies and personal skills */
-.decision-section { padding-top: 18px; }
-.decision-head { align-items: flex-end; }
-.decision-datestamp { color: var(--muted); font-size: .8rem; white-space: nowrap; }
-.investment-group + .investment-group { margin-top: 27px; }
-.investment-group-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 9px 18px; margin: 0 0 12px; }
-.investment-group-head h3 { font-size: 1.16rem; letter-spacing: -.02em; margin: 0; font-weight: 720; }
-.investment-group-head p { color: var(--muted); font-size: .87rem; margin: 0; }
-.decision-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; }
-.decision-item { display: flex; flex-direction: column; min-width: 0; background: #edf1eb; border: 1px solid #d5ded5; border-radius: 16px; padding: 21px 23px 18px; }
-.decision-item-top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
-.decision-priority { color: #426b5e; font-size: .77rem; font-weight: 740; }
-.decision-ticker { color: #576a60; font-size: .76rem; font-weight: 650; }
-.decision-item h4 { font-size: 1.28rem; line-height: 1.37; font-weight: 710; letter-spacing: -.018em; margin: 12px 0 8px; }
-.decision-rationale { font-size: .91rem; line-height: 1.7; margin: 0 0 12px; color: #303c34; }
-.decision-action, .decision-watch { font-size: .85rem; line-height: 1.7; color: #425b4f; margin: 0 0 10px; }
-.decision-action strong, .decision-watch strong { font-weight: 760; }
-.decision-links { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: auto; border-top: 1px solid #cfdbd3; padding-top: 12px; }
-.decision-links a { color: #155e4f; font-size: .79rem; font-weight: 720; text-decoration: none; }
-.decision-links a:hover { text-decoration: underline; }
-.decision-footnote { color: var(--muted); font-size: .78rem; line-height: 1.65; margin: 13px 0 0; }
+
+/* Investment Outlook overview – two article gateways, not recommendations crammed into cards. */
+.investment-section { padding-top: 20px; }
+.investment-overview { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; }
+.investment-overview-card { border-top: 3px solid #347665; padding: 25px 27px; }
+.investment-overview-card .home-topic-current p { font-size: 1rem; line-height: 1.8; }
+.investment-date-note { color: var(--muted); font-size: .8rem; margin: 12px 0 0; }
 @media (max-width: 640px) {
-  .decision-grid { grid-template-columns: 1fr; }
-  .decision-datestamp { white-space: normal; }
-  .decision-item { padding: 19px; }
-  .decision-head { align-items: flex-start; }
+ .investment-overview { grid-template-columns: 1fr; }
+ .investment-overview-card { padding: 21px; }
 }
