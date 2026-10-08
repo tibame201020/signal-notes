@@ -85,6 +85,8 @@ featured: false
 
 **依據：** [固定快照](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-08.json)、[Reuters｜日本央行與 AI 投資](https://www.reuters.com/technology/boj-says-ai-boom-may-have-eased-financial-conditions-warns-market-risks-2026-10-05/)
 
+**為什麼這樣判斷：** 日本 10 年債 7 日下降 1.6 bp，和美國、英國同期上升相反；因此這一週的價格訊號並不支持「全球債率同步上衝」。
+
 ## 歐洲
 
 德國約 **3.481%**，法國約 **4.892%**。法國近 3 日 +2.7 bp，而德國 -1.2 bp。
