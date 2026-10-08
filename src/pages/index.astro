@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import {getPublishedPosts} from '../lib/content';
 import {withBase} from '../lib/urls';
+import actionBrief from '../data/action-brief.json';
 
 const posts = await getPublishedPosts();
 const essay = posts.find(post => post.data.slug === 'huggingface-agent-civilization');
@@ -39,18 +40,66 @@ function focus(post: (typeof posts)[number] | undefined): string {
   return value ? (value.length > 96 ? value.slice(0, 95) + '…' : value) : post.data.description;
 }
 const formatDate = (value: Date) => new Intl.DateTimeFormat('zh-TW', {timeZone:'Asia/Taipei', year:'numeric',month:'2-digit',day:'2-digit'}).format(value);
+const actionEvidence = actionBrief.items.map(item => item.evidenceTags.map(tag => ({
+  post: latestFor(tag),
+  topic: topics.find(topic => topic.slug === tag)?.name ?? tag,
+  tag,
+})).filter(({post}) => Boolean(post)));
+const evidenceDates = actionEvidence.flat().map(({post}) => post?.data.publishedAt.getTime() ?? 0);
+const latestEvidence = evidenceDates.length ? new Date(Math.max(...evidenceDates)) : null;
 ---
 <BaseLayout>
   <section class="hero home-hero">
     <div class="kicker">Independent perspective / Daily signals</div>
     <h1>觀點與前沿觀察</h1>
-    <p>分開閱讀深度論點與每日變化。從主題選擇閱讀方向，再進入文章查看證據、比較與推論。</p>
+    <p>信念提供方向，前沿提供證據；將兩者轉成可檢驗的下一步。</p>
+  </section>
+
+  <section class="section decision-section" aria-labelledby="decision-heading">
+    <div class="section-head decision-head">
+      <div>
+        <p class="home-overline">01 / Action brief</p>
+        <h2 id="decision-heading">現在值得做什麼</h2>
+        <p class="home-section-lede">以長期信念對照本期前沿，先做可驗證、可調整的小型布局。不是把新聞直接變成決策。</p>
+      </div>
+      {latestEvidence && <span class="decision-datestamp">資料截至 {formatDate(latestEvidence)}</span>}
+    </div>
+    <div class="decision-grid">
+      {actionBrief.items.map((item, index) => {
+        const evidence = actionEvidence[index];
+        const principal = evidence[0];
+        return (
+          <article class="decision-item">
+            <div class="decision-item-top">
+              <span class="decision-number">{String(index + 1).padStart(2, '0')}</span>
+              <span class="decision-priority">{item.priority}</span>
+            </div>
+            <h3>{item.title}</h3>
+            <p class="decision-action">{item.action}</p>
+            <p class="decision-watch"><strong>確認什麼：</strong>{item.watch}</p>
+            {principal?.post && (
+              <div class="decision-signal">
+                <span>當期訊號 · {principal.topic}</span>
+                <p>{focus(principal.post)}</p>
+              </div>
+            )}
+            <div class="decision-links">
+              {essay && <a href={withBase(`/articles/${essay.data.slug}/`)}>信念依據 ↗</a>}
+              {evidence.map(({post, topic}) => post && (
+                <a href={withBase(`/articles/${post.data.slug}/`)}>{topic} · {formatDate(post.data.publishedAt)} ↗</a>
+              ))}
+            </div>
+          </article>
+        );
+      })}
+    </div>
+    <p class="decision-footnote">以上是需要檢驗的方向，不是已被證實的預測。若來源或當期訊號改變，應重新評估，不應自動延續建議。</p>
   </section>
 
   <section class="section" aria-labelledby="daily-heading">
     <div class="section-head">
       <div>
-        <p class="home-overline">01 / Daily digest</p>
+        <p class="home-overline">02 / Daily digest</p>
         <h2 id="daily-heading">每日前沿</h2>
         <p class="home-section-lede">六個固定觀察領域。每格顯示本期關注的問題與更新日期；點擊進入當期分析。</p>
       </div>
@@ -79,7 +128,7 @@ const formatDate = (value: Date) => new Intl.DateTimeFormat('zh-TW', {timeZone:'
   <section class="section" aria-labelledby="essay-heading">
     <div class="section-head">
       <div>
-        <p class="home-overline">02 / Perspective</p>
+        <p class="home-overline">03 / Perspective</p>
         <h2 id="essay-heading">我的論點</h2>
       </div>
     </div>

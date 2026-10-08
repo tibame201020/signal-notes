@@ -1,0 +1,41 @@
+{
+  "belief": {
+    "slug": "huggingface-agent-civilization",
+    "claim": "Agent 能藉由共享上下文互相影響，個別工具權限不等於群體行為已受控制。"
+  },
+  "items": [
+    {
+      "id": "collective-behavior",
+      "priority": "先驗證",
+      "title": "重現跨 Agent 的目標轉移",
+      "action": "用兩個工具權限不同的 Agent 建立可重複測試，記錄任務要求如何被傳遞、採納或拒絕。",
+      "watch": "成功阻斷跨 Agent 越權要求，且保留完整追蹤紀錄。",
+      "evidenceTags": [
+        "software",
+        "ai"
+      ]
+    },
+    {
+      "id": "governance-poc",
+      "priority": "再試產品",
+      "title": "驗證協作治理的需求",
+      "action": "做一個委派、核准、稽核的小型流程，找真實使用情境測試，不急著擴大平台。",
+      "watch": "比較任務完成率、人工介入次數與追查問題所需時間。",
+      "evidenceTags": [
+        "software",
+        "semiconductor"
+      ]
+    },
+    {
+      "id": "capital-discipline",
+      "priority": "控制投入",
+      "title": "以實測成果決定擴張",
+      "action": "把算力或開發成本分階段投入；先確認實際需求與單次任務成本，再決定是否擴充。",
+      "watch": "若成本增幅高於完成任務的效益，先暫停擴張。",
+      "evidenceTags": [
+        "finance",
+        "capital-flows"
+      ]
+    }
+  ]
+}

@@ -159,3 +159,26 @@ nav a { font-size: .92rem; color: var(--muted); text-decoration: none; font-weig
 .home-topic-unavailable { color: var(--muted); font-size: .85rem; }
 @media (max-width: 920px) { .home-topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 640px) { .essay-feature { grid-template-columns: 1fr; } .essay-side { display: none; } .home-topic-grid { grid-template-columns: 1fr; } .section-head { align-items: flex-start; } .home-topic { padding: 21px; } }
+
+/* Decision brief: concise actions supported by a belief and dated source articles. */
+.decision-section { padding-top: 18px; }
+.decision-head { align-items: flex-end; }
+.decision-datestamp { color: var(--muted); font-size: .8rem; white-space: nowrap; }
+.decision-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.decision-item { display: flex; flex-direction: column; min-width: 0; gap: 0; background: #edf1eb; border: 1px solid #d5ded5; border-radius: 16px; padding: 23px 23px 19px; }
+.decision-item-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.decision-number { color: #426d60; font-size: .81rem; font-weight: 780; font-variant-numeric: tabular-nums; }
+.decision-priority { color: #456358; font-size: .77rem; font-weight: 680; }
+.decision-item h3 { font-size: 1.23rem; line-height: 1.4; font-weight: 710; letter-spacing: -.018em; margin: 15px 0 9px; }
+.decision-action { font-size: .91rem; line-height: 1.69; margin: 0 0 13px; color: #303c34; }
+.decision-watch { font-size: .83rem; line-height: 1.68; color: #496258; margin: 0 0 13px; }
+.decision-watch strong { font-weight: 730; }
+.decision-signal { padding-top: 10px; border-top: 1px solid #cfdbd3; margin-top: auto; }
+.decision-signal > span { font-size: .76rem; color: #426b5e; font-weight: 720; }
+.decision-signal p { color: #48574e; font-size: .82rem; line-height: 1.65; margin: 6px 0 12px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.decision-links { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: auto; border-top: 1px solid #cfdbd3; padding-top: 10px; }
+.decision-links a { color: #155e4f; font-size: .77rem; font-weight: 710; text-decoration: none; }
+.decision-links a:hover { text-decoration: underline; }
+.decision-footnote { color: var(--muted); font-size: .79rem; line-height: 1.6; margin: 12px 0 0; }
+@media (max-width: 920px) { .decision-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .decision-grid { grid-template-columns: 1fr; } .decision-datestamp { white-space: normal; } .decision-item { padding: 19px; } .decision-head { align-items: flex-start; } }
