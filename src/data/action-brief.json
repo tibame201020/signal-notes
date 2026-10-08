@@ -23,7 +23,7 @@
       "watch": "比較任務完成率、人工介入次數與追查問題所需時間。",
       "evidenceTags": [
         "software",
-        "semiconductor"
+        "ai"
       ]
     },
     {
@@ -37,5 +37,6 @@
         "capital-flows"
       ]
     }
-  ]
+  ],
+  "reviewedAsOf": "2026-10-08"
 }
