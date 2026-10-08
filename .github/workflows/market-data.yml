@@ -41,7 +41,7 @@ jobs:
 
       - name: Commit snapshot
         run: |
-          if git diff --quiet -- data/market; then
+          if [ -z "$(git status --porcelain -- data/market)" ]; then
             echo "No market data changes."
             exit 0
           fi
