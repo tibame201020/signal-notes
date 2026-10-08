@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "as_of": "2026-10-08",
-  "collected_at": "2026-10-08T04:05:36.175Z",
+  "collected_at": "2026-10-08T04:06:10.703Z",
   "market_cap": {
     "global_top50": {
       "source": {
@@ -189,10 +189,10 @@
           "rank": 17,
           "name": "SK Hynix",
           "ticker": "",
-          "market_cap_usd": 905970000000,
-          "market_cap_display": "$ 905.97 B",
-          "price_display": "$1,274",
-          "daily_price_change_pct": 1.1,
+          "market_cap_usd": 907040000000,
+          "market_cap_display": "$ 907.04 B",
+          "price_display": "$1,276",
+          "daily_price_change_pct": 0.99,
           "country": "🇰🇷 S. Korea",
           "sector": "Semiconductors"
         },
@@ -486,10 +486,10 @@
           "rank": 44,
           "name": "ICBC",
           "ticker": "",
-          "market_cap_usd": 347000000000,
-          "market_cap_display": "$ 347.00 B",
+          "market_cap_usd": 346780000000,
+          "market_cap_display": "$ 346.78 B",
           "price_display": "$0.97",
-          "daily_price_change_pct": 0.79,
+          "daily_price_change_pct": 0.73,
           "country": "🇨🇳 China",
           "sector": "Financials"
         },
@@ -919,9 +919,9 @@
         "base_date": "2026-10-07",
         "global_top50": {
           "matched_count": 49,
-          "total_market_cap_usd": 55051880000000,
-          "total_change_usd": -135820000000,
-          "total_change_pct": -0.246,
+          "total_market_cap_usd": 55052730000000,
+          "total_change_usd": -134970000000,
+          "total_change_pct": -0.245,
           "companies": [
             {
               "rank": 1,
@@ -1055,9 +1055,9 @@
               "rank": 17,
               "name": "SK Hynix",
               "ticker": "",
-              "market_cap_usd": 905970000000,
-              "change_usd": -9820000000,
-              "change_pct": -1.072
+              "market_cap_usd": 907040000000,
+              "change_usd": -8750000000,
+              "change_pct": -0.955
             },
             {
               "rank": 18,
@@ -1271,9 +1271,9 @@
               "rank": 44,
               "name": "ICBC",
               "ticker": "",
-              "market_cap_usd": 347000000000,
-              "change_usd": 2770000000,
-              "change_pct": 0.805
+              "market_cap_usd": 346780000000,
+              "change_usd": 2550000000,
+              "change_pct": 0.741
             },
             {
               "rank": 45,
