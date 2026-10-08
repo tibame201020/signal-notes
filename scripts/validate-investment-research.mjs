@@ -7,7 +7,7 @@ const article=slug=>posts+'/'+slug+'/index.md';
 const subjects=['world','finance','ai','semiconductor','software','capital-flows'];
 const nonempty=v=>typeof v==='string'&&v.trim().length>0;
 const issue=(d,message)=>failures.push(d+': '+message);
-const editions=[...new Set(fs.readdirSync(posts).filter(n=>/^investment-(companies|skills)-\d{4}-\d{2}-\d{2}$/.test(n)).map(n=>n.slice(-10)).filter(d=>d>='2026-10-09'))].sort();
+const editions=[...new Set(fs.readdirSync(posts).filter(n=>/^investment-(companies|skills)-\d{4}-\d{2}-\d{2}$/.test(n)).map(n=>n.slice(-10)).filter(d=>d>='2026-10-07'))].sort();
 for(const d of editions){
   const companies=article('investment-companies-'+d),skills=article('investment-skills-'+d);
   if(!has(companies)||!has(skills)){issue(d,'both investment articles required');continue;}
@@ -55,4 +55,4 @@ for(const d of editions){
   for(const key of ['候選池與淘汰理由','市場估值與我的估值','推論與選擇'])if(!md.includes(key))issue(d,'article lacks section '+key);
 }
 if(failures.length){console.error(failures.join('\n'));process.exitCode=1;}
-else console.log('PASS: investment provenance structure ('+editions.length+' editions checked from 2026-10-09).');
+else console.log('PASS: investment provenance structure ('+editions.length+' editions checked from 2026-10-07).');
