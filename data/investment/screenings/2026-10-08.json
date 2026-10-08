@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-08",
+  "backfilledOn": "2026-10-08",
+  "selectionMode": "company",
+  "sourcePosts": [
+    "daily-world-2026-10-08",
+    "daily-finance-2026-10-08",
+    "daily-ai-2026-10-08",
+    "daily-semiconductor-2026-10-08",
+    "daily-software-2026-10-08",
+    "daily-capital-flows-2026-10-08"
+  ],
+  "beliefPosts": [
+    "huggingface-agent-civilization"
+  ],
+  "method": "As-of-2026-10-08 independent frontier signals first; then all-sector ranking. Historical Oct-07 article is only considered after ranking.",
+  "signals": [
+    {
+      "id": "s1",
+      "post": "daily-software-2026-10-08",
+      "claim": "GitHub discloses rebuilding Git infrastructure for agent-scale parallel work, highlighting permissions, indexing, reliability and concurrent tool execution.",
+      "sourceUrls": [
+        "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/"
+      ]
+    },
+    {
+      "id": "s2",
+      "post": "daily-semiconductor-2026-10-08",
+      "claim": "AMD 2027 supply expansion and Rapidus customer validation shift focus from model/chip announcements to physical deliverability.",
+      "sourceUrls": [
+        "https://www.reuters.com/world/asia-pacific/amd-plans-substantially-increase-supply-2027-ceo-says-2026-10-06/",
+        "https://www.reuters.com/world/asia-pacific/japans-15-billion-rapidus-chip-bet-hinges-winning-customers-2026-10-06/"
+      ]
+    },
+    {
+      "id": "s3",
+      "post": "daily-finance-2026-10-08",
+      "claim": "Long bond yields remain elevated and diverge; financing costs discourage simply rerating all AI businesses upward.",
+      "sourceUrls": [
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-08.json"
+      ]
+    },
+    {
+      "id": "s4",
+      "post": "daily-capital-flows-2026-10-08",
+      "claim": "Taiwan top-20 equity capitalization fell more sharply than global top-50, yet remained highly concentrated in semiconductors.",
+      "sourceUrls": [
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-07.json",
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-08.json"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "gss",
+      "company": "叡揚資訊",
+      "ticker": "6752",
+      "market": "TPEx",
+      "valueLayer": "企業文件權限、知識脈絡與訂閱式軟體",
+      "signalIds": [
+        "s1",
+        "s3"
+      ],
+      "disposition": "selected",
+      "reason": "2026H1訂閱式收入增速20.56%而總營收4.47%，市場約14倍歷史EPS；基準情境需訂閱營收帶動EPS回升，非僅AI提問流量。當日OTC收盤無可核實獨立來源，價格基準明訂10/07。",
+      "valuation": {
+        "marketAsOf": "2026-10-07",
+        "method": "forward EPS 5.8/7.2/8.3 × scenario P/E 12/17/20; using last verified close",
+        "anchorPrice": 96.7,
+        "currency": "TWD",
+        "bear": 69.6,
+        "base": 122.4,
+        "bull": 166
+      },
+      "priceSource": "https://www.peicheng.com.tw/asp/stockquery/6752.htm",
+      "earningsSource": "https://finmoconf.diveinvest.net/presentation/6a9d7694a16a75b813c911d8"
+    },
+    {
+      "id": "mitac",
+      "company": "神達控股",
+      "ticker": "3706",
+      "market": "TWSE",
+      "valueLayer": "伺服器 CPU/DRAM/SSD 工作負載承載與系統整合",
+      "signalIds": [
+        "s2",
+        "s4",
+        "s3"
+      ],
+      "disposition": "selected",
+      "reason": "同日AI伺服器交付與金融成本相互制約；上半年已公告營收728.18億與EPS2.58，選擇者應關注毛利而非營收單位數。",
+      "valuation": {
+        "marketAsOf": "2026-10-08",
+        "method": "forward EPS 5.3/6.2/7.2 × scenario P/E 12/16/18",
+        "anchorPrice": 80.7,
+        "currency": "TWD",
+        "bear": 63.6,
+        "base": 99.2,
+        "bull": 129.6
+      },
+      "priceSource": "https://hk.investing.com/equities/mhc-historical-data",
+      "earningsSource": "https://www.mitac.com/zh-TW/news_room/detail/MiTAC_Holdings_2Q_2026_Revenue"
+    },
+    {
+      "id": "acer-csi",
+      "company": "安碁資訊",
+      "ticker": "6690",
+      "market": "TPEx",
+      "valueLayer": "企業資安SOC及Agent執行監控",
+      "signalIds": [
+        "s1",
+        "s3"
+      ],
+      "disposition": "watch",
+      "reason": "與Agent治理連結成立但10/08當日可靠新價尚未核實，且安全產品新增收入對毛利的影響尚未拆出；不靠昨天入選資格直接續列。",
+      "missingValuationReason": "可核實的最近收盤是 10/07 的 178 元；本次缺乏獨立核實的 10/08 收盤價與當期盈利變化。",
+      "priceSource": "https://cn.investing.com/equities/acer-cyber-historical-data"
+    },
+    {
+      "id": "quanta",
+      "company": "廣達",
+      "ticker": "2382",
+      "market": "TWSE",
+      "valueLayer": "大量 AI 機櫃系統整合",
+      "signalIds": [
+        "s2",
+        "s4"
+      ],
+      "disposition": "rejected",
+      "reason": "有大型雲客戶與AI伺服器產能優勢，但在高市場關注度與集中風險下，難以證明其預期成長尚未定價；10/08當日資料源不同步，不硬估最新情境差。",
+      "missingValuationReason": "10/07可見收盤335元與TTM EPS 22.95；10/08不同行情提供盤中價、尚缺同口徑收盤，故不按10/08未核實現價造價值差距。",
+      "priceSource": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?A=C023145&B=7",
+      "earningsSource": "https://tw.finance.yahoo.com/quote/2382/eps"
+    }
+  ],
+  "rankedIds": [
+    "gss",
+    "mitac",
+    "acer-csi",
+    "quanta"
+  ],
+  "scoreRationale": "GitHub agent-scale 使資料/權限/索引的利用率增加，叡揚訂閱結構提供尚待證明的利潤重估空間；硬體需求同時成立但神達毛利風險限制上檔。安碁缺當日可核價、廣達市場已較充分理解。"
+}

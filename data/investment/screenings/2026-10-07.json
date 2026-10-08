@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-07",
+  "backfilledOn": "2026-10-08",
+  "selectionMode": "company",
+  "sourcePosts": [
+    "daily-world-2026-10-07",
+    "daily-finance-2026-10-07",
+    "daily-ai-2026-10-07",
+    "daily-semiconductor-2026-10-07",
+    "daily-software-2026-10-07",
+    "daily-capital-flows-2026-10-07"
+  ],
+  "beliefPosts": [
+    "huggingface-agent-civilization"
+  ],
+  "method": "Independent six-frontier snapshot -> economic demand -> at least four Taiwanese companies across value layers -> dated valuations -> ranking. Do not seed with prior recommendations.",
+  "signals": [
+    {
+      "id": "s1",
+      "post": "daily-ai-2026-10-07",
+      "claim": "US AI research moves toward real-world computer use and Taiwanese manufacturers remain concentrated in AI infrastructure delivery.",
+      "sourceUrls": [
+        "https://openai.com/index/advancing-computer-use-with-ironclad/",
+        "https://www.investing.com/news/stock-market-news/foxconn-thirdquarter-revenue-jumps-47-yy-beats-market-forecast-4931168"
+      ]
+    },
+    {
+      "id": "s2",
+      "post": "daily-semiconductor-2026-10-07",
+      "claim": "AMD discusses increasing 2027 supply, suggesting demand transmits to server system assembly and packaging, not solely chip design.",
+      "sourceUrls": [
+        "https://www.reuters.com/world/asia-pacific/amd-plans-substantially-increase-supply-2027-ceo-says-2026-10-06/"
+      ]
+    },
+    {
+      "id": "s3",
+      "post": "daily-software-2026-10-07",
+      "claim": "Agent-aware development tools and cybersecurity verification indicate new tool execution and accountability workloads.",
+      "sourceUrls": [
+        "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app/",
+        "https://www.anthropic.com/news/cyber-verification-program"
+      ]
+    },
+    {
+      "id": "s4",
+      "post": "daily-finance-2026-10-07",
+      "claim": "The US 10-year yield is 5.288% and UK/France yields rise sharply; growth assumptions need a valuation discount.",
+      "sourceUrls": [
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-07.json"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "mitac",
+      "company": "神達控股",
+      "ticker": "3706",
+      "market": "TWSE",
+      "valueLayer": "伺服器系統整合與 CPU/DRAM/儲存運算節點",
+      "signalIds": [
+        "s1",
+        "s2",
+        "s4"
+      ],
+      "disposition": "selected",
+      "reason": "2026H1 營收與獲利已可驗證；若更多AI工作負載進入實際部署，系統機櫃需求可早於上游題材出現在營收。但毛利薄且高利率壓抑重估；情境估值須反映此限制。",
+      "valuation": {
+        "marketAsOf": "2026-10-07",
+        "method": "forward EPS × scenario P/E; 2026H1 EPS 2.58 is historical anchor, forward EPS explicitly modeled",
+        "anchorPrice": 80.9,
+        "currency": "TWD",
+        "bear": 63.6,
+        "base": 99.2,
+        "bull": 129.6
+      },
+      "priceSource": "https://hk.investing.com/equities/mhc-historical-data",
+      "earningsSource": "https://www.mitac.com/zh-TW/news_room/detail/MiTAC_Holdings_2Q_2026_Revenue"
+    },
+    {
+      "id": "acer-csi",
+      "company": "安碁資訊",
+      "ticker": "6690",
+      "market": "TPEx",
+      "valueLayer": "企業資安維運與工具執行審計",
+      "signalIds": [
+        "s3",
+        "s1"
+      ],
+      "disposition": "selected",
+      "reason": "資安驗證與Agent委派增加監控和事件處理複雜度，既有SOC客戶有交叉銷售路徑；必須觀察服務毛利是否勝過導入成本。",
+      "valuation": {
+        "marketAsOf": "2026-10-07",
+        "method": "forward EPS × scenario P/E; historical TTM EPS estimated 10.95 from disclosed quarters",
+        "anchorPrice": 178,
+        "currency": "TWD",
+        "bear": 123.5,
+        "base": 218.5,
+        "bull": 275
+      },
+      "priceSource": "https://cn.investing.com/equities/acer-cyber-historical-data",
+      "earningsSource": "https://www.acercsi.com/tw/news/21/1356"
+    },
+    {
+      "id": "quanta",
+      "company": "廣達",
+      "ticker": "2382",
+      "market": "TWSE",
+      "valueLayer": "大型 AI 伺服器整機與雲端客戶組裝",
+      "signalIds": [
+        "s1",
+        "s2"
+      ],
+      "disposition": "watch",
+      "reason": "伺服器需求證據強，但市場高度熟悉AI伺服器題材，缺乏獨立的被低估證據；保留比較。",
+      "valuation": {
+        "marketAsOf": "2026-10-07",
+        "method": "TTM EPS 22.95 × illustrative P/E 11/14/18 (scenario sensitivity, not selected fair value)",
+        "anchorPrice": 335,
+        "currency": "TWD",
+        "bear": 252.45,
+        "base": 321.3,
+        "bull": 413.1
+      },
+      "priceSource": "https://www.moneydj.com/z/zh/zha/zh00.djhtm?A=C023145&B=7",
+      "earningsSource": "https://tw.finance.yahoo.com/quote/2382/eps"
+    },
+    {
+      "id": "gss",
+      "company": "叡揚資訊",
+      "ticker": "6752",
+      "market": "TPEx",
+      "valueLayer": "企業知識管理與 SaaS 訂閱",
+      "signalIds": [
+        "s3",
+        "s4"
+      ],
+      "disposition": "watch",
+      "reason": "訂閱式收入高於總營收增速，但截至2026H1 獲利率承壓；本期不把AI問答直接折算Agent新收入。",
+      "valuation": {
+        "marketAsOf": "2026-10-07",
+        "method": "forward EPS 5.8/7.2/8.3 × P/E 12/17/20",
+        "anchorPrice": 96.7,
+        "currency": "TWD",
+        "bear": 69.6,
+        "base": 122.4,
+        "bull": 166
+      },
+      "priceSource": "https://www.peicheng.com.tw/asp/stockquery/6752.htm",
+      "earningsSource": "https://finmoconf.diveinvest.net/presentation/6a9d7694a16a75b813c911d8"
+    }
+  ],
+  "rankedIds": [
+    "mitac",
+    "acer-csi",
+    "gss",
+    "quanta"
+  ],
+  "scoreRationale": "神達/安碁分屬實體系統與服務控制面，兩者估值情境差距有條件而非確定。叡揚H1獲利下滑，廣達價值已較充分被辨識。"
+}
