@@ -1,0 +1,228 @@
+{
+  "date": "2026-10-09",
+  "selectionMode": "company",
+  "method": "10/09 六類前沿固定→高品質訊號→跨價值鏈候選池→核實 10/08 台股收盤與公開報表→三情境 EPS × P/E→逐項排序→只選一家公司。昨天 Investment Outlook 未用於構建候選池；本日排名後才對照歷史。",
+  "marketCutoff": "台灣 2026-10-09 上午，採用最近完成交易日 2026-10-08 收盤；本日期內不得把 10/09 盤中報價當作 10/08 收盤。",
+  "sourcePosts": [
+    "daily-world-2026-10-09",
+    "daily-finance-2026-10-09",
+    "daily-ai-2026-10-09",
+    "daily-semiconductor-2026-10-09",
+    "daily-software-2026-10-09",
+    "daily-capital-flows-2026-10-09"
+  ],
+  "beliefPosts": [
+    "huggingface-agent-civilization"
+  ],
+  "signals": [
+    {
+      "id": "s1",
+      "post": "daily-semiconductor-2026-10-09",
+      "claim": "台積電 2026/09 營收 NT$511.857bn 年增 54.6%，2026Q2 EPS NT$27.25；晶圓投片已實現為營收而非只有計畫。",
+      "sourceUrls": [
+        "https://pr.cld.tsmc.com/english/news/3343",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q2"
+      ]
+    },
+    {
+      "id": "s2",
+      "post": "daily-ai-2026-10-09",
+      "claim": "Upscale AI 10/08 發布 Token Fabric，宣稱支援跨供應商 AI 晶片互連，形成高速網路／供電／系統驗證需求假說；客戶付費和性能尚待核實。",
+      "sourceUrls": [
+        "https://www.reuters.com/business/nvidia-backed-upscale-ai-launches-platform-connect-chips-rival-suppliers-2026-10-08/"
+      ]
+    },
+    {
+      "id": "s3",
+      "post": "daily-software-2026-10-09",
+      "claim": "GitHub 10/07 公告本機 MXC 工具沙盒正式推出，10/08 擴大 draft PR 數量治理，暗示工具授權與企業安全通路服務機會但不保證其毛利。",
+      "sourceUrls": [
+        "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/",
+        "https://github.blog/changelog/2026-10-08-draft-pull-requests-count-toward-pull-request-limits/"
+      ]
+    },
+    {
+      "id": "s4",
+      "post": "daily-finance-2026-10-09",
+      "claim": "澳洲長債約 5.346%、美國約 5.237%（10/09 快照），高資金成本提高融資依賴型基建估值折現率；油價 10/08 升至 Brent $104.28。",
+      "sourceUrls": [
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-09.json",
+        "https://www.reuters.com/business/energy/oil-rises-middle-east-supply-concerns-persist-amid-shipping-attacks-2026-10-08/"
+      ]
+    },
+    {
+      "id": "s5",
+      "post": "daily-capital-flows-2026-10-09",
+      "claim": "Top50 與台灣 Top20 來源快照市值降低（比較時點不一）；這是市場定價／成分變化而非真實資金淨流。",
+      "sourceUrls": [
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-08.json",
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-09.json"
+      ]
+    },
+    {
+      "id": "s6",
+      "post": "daily-semiconductor-2026-10-09",
+      "claim": "Samsung 10/07 預告記憶體獲利增長且市場擔心週期；台灣封裝測試商受益須扣除產能與 ASP 週期風險。",
+      "sourceUrls": [
+        "https://www.reuters.com/business/samsung-q3-profit-jumps-783-ai-memory-boom-lifts-chip-earnings-2026-10-07/",
+        "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f4fbe9e3-1bb2-467e-865b-c4321436ed17"
+      ]
+    }
+  ],
+  "candidatePoolBeforeValuation": [
+    "tsmc",
+    "zerone",
+    "powertech",
+    "delta"
+  ],
+  "candidates": [
+    {
+      "id": "tsmc",
+      "company": "台積電",
+      "ticker": "2330",
+      "market": "TWSE",
+      "valueLayer": "先進製程晶圓代工／2nm 生產",
+      "signalIds": [
+        "s1",
+        "s2",
+        "s4",
+        "s5"
+      ],
+      "disposition": "selected",
+      "reason": "在 10/08 當日最可核驗的需求證據是自家年增 54.6% 的 9 月實現營收、2Q26 EPS 27.25，依 10/08 收盤 2550 元情境基準仍有 +16.5% 理論空間；假設 2027 EPS 110、P/E 27，優於其他候選的獲利可追蹤性。高估值與海外廠成本為主要風險。",
+      "valuation": {
+        "marketAsOf": "2026-10-08",
+        "method": "2027 forward diluted EPS TWD 90/110/130 × P/E 22/27/30; EPS 與倍數全部為研究情境非公司指引",
+        "anchorPrice": 2550,
+        "currency": "TWD",
+        "bear": 1980,
+        "base": 2970,
+        "bull": 3900
+      },
+      "priceSource": "https://tw.finance.yahoo.com/quote/2330",
+      "earningsSource": "https://investor.tsmc.com/english/quarterly-results/2026/q2",
+      "revenueSource": "https://pr.cld.tsmc.com/english/news/3343",
+      "peerMultipleSource": "https://tw.finance.yahoo.com/quote/2330",
+      "valuationPct": {
+        "bear": -22.35,
+        "base": 16.47,
+        "bull": 52.94
+      },
+      "catalyst": "10/15 第三季正式財報及毛利、資本支出指引",
+      "falsification": "若海外產能折舊、2nm 良率或電力成本令 EPS 未達基準；或 P/E 下修低於 22×"
+    },
+    {
+      "id": "zerone",
+      "company": "零壹科技",
+      "ticker": "3029",
+      "market": "TWSE",
+      "valueLayer": "企業 IT／資安與開發工具通路",
+      "signalIds": [
+        "s3",
+        "s4"
+      ],
+      "disposition": "watch",
+      "reason": "GitHub 原生工具治理與 10/08 韓銀網攻調查提出企業採購需求；零壹 H1 2026 營收 141.19 億，2Q EPS 1.86，8 月累計營收年增 20.13%，但新增安全支出是否分配到零壹尚無訂單拆分。採 10/08 收盤 114.5 元，基準價差僅 +3.4%，未選。",
+      "valuation": {
+        "marketAsOf": "2026-10-08",
+        "method": "forward EPS TWD 5.8/7.4/9.0 × P/E 12/16/20，僅研究假設",
+        "anchorPrice": 114.5,
+        "currency": "TWD",
+        "bear": 69.6,
+        "base": 118.4,
+        "bull": 180
+      },
+      "priceSource": "https://tw.finance.yahoo.com/quote/3029",
+      "earningsSource": "https://m.moneydj.com/f1a.aspx?a=38951d51-689d-4d3b-9ef1-34942af7eeff",
+      "revenueSource": "https://www.zerone.com.tw/investor/financials/monthly-revenue-report/31-2026",
+      "valuationPct": {
+        "bear": -39.21,
+        "base": 3.41,
+        "bull": 57.21
+      },
+      "catalyst": "資安／AI 軟體專案毛利率與企業續約揭露",
+      "falsification": "通路銷售成長卻無毛利率改善"
+    },
+    {
+      "id": "powertech",
+      "company": "力成科技",
+      "ticker": "6239",
+      "market": "TWSE",
+      "valueLayer": "記憶體封測及先進封裝／光互連選項",
+      "signalIds": [
+        "s2",
+        "s6",
+        "s4"
+      ],
+      "disposition": "rejected",
+      "reason": "2Q26 EPS 3.00 與 10/08 收盤 308 元可核價，先進封裝、記憶體測試與網路需求有傳導，惟按 EPS 13×P/E22 基準價 286 元低於市價；2027 製程量產仍有延遲風險，不能將記憶體週期高峰當作永久獲利。",
+      "valuation": {
+        "marketAsOf": "2026-10-08",
+        "method": "forward EPS TWD 9/13/18 × P/E 18/22/26；記憶體週期與 2027 封裝選擇權情境",
+        "anchorPrice": 308,
+        "currency": "TWD",
+        "bear": 162,
+        "base": 286,
+        "bull": 468
+      },
+      "priceSource": "https://tw.finance.yahoo.com/quote/6239.TW",
+      "earningsSource": "https://www.moneydj.com/kmdj/news/newsviewer.aspx?a=f4fbe9e3-1bb2-467e-865b-c4321436ed17",
+      "valuationPct": {
+        "bear": -47.4,
+        "base": -7.14,
+        "bull": 51.95
+      },
+      "catalyst": "Q3 財報毛利；2027 封裝量產與良率",
+      "falsification": "記憶體 ASP 回落與 FOPLP 客戶驗證遞延"
+    },
+    {
+      "id": "delta",
+      "company": "台達電子",
+      "ticker": "2308",
+      "market": "TWSE",
+      "valueLayer": "資料中心電源、電力轉換與散熱設備",
+      "signalIds": [
+        "s2",
+        "s4",
+        "s5"
+      ],
+      "disposition": "rejected",
+      "reason": "跨供應商 AI 資料中心互連仍可能擴大電力／散熱採購，但沒有可拆分的 10/08 新訂單獲利；10/08 收盤 1965 元、約 63 倍歷史本益比，基準 EPS 38×45 倍僅 1710 元，價格已反映大量成長。",
+      "valuation": {
+        "marketAsOf": "2026-10-08",
+        "method": "forward EPS TWD 28/38/50 × P/E 35/45/55；市場 TTM P/E 約 62.5–63.3×，情境含高基期修正",
+        "anchorPrice": 1965,
+        "currency": "TWD",
+        "bear": 980,
+        "base": 1710,
+        "bull": 2750
+      },
+      "priceSource": "https://tw.finance.yahoo.com/quote/2308",
+      "peerMultipleSource": "https://www.wantgoo.com/stock/2308/enterprise-value/price-to-earning-ratio",
+      "valuationPct": {
+        "bear": -50.13,
+        "base": -12.98,
+        "bull": 39.95
+      },
+      "catalyst": "後續資料中心電源訂單／區隔毛利披露",
+      "falsification": "若訂單及毛利不足支持高於 45× 的持續本益比"
+    }
+  ],
+  "rankedIds": [
+    "tsmc",
+    "zerone",
+    "powertech",
+    "delta"
+  ],
+  "rankingFactors": [
+    "信號原始來源及財報可信度",
+    "需求→付費→新增毛利的傳導",
+    "10/08 價格相對基準情境差距",
+    "可見催化時間",
+    "資金成本與競爭下行",
+    "盈利品質及資本支出"
+  ],
+  "scoreRationale": "TSMC：財報實現程度和正價差最強（+16.5%），但需 Q3 新指引驗證。零壹：可能的治理軟體採購需求但 ASP／毛利未證、估值安全邊際 +3.4% 不足。力成：已實現獲利且 2027 封裝選擇權，但基準折價 -7.1%。台達電：產品受益可信但交易於高本益比，基準折價 -13.0%。",
+  "rankedAt": "2026-10-09",
+  "historicalComparisonAfterRanking": "排名確定後才對照 10/08 投資文章：昨日列出的叡揚／神達並未因舊名單自動入池，今日新增證據強度以台積電正式月營收更高，維持觀察其長期價值需重新取得本日訊號；無強迫每日換股。"
+}
