@@ -1,0 +1,51 @@
+rank,name,ticker,market_cap_usd,sector,source_date
+1,"NVIDIA",,5565000000000,"Semiconductors",2026-10-09
+2,"Apple",,4968000000000,"Hardware",2026-10-09
+3,"Alphabet (Google)",,4216999999999.9995,"Software/Internet",2026-10-09
+4,"Microsoft",,3880000000000,"Software/Internet",2026-10-09
+5,"Amazon",,2740000000000,"Software/Internet",2026-10-09
+6,"TSMC",,2375000000000,"Semiconductors",2026-10-09
+7,"SpaceX",,2115000000000.0002,"Industrials/Auto/Aerospace",2026-10-09
+8,"Meta Platforms (Facebook)",,1836000000000,"Software/Internet",2026-10-09
+9,"Broadcom",,1719000000000,"Semiconductors",2026-10-09
+10,"Saudi Aramco",,1659000000000,"Energy",2026-10-09
+11,"Tesla",,1481000000000,"Industrials/Auto/Aerospace",2026-10-09
+12,"Samsung",,1281000000000,"Hardware",2026-10-09
+13,"Micron Technology",,1169000000000,"Semiconductors",2026-10-09
+14,"Berkshire Hathaway",,1094000000000.0001,"Financials",2026-10-09
+15,"Eli Lilly",,1042000000000,"Healthcare",2026-10-09
+16,"AMD",,1012999999999.9999,"Semiconductors",2026-10-09
+17,"SK Hynix",,890670000000,"Semiconductors",2026-10-09
+18,"JPMorgan Chase",,880970000000,"Financials",2026-10-09
+19,"Walmart",,877150000000,"Consumer/Retail",2026-10-09
+20,"Visa",,704190000000,"Financials",2026-10-09
+21,"Exxon Mobil",,692850000000,"Energy",2026-10-09
+22,"ASML",,679770000000,"Semiconductors",2026-10-09
+23,"Johnson & Johnson",,618090000000,"Healthcare",2026-10-09
+24,"Intel",,566030000000,"Semiconductors",2026-10-09
+25,"CXMT",,534460000000.00006,"Semiconductors",2026-10-09
+26,"Mastercard",,503490000000,"Financials",2026-10-09
+27,"AbbVie",,481390000000,"Healthcare",2026-10-09
+28,"Palantir",,477670000000,"Software/Internet",2026-10-09
+29,"Tencent",,477210000000,"Software/Internet",2026-10-09
+30,"Cisco",,452960000000,"Hardware",2026-10-09
+31,"China Construction Bank",,435750000000,"Financials",2026-10-09
+32,"Costco",,420050000000,"Consumer/Retail",2026-10-09
+33,"Chevron",,414970000000,"Energy",2026-10-09
+34,"Oracle",,411340000000,"Software/Internet",2026-10-09
+35,"Applied Materials",,404390000000,"Semiconductors",2026-10-09
+36,"Lam Research",,401190000000,"Semiconductors",2026-10-09
+37,"Coca-Cola",,377630000000,"Consumer/Retail",2026-10-09
+38,"Bank of America",,374880000000,"Financials",2026-10-09
+39,"Agricultural Bank of China",,367030000000,"Financials",2026-10-09
+40,"Caterpillar",,365980000000,"Industrials/Auto/Aerospace",2026-10-09
+41,"Dell",,365300000000,"Hardware",2026-10-09
+42,"Merck",,351270000000,"Healthcare",2026-10-09
+43,"Procter & Gamble",,350030000000,"Consumer/Retail",2026-10-09
+44,"Roche",,345920000000,"Healthcare",2026-10-09
+45,"ICBC",,343570000000,"Financials",2026-10-09
+46,"UnitedHealth",,332960000000,"Healthcare",2026-10-09
+47,"Bank of China",,327800000000,"Financials",2026-10-09
+48,"Palo Alto Networks",,325970000000,"Software/Internet",2026-10-09
+49,"General Electric",,317090000000,"Industrials/Auto/Aerospace",2026-10-09
+50,"HSBC",,316720000000,"Financials",2026-10-09
