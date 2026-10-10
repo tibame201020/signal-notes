@@ -1,0 +1,29 @@
+name: Validate content before publication
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [recovery/publish-2026-10-10]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: content-validation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  content:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - run: npm run test:investment
+      - run: npm run validate:investment
+      - run: npm run build
