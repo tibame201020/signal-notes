@@ -1,0 +1,235 @@
+{
+  "date": "2026-10-10",
+  "selectionMode": "company",
+  "method": "先讀 docs/investment-outlook-method.md→先獨立產製並逐篇讀取 10/10 六篇前沿→擷取 10/09 新訊號→傳導需求至台灣上市櫃價值鏈→四家公司初篩→10/08（台灣 10/09 休市）股價／最新財報與同業估值→三情境模型→獨立排序與入選；完成後才對照 10/09 舊文章。",
+  "marketCutoff": "10/10 台北 05:00；台灣 10/09 國慶連假休市，全部台股採 10/08 收盤，市場資料 10/10 新快照缺失，不將 10/09 舊市值快照視為 10/10 收盤。",
+  "sourcePosts": [
+    "daily-world-2026-10-10",
+    "daily-finance-2026-10-10",
+    "daily-ai-2026-10-10",
+    "daily-semiconductor-2026-10-10",
+    "daily-software-2026-10-10",
+    "daily-capital-flows-2026-10-10"
+  ],
+  "beliefPosts": [
+    "huggingface-agent-civilization"
+  ],
+  "signals": [
+    {
+      "id": "trade",
+      "post": "daily-world-2026-10-10",
+      "claim": "10/09 中歐就中國混合動力車輸歐數量達共同理解，可能減少超過一半，尚無執行細則；稀土／磁材許可改善仍待落實。汽車供應鏈可能重新配置，但沒有直接台灣供應商合約。",
+      "sourceUrls": [
+        "https://www.reuters.com/world/china/china-eu-reach-hybrid-vehicle-trade-understanding-keep-talks-alive-ev-dispute-2026-10-09/"
+      ]
+    },
+    {
+      "id": "liquidity",
+      "post": "daily-finance-2026-10-10",
+      "claim": "LSEG Lipper 截至 10/07 週度全球貨幣市場基金淨流入 1538.1 億美元，10/09 Firmus 50 億美元 IPO 撤回；基建融資需要更強現金流驗證。",
+      "sourceUrls": [
+        "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-10-09/",
+        "https://www.reuters.com/world/asia-pacific/australian-nvidia-backed-ai-data-centre-operator-firmus-shelves-ipo-2026-10-08/"
+      ]
+    },
+    {
+      "id": "model-disclosure",
+      "post": "daily-ai-2026-10-10",
+      "claim": "SemiAnalysis 10/09 調查 857 次中國模型發布僅 31 次有具名模型安全測試公開揭露，形成企業安全稽核／模型供應鏈證據需求；非未執行測試的證明。",
+      "sourceUrls": [
+        "https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/"
+      ]
+    },
+    {
+      "id": "asia-cyber",
+      "post": "daily-software-2026-10-10",
+      "claim": "10/09 韓日金融、零售及電信資安事件調查，AI 使用方式未全確認；企業可能增加 SOC、監控、事故回應與安全證據管理採購。",
+      "sourceUrls": [
+        "https://www.reuters.com/legal/litigation/south-korea-japan-buffeted-by-hacks-ai-lowers-bar-cybercriminals-2026-10-09/"
+      ]
+    },
+    {
+      "id": "chip-power",
+      "post": "daily-semiconductor-2026-10-10",
+      "claim": "10/09 SK 海力士光州擴廠仍未定開工日，取決於供電／用水；晶圓廠與資料中心的電網設備是必要但須有訂單證據的傳導層。",
+      "sourceUrls": [
+        "https://www.reuters.com/world/asia-pacific/sk-chairman-chey-says-chip-demand-keep-growing-fast-2026-10-09/"
+      ]
+    },
+    {
+      "id": "memory",
+      "post": "daily-semiconductor-2026-10-10",
+      "claim": "10/07 Micron 台灣工會取得可能罷工授權，但尚未罷工；10/09 SK 擴產訊號顯示記憶體需求強、供應及周期風險並存。",
+      "sourceUrls": [
+        "https://www.reuters.com/business/world-at-work/microns-taoyuan-union-taiwan-secures-authorisation-strike-2026-10-07/",
+        "https://www.reuters.com/world/asia-pacific/sk-chairman-chey-says-chip-demand-keep-growing-fast-2026-10-09/"
+      ]
+    },
+    {
+      "id": "fund",
+      "post": "daily-capital-flows-2026-10-10",
+      "claim": "10/09 公布截至 10/07 的全球貨幣基金淨流入 1538.1 億美元，全球科技產業基金仍流入 53.7 億；不可把市值變動當作淨申贖。",
+      "sourceUrls": [
+        "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-10-09/"
+      ]
+    }
+  ],
+  "candidatePoolBeforeValuation": [
+    "cymmetrik-cyber",
+    "chief-telecom-sec",
+    "chung-hsin",
+    "nanya"
+  ],
+  "candidates": [
+    {
+      "id": "chief-telecom-sec",
+      "company": "中華資安",
+      "ticker": "7765",
+      "market": "TWSE",
+      "valueLayer": "企業 SOC、資安專業服務／持續性監控",
+      "signalIds": [
+        "asia-cyber",
+        "model-disclosure",
+        "liquidity"
+      ],
+      "disposition": "selected",
+      "reason": "10/09 韓日攻擊調查與模型揭露缺口提出企業可驗證資安服務需求；公司 2026/09 營收 2.049 億元年增 31.41%，H1 EPS 6.16；10/08 收盤 236 元，TTM P/E 20.58x，研究基準 2027 EPS 13.5×22=297（+25.85%）。持續性服務能否增加毛利仍需驗證，未把國際事件視為已簽單。",
+      "valuation": {
+        "marketAsOf": "2026-10-08",
+        "method": "2027 forward EPS 10/13.5/16 TWD × P/E 16/22/26，研究情境；以 H1 EPS 6.16、TTM 約 11.47 與 9 月營收年增 31.41% 校準，非公司指引",
+        "anchorPrice": 236,
+        "currency": "TWD",
+        "bear": 160,
+        "base": 297,
+        "bull": 416
+      },
+      "priceSource": "https://tw.stock.yahoo.com/quote/7765/income-statement",
+      "earningsSource": "https://tw.stock.yahoo.com/quote/7765/income-statement",
+      "revenueSource": "https://www.wantgoo.com/stock/7765/financial-statements/monthly-revenue",
+      "peerMultipleSource": "https://tw.stock.yahoo.com/quote/7765/income-statement",
+      "valuationPct": {
+        "bear": -32.2,
+        "base": 25.85,
+        "bull": 76.27
+      },
+      "catalyst": "下一季財報驗證服務毛利與續約率；10/09 韓日銀行安全採購是否轉為台灣需求",
+      "falsification": "營收成長僅來自低毛利商品轉售；SOC 合約續約率或毛利下降；2027 EPS < 10"
+    },
+    {
+      "id": "chung-hsin",
+      "company": "中興電",
+      "ticker": "1513",
+      "market": "TWSE",
+      "valueLayer": "變電／配電設備、電網 EPC 與晶圓廠供電",
+      "signalIds": [
+        "chip-power",
+        "liquidity",
+        "fund"
+      ],
+      "disposition": "selected",
+      "reason": "10/09 SK 擴廠受供電制約直接指出電力設備價值鏈；公司 2026 Q2 EPS 2.56、H1 EPS 4.50，公開報導在手訂單約 400–431 億元（截至 8 月），10/08 收盤報價 167 元，TTM EPS 8.89、約 18.8x，基準 2027 EPS 10.5×20=210（+25.75%）。海外 SK 訂單未確認，僅以台灣電網及廠房需求作可追蹤基礎。",
+      "valuation": {
+        "marketAsOf": "2026-10-08",
+        "method": "2027 forward EPS 8/10.5/13 TWD × P/E 15/20/23；校準 2026H1 EPS 4.5、TTM EPS 8.89；同業華城 TTM P/E 約 45x 僅作估值上限比較",
+        "anchorPrice": 167,
+        "currency": "TWD",
+        "bear": 120,
+        "base": 210,
+        "bull": 299
+      },
+      "priceSource": "https://tw.finance.yahoo.com/quote/1513/eps",
+      "earningsSource": "https://tw.finance.yahoo.com/quote/1513/eps",
+      "revenueSource": "https://money.udn.com/money/amp/story/5710/9685402",
+      "peerMultipleSource": "https://tw.finance.yahoo.com/quote/1519.TW/eps",
+      "valuationPct": {
+        "bear": -28.14,
+        "base": 25.75,
+        "bull": 79.04
+      },
+      "catalyst": "2026Q3 財報驗證訂單轉收入及毛利、台電強韌電網招標",
+      "falsification": "電力建設延後、毛利率回落、2027 EPS 低於 8 或工程應收帳款惡化"
+    },
+    {
+      "id": "cymmetrik-cyber",
+      "company": "安碁資訊",
+      "ticker": "6690",
+      "market": "TPEx",
+      "valueLayer": "企業安全監控、事故回應與資安系統服務",
+      "signalIds": [
+        "asia-cyber",
+        "model-disclosure"
+      ],
+      "disposition": "watch",
+      "reason": "2026/09 營收 2.492 億元年增 8.62%、累計年增 12.87%；10/08 收盤 178 元、TTM P/E 16.26x；基準 2027 EPS 12.5×18=225（+26.4%）。儘管價格差略高，新增國際事件到本公司實際高毛利收入的傳導較弱，營收增速不及中華資安且缺客戶專案拆分，未選。",
+      "valuation": {
+        "marketAsOf": "2026-10-08",
+        "method": "2027 forward EPS 9/12.5/15 TWD × P/E 13/18/22；以 10/08 TTM P/E 16.26x（推得 EPS 10.95）及 9 月營收年增 8.62% 作校準",
+        "anchorPrice": 178,
+        "currency": "TWD",
+        "bear": 117,
+        "base": 225,
+        "bull": 330
+      },
+      "priceSource": "https://tw.stock.yahoo.com/quote/6690/announcement",
+      "earningsSource": "https://www.wantgoo.com/stock/6690/financial-statements/income-statement",
+      "revenueSource": "https://tw.stock.yahoo.com/quote/6690/announcement",
+      "valuationPct": {
+        "bear": -34.27,
+        "base": 26.4,
+        "bull": 85.39
+      },
+      "catalyst": "10 月營收與 2026Q3 毛利率／服務收入占比",
+      "falsification": "資安專案成長低於整體市場，服務毛利持續下降"
+    },
+    {
+      "id": "nanya",
+      "company": "南亞科",
+      "ticker": "2408",
+      "market": "TWSE",
+      "valueLayer": "DRAM 製造／記憶體價格與供應週期",
+      "signalIds": [
+        "memory",
+        "chip-power",
+        "liquidity"
+      ],
+      "disposition": "rejected",
+      "reason": "2026/09 營收 450.91 億元年增 576.62%、Q2 EPS 14.66，10/08 收盤 532 元；需求強但週期高峰定價與大規模資本支出可能使獲利回落，基準 EPS 52×11=572（+7.5%）不足抵銷保守情境 -57.9% 風險，淘汰。",
+      "valuation": {
+        "marketAsOf": "2026-10-08",
+        "method": "2027 normalized cycle EPS 28/52/75 TWD × P/E 8/11/14；EPS 非公司指引，考慮記憶體價格週期及擴產資本成本",
+        "anchorPrice": 532,
+        "currency": "TWD",
+        "bear": 224,
+        "base": 572,
+        "bull": 1050
+      },
+      "priceSource": "https://hk.finance.yahoo.com/quote/2408.TW/history/",
+      "earningsSource": "https://udn.com/news/amp/story/7252/9730129",
+      "revenueSource": "https://gfe-desktop.cnyes.com/news/id/6621909/print",
+      "valuationPct": {
+        "bear": -57.89,
+        "base": 7.52,
+        "bull": 97.37
+      },
+      "catalyst": "10 月營收與下一季 DRAM 合約價／毛利率",
+      "falsification": "DRAM 現貨或長約價反轉、HBM 擴產排擠不如預期、折舊過高"
+    }
+  ],
+  "rankedIds": [
+    "chief-telecom-sec",
+    "chung-hsin",
+    "cymmetrik-cyber",
+    "nanya"
+  ],
+  "rankingFactors": [
+    "10/09 當日訊號原始證據與公司營收連結",
+    "需求→合約→毛利率的可驗證性",
+    "10/08 市價對基準估值落差",
+    "營運／財務品質",
+    "可驗證催化",
+    "保守情境下行與高利率"
+  ],
+  "scoreRationale": "中華資安：9 月年增 31.41%、H1 EPS 6.16，具服務續約與安全治理可驗證路徑，+25.85% 基準差。中興電：電網訂單與晶圓廠供電需求可追、TTM P/E 18.8×、+25.75%。安碁資訊：+26.4% 但 9 月年增僅 8.62%，新增事件與公司收入連結弱。南亞科：營收高速成長但價格週期與折舊風險使基準差僅 +7.52%。無軟硬體各一家名額，排序依證據和估值風險。",
+  "rankedAt": "2026-10-10",
+  "historicalComparisonAfterRanking": "待排名凍結後才回看 10/09 舊報告；今日候選池獨立由韓日資安、SK 電力瓶頸、記憶體與流動性訊號生成，沒有因昨天選過台積電而預設或排除。"
+}
