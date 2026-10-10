@@ -1,0 +1,6 @@
+{
+  "scenario": "scheduled-connector-write",
+  "run_date": "2026-10-10",
+  "result": "success",
+  "target": "isolated-poc-branch"
+}
