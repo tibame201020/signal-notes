@@ -1,0 +1,8 @@
+{
+  "scenario": "interactive-connector-control",
+  "run_date": "2026-10-10",
+  "expected": "write_success",
+  "target": "isolated-poc-branch",
+  "result": "connector-create-file-success",
+  "notes": "Synthetic test data; never modify main or publish content."
+}
