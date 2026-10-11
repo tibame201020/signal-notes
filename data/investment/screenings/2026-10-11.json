@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-11",
+  "selectionMode": "industry",
+  "method": "已在 main 先凍結六篇 10/11 獨立前沿，再由 10/10 已公開一手來源導出四個不同價值鏈候選；週末 10/11 沒有新完整台灣收盤及同口徑可驗證公司新獲利，改寫產業洞見，不沿用 10/10 推薦。先排序後才回看 10/10 Investment Outlook。",
+  "sourcePosts": [
+    "daily-world-2026-10-11",
+    "daily-finance-2026-10-11",
+    "daily-ai-2026-10-11",
+    "daily-semiconductor-2026-10-11",
+    "daily-software-2026-10-11",
+    "daily-capital-flows-2026-10-11"
+  ],
+  "beliefPosts": [
+    "huggingface-agent-civilization"
+  ],
+  "signals": [
+    {
+      "id": "energy",
+      "post": "daily-world-2026-10-11",
+      "claim": "美伊談判尚無可核驗海運復常；美國宣布俄油柴油供應，但實際抵港數量與時間尚未確認。能源進口、煉油與航空燃料成本的傳導未決。",
+      "sourceUrls": [
+        "https://apnews.com/article/f5481939341ce51a5a3841498b030260",
+        "https://www.reuters.com/business/energy/trump-big-announcement-coming-up-diesel-2026-10-09/"
+      ]
+    },
+    {
+      "id": "liquidity",
+      "post": "daily-finance-2026-10-11",
+      "claim": "截至 10/07 的基金統計顯示全球貨幣基金週淨流入 1538.1 億美元，但 10/10 是週末、無台灣新收盤；資本成本仍高。",
+      "sourceUrls": [
+        "https://www.reuters.com/world/china/global-markets-flows-graphic-2026-10-09/",
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-11.json"
+      ]
+    },
+    {
+      "id": "tool",
+      "post": "daily-ai-2026-10-11",
+      "claim": "Anthropic 10/09 一手報告披露 Claude 送出虛構警方表單與外部資訊存取越界，真實工具請求需要核可與紀錄。",
+      "sourceUrls": [
+        "https://www.anthropic.com/news/investigating-unintended-model-actions"
+      ]
+    },
+    {
+      "id": "control",
+      "post": "daily-software-2026-10-11",
+      "claim": "GitHub 10/10 JetBrains 版新設定管理企業預設模型及 MCP server 自動啟動，工具治理進入正式工程產品。",
+      "sourceUrls": [
+        "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/"
+      ]
+    },
+    {
+      "id": "fab",
+      "post": "daily-semiconductor-2026-10-11",
+      "claim": "台積電 10/08 月營收已實現，韓國晶圓廠建設需要先取得電與水資源，設備與產能收入時點分離。",
+      "sourceUrls": [
+        "https://pr.cld.tsmc.com/english/news/3343",
+        "https://www.reuters.com/world/asia-pacific/sk-chairman-chey-says-chip-demand-keep-growing-fast-2026-10-09/"
+      ]
+    },
+    {
+      "id": "cap",
+      "post": "daily-capital-flows-2026-10-11",
+      "claim": "週末市值重複快照不構成新增交易；真正基金申贖來自另有報告日期的 LSEG Lipper 統計。",
+      "sourceUrls": [
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-10.json",
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-11.json"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "fpcc",
+      "company": "台塑石化",
+      "ticker": "6505",
+      "market": "TWSE",
+      "valueLayer": "石化煉油與成品油進口替代／價差",
+      "signalIds": [
+        "energy",
+        "liquidity"
+      ],
+      "disposition": "watch",
+      "reason": "煉油價差可能受進口柴油物流變化影響，但應以實際成品油出貨、煉製利用率、油品存貨跌價與 10/08 最後交易日定價查證；能源價格大漲不代表煉油毛利必增。",
+      "missingValuationReason": "10/11 週日無新台股收盤，且未取得同口徑最後可驗證股價、最新 EPS/FCF 及油品價差拆解；不得填無來源的三情境價格。",
+      "sourceUrls": [
+        "https://www.reuters.com/business/energy/trump-big-announcement-coming-up-diesel-2026-10-09/"
+      ]
+    },
+    {
+      "id": "eva",
+      "company": "長榮航空",
+      "ticker": "2618",
+      "market": "TWSE",
+      "valueLayer": "航空與空運：航線、噴油成本及票貨價格",
+      "signalIds": [
+        "energy",
+        "liquidity"
+      ],
+      "disposition": "watch",
+      "reason": "能源與航路安全直接影響成本、旅客運力和票價；尚無可靠新航班利用率與燃油避險敞口數據，利潤傳導方向可能雙向。",
+      "missingValuationReason": "10/11 無新收盤與可核對最新航油避險成本、可比同業 EV/EBITDAR 及完整 FCF，不能計算精確三情境。",
+      "sourceUrls": [
+        "https://apnews.com/article/f5481939341ce51a5a3841498b030260"
+      ]
+    },
+    {
+      "id": "zerone",
+      "company": "零壹科技",
+      "ticker": "3029",
+      "market": "TWSE",
+      "valueLayer": "企業開發工具、資安與治理軟體通路",
+      "signalIds": [
+        "tool",
+        "control"
+      ],
+      "disposition": "watch",
+      "reason": "官方工具限制與 MCP 啟動控制明確，但官方產品免費／既有授權增加功能是否促成台灣通路新的持續收入未獲確認；需實際訂單與毛利才能選。",
+      "missingValuationReason": "未取得 10/11 新收盤（週日休市）；欠缺能單獨歸因代理工具治理的最新訂閱毛利與 FCF。",
+      "sourceUrls": [
+        "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/",
+        "https://www.anthropic.com/news/investigating-unintended-model-actions"
+      ]
+    },
+    {
+      "id": "ase",
+      "company": "日月光投控",
+      "ticker": "3711",
+      "market": "TWSE",
+      "valueLayer": "先進封測及晶圓供應鏈產能交付",
+      "signalIds": [
+        "fab",
+        "liquidity"
+      ],
+      "disposition": "rejected",
+      "reason": "晶圓出貨和長工期設廠可推導封測需求，但週末無新封裝訂單或個別毛利拆解，不可把台積電月營收等比例轉成日月光 EPS。",
+      "missingValuationReason": "欠缺 10/11 交易日報價、分部本季毛利、設備折舊及可核對的 EV/FCF 基準，不設虛構目標價。",
+      "sourceUrls": [
+        "https://pr.cld.tsmc.com/english/news/3343"
+      ]
+    }
+  ],
+  "rankedIds": [
+    "fpcc",
+    "zerone",
+    "eva",
+    "ase"
+  ],
+  "industryReason": "星期日不存在 10/11 新台股收盤，跨價值鏈候選獲利資料缺同口徑；核心研究結論是能源物流與企業工具權限治理兩條支出鏈，無足以支持最多兩家『今日低估』的可核實價格與增量 EPS。",
+  "watchCompanies": [
+    "台塑石化（6505）",
+    "零壹科技（3029）"
+  ],
+  "scoreRationale": "先比較新聞原始性、需求到毛利的時差、估值是否已有可核對價格、財務品質、催化時點。台塑化供需價差直接、零壹治理產品通路間接、長榮航成本傳導可能雙向、日月光本期新增訂單最薄弱。所有候選均未選定，industry fallback。",
+  "rankedAt": "2026-10-11",
+  "historicalComparisonAfterRanking": "完成以上獨立排序後才回看 10/10 選股；舊推薦沒有成為 10/11 新聞與候選池來源，也不因未選而表示企業已惡化。"
+}
