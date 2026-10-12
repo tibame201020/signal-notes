@@ -5,10 +5,6 @@ on:
     # 04:20 Asia/Taipei = 20:20 UTC (previous calendar day).
     - cron: "20 20 * * *"
   workflow_dispatch:
-  push:
-    paths:
-      - "scripts/market-data/**"
-      - ".github/workflows/market-data.yml"
 
 permissions:
   contents: write
@@ -34,11 +30,6 @@ jobs:
       - name: Collect fixed market data
         run: node scripts/market-data/collect.mjs
 
-      - name: Generate trend evidence charts
-        run: |
-          node scripts/market-data/render-trends.mjs 2026-10-07 2026-10-08
-          node scripts/market-data/render-trends.mjs
-
       - name: Validate snapshot
         run: |
           test -s data/market/latest.json
@@ -46,12 +37,12 @@ jobs:
 
       - name: Commit snapshot
         run: |
-          if [ -z "$(git status --porcelain -- data/market src/content/posts/daily-capital-flows-*)" ]; then
+          if [ -z "$(git status --porcelain -- data/market)" ]; then
             echo "No market data changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/market src/content/posts/daily-capital-flows-*
+          git add data/market
           git commit -m "data: refresh market snapshot $(date -u +%Y-%m-%d)"
           git push

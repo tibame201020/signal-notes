@@ -41,3 +41,7 @@ collector 會使用 repo 自己累積的 snapshot 計算：
 `scripts/market-data/display-zh.mjs` 以固定對照表提供中文公司名稱及中文產業類別；`render-trends.mjs` 讀入原始值完成計算後，將顯示用文字轉成繁體中文，並輸出**中文欄位置前、保留來源英文字段**的 UTF-8 BOM CSV。未收錄的新公司或產業，必須更新對照表，不能默默回退為全英文。
 
 本機或 CI 可執行 `node scripts/market-data/render-trends.mjs YYYY-MM-DD` 以生成當日圖表和 `global-top50-YYYY-MM-DD.csv`／`taiwan-top20-YYYY-MM-DD.csv`。發布檢查同時檢查圖內 SVG 文字及 CSV 中文欄位。
+
+## 避免背景刷新覆寫已發布文章
+
+04:20 的市場資料工作只更新 `data/market/`，不再在每次資料採集時重新輸出或改寫已發布的 `src/content/posts/daily-capital-flows-*/` 圖表與文字。每日 05:00 的文章發布流程必須在取得同日資料後，用 `render-trends.mjs YYYY-MM-DD` 建立並提交當期繁體中文 SVG／CSV，確保圖表、引用來源與文章敘述對應同一份資料版本。若原始快照較原訂時間晚到，必須在文章明確標記補採時間，人工核對敘述後再更新，不能由資料工作靜默改寫歷史文章。
