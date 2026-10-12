@@ -3,6 +3,7 @@ import { canonicalCompanyName } from "./taxonomy.mjs";
 
 export const COMPANY_NAME_ZH = Object.freeze({
   "NVIDIA":"輝達（NVIDIA）",
+  "Arm Holdings":"安謀（Arm）",
   "Apple":"蘋果",
   "Alphabet (Google)":"Alphabet（Google 母公司）",
   "Microsoft":"微軟",

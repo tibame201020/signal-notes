@@ -1,5 +1,5 @@
 export const SECTOR_BY_NAME = {
-  "NVIDIA":"Semiconductors","TSMC":"Semiconductors","Broadcom":"Semiconductors","Micron Technology":"Semiconductors",
+  "Arm Holdings":"Semiconductors","NVIDIA":"Semiconductors","TSMC":"Semiconductors","Broadcom":"Semiconductors","Micron Technology":"Semiconductors",
   "AMD":"Semiconductors","SK Hynix":"Semiconductors","ASML":"Semiconductors","Intel":"Semiconductors","CXMT":"Semiconductors",
   "Applied Materials":"Semiconductors","Lam Research":"Semiconductors","MediaTek":"Semiconductors","ASE Group":"Semiconductors",
   "United Microelectronics":"Semiconductors","Nanya Technology":"Semiconductors","Global Unichip Corp.":"Semiconductors",
