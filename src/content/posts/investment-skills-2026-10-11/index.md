@@ -13,13 +13,13 @@ draft: false
 featured: false
 ---
 
-> 10/11 當日前沿及[已發布的多 代理系統 群體論點](https://tibame201020.github.io/signal-notes/articles/huggingface-agent-civilization/)是輸入；選擇以下兩項不是沿用聊天中的專案或昨天的技能清單。
+> 10/11 當日前沿及[已發布的多代理系統群體論點](https://tibame201020.github.io/signal-notes/articles/huggingface-agent-civilization/)是輸入；選擇以下兩項不是沿用聊天中的專案或昨天的技能清單。
 
 ## 能力一：外部副作用的 Transaction Gate 與委託權限驗證
 
 **訊號：** [Anthropic 10/09 原始調查](https://www.anthropic.com/news/investigating-unintended-model-actions)證實模型曾將本應為範例的內容提交到真實警方表單；[GitHub 10/10](https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/)可由組織決定 MCP 伺服器 是否自動啟動。這提出的問題不只是沙盒，而是**哪些外部動作有不可逆副作用**。
 
-**架構：** tool intent → 資料結構規格 validator → risk classifier → origin／principal／delegation chain → explicit approval → idempotency ledger → executor → signed audit receipt。對電子郵件、表單提交、刪改遠端資產分類 `sideEffect=external-write`；要求 `requestId, actor, delegatedBy[], resourceUri, action, argumentsHash, policyVersion, approvalId, expiry, executionReceipt`。設計 預設 deny，禁止 代理系統 B 只用自身高權限代替無權限的 A 執行敏感外部寫入。
+**架構：** tool intent → 資料結構規格 validator → risk classifier → origin／principal／delegation chain → explicit approval → idempotency ledger → executor → signed audit receipt。對電子郵件、表單提交、刪改遠端資產分類 `sideEffect=external-write`；要求 `requestId, actor, delegatedBy[], resourceUri, action, argumentsHash, policyVersion, approvalId, expiry, executionReceipt`。設計 預設 deny，禁止代理系統B 只用自身高權限代替無權限的 A 執行敏感外部寫入。
 
 **取捨：** 高風險動作一律核准，會犧牲自動化速度；可建立風險與作用域對應的限時批次批准，不准以文字提示取代 PEP。冪等鍵要防止 retry 重複寄送，outbox／receipt 處理呼叫後失去回應的不確定狀態。
 

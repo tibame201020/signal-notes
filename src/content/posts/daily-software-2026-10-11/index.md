@@ -1,5 +1,5 @@
 ---
-title: "每日前沿｜軟體工程：IDE 代理系統 的政策治理開始成為正式產品"
+title: "每日前沿｜軟體工程：整合開發環境中的代理系統治理開始成為正式產品"
 slug: "daily-software-2026-10-11"
 description: "GitHub 10/10 JetBrains 公告：企業預設模型、MCP 自動啟動控制與診斷修復；延伸至靜態分析規則。"
 publishedAt: 2026-10-11
@@ -16,7 +16,7 @@ featured: false
 > **補發版本：** 以台北 10/11 為文章日期、10/10 為主要事件日；週末無完整股票收盤。10/11 07:39 台北採集的市場快照為事後補發可用資料，不能冒充 05:00 已存在。比較日：昨日 10/10、近三日 10/08–10、近七日 10/04–10；新聞按實際公開日分類，無新訊號不湊數。
 
 ## 美國與全球｜10/10 官方新訊號
-GitHub 10/10 發布 Copilot for JetBrains 更新：企業可集中設定新對話的預設模型；新增**可關閉 MCP 伺服器 自動啟動**設定，並把 IDE 診斷與修復對話串接。這些是具體產品行為，並不代表所有 plugin 都自動可信。**依據：** [GitHub Changelog 10/10](https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/)。
+GitHub 10/10 發布 Copilot for JetBrains 更新：企業可集中設定新對話的預設模型；新增**可關閉 MCP 伺服器自動啟動**設定，並把 IDE 診斷與修復對話串接。這些是具體產品行為，並不代表所有 plugin 都自動可信。**依據：** [GitHub Changelog 10/10](https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/)。
 
 **為什麼這樣判斷：** 模型選擇、工具啟動和修復責任從個別開發者偏好提升到組織策略。自動化的部署成本開始包括「可限制哪些工具會啟動」而不只有訂閱席位。
 

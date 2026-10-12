@@ -26,4 +26,5 @@ jobs:
       - run: npm ci
       - run: npm run test:investment
       - run: npm run validate:investment
+      - run: npm run validate:language
       - run: npm run build

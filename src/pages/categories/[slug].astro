@@ -18,7 +18,7 @@ const {category, posts} = Astro.props;
 ---
 <BaseLayout title={category.name} description={`${category.name} 分類文章。`}>
   <section class="hero">
-    <div class="kicker">Category</div>
+    <div class="kicker">文章分類</div>
     <h1>{category.name}</h1>
     <p>{category.count} 篇文章</p>
   </section>

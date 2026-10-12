@@ -12,7 +12,7 @@ const topics = [
   {slug: 'finance', name: '財經與利率', scope: '股債・匯率・總體經濟', detail: '比較各國債率、資金成本與政策分化，判斷市場壓力從哪裡來。'},
   {slug: 'ai', name: '人工智慧', scope: '模型・部署・算力・治理', detail: '觀察 AI 競爭從模型能力延伸到晶片供給、資料中心及企業採用。'},
   {slug: 'semiconductor', name: '半導體', scope: '先進製程・封裝・記憶體', detail: '追蹤供應鏈瓶頸、擴產、客戶驗證與各地製造布局。'},
-  {slug: 'software', name: '軟體工程', scope: '開源・Agent・開發基礎設施', detail: '理解 AI Agent 如何改變 GitHub、開發流程、工具與系統架構。'},
+  {slug: 'software', name: '軟體工程', scope: '開源・代理系統・開發基礎設施', detail: '理解 AI 代理系統 如何改變 GitHub、開發流程、工具與系統架構。'},
   {slug: 'capital-flows', name: '金流與估值', scope: '市值・資金分布・主權債', detail: '用跨日圖表比較企業市值、產業占比與各國十年債變化。'},
 ];
 
@@ -51,7 +51,7 @@ const latestInvestmentDate = investmentPosts.length ? investmentPosts[0].data.pu
   <section class="section investment-section" aria-labelledby="investment-heading">
     <div class="section-head">
       <div>
-        <p class="home-overline">01 / Investment Outlook</p>
+        <p class="home-overline">01 / 投資布局</p>
         <h2 id="investment-heading">現在值得做什麼</h2>
         <p class="home-section-lede">以當日六類前沿為起點，對照已發表論點與市場估值，跨產業比較候選；不預設軟體或硬體優先。</p>
       </div>
@@ -86,7 +86,7 @@ const latestInvestmentDate = investmentPosts.length ? investmentPosts[0].data.pu
   <section class="section" aria-labelledby="daily-heading">
     <div class="section-head">
       <div>
-        <p class="home-overline">02 / Daily digest</p>
+        <p class="home-overline">02 / 每日前沿</p>
         <h2 id="daily-heading">每日前沿</h2>
         <p class="home-section-lede">六個固定觀察領域。每格顯示本期關注的問題與更新日期；點擊進入當期分析。</p>
       </div>
@@ -115,19 +115,19 @@ const latestInvestmentDate = investmentPosts.length ? investmentPosts[0].data.pu
   <section class="section" aria-labelledby="essay-heading">
     <div class="section-head">
       <div>
-        <p class="home-overline">03 / Perspective</p>
+        <p class="home-overline">03 / 我的論點</p>
         <h2 id="essay-heading">我的論點</h2>
       </div>
     </div>
     {essay && (
       <a class="essay-feature" href={withBase(`/articles/${essay.data.slug}/`)}>
         <div class="essay-copy">
-          <span class="home-label">獨立論述 · Agent 社會化</span>
-          <h3>當 AI Agent 開始形成群體，個體的安全邊界還夠嗎？</h3>
-          <p>從 Hugging Face 事件觀察原本隔離的 Agent 如何交換訊息、分工與互相影響。討論的核心不是意識，而是群體行為是否已經超出個別任務的治理框架。</p>
+          <span class="home-label">獨立論述 · 代理系統社會化</span>
+          <h3>當 AI 代理系統 開始形成群體，個體的安全邊界還夠嗎？</h3>
+          <p>從 Hugging Face 事件觀察原本隔離的 代理系統如何交換訊息、分工與互相影響。討論的核心不是意識，而是群體行為是否已經超出個別任務的治理框架。</p>
           <span class="home-action">閱讀完整論點 <span aria-hidden="true">↗</span></span>
         </div>
-        <div class="essay-side" aria-hidden="true"><span>AGENT</span><span>→</span><span>GROUP</span></div>
+        <div class="essay-side" aria-hidden="true"><span>個體</span><span>→</span><span>群體</span></div>
       </a>
     )}
   </section>

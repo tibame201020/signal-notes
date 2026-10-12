@@ -36,6 +36,9 @@ jobs:
       - name: Validate investment provenance
         run: npm run validate:investment
 
+      - name: Validate Traditional Chinese editorial language
+        run: npm run validate:language
+
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
