@@ -15,12 +15,12 @@ draft: false
 featured: false
 ---
 
-> 補發時間口徑：repo 10/11 快照在 **10/11 07:39 台北**採集，晚於原 05:00 排程；股票市值與 10/10 快照完全相同，**並非 10/11 股市又交易了一天**。本期使用 10/09→10/10 有變化的最後兩次快照。台灣 10/09 休市，美元市值採集差不等於台股股票報酬。[10/11 資料](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-11.json)、[10/10 資料](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-10.json)、[10/09 基準](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-09.json)。
+> 補發時間口徑：儲存庫 10/11 快照在 **10/11 07:39 台北**採集，晚於原 05:00 排程；股票市值與 10/10 快照完全相同，**並非 10/11 股市又交易了一天**。本期使用 10/09→10/10 有變化的最後兩次快照。台灣 10/09 休市，美元市值採集差不等於台股股票報酬。[10/11 資料](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-11.json)、[10/10 資料](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-10.json)、[10/09 基準](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-09.json)。
 
 ## 全球 Top10 市值（跨快照）
 ![全球 Top10 企業美元市值：10/09 與 10/10](./trend-global-top10.svg)
 
-全球 Top50 合計自 **54.341 兆美元**至 **54.675 兆美元**，跨快照 **+0.615%**；資料籃子含成分及時間差，不是固定成分指數，亦不是資金淨流。**依據：** 以上 repo 原始快照。**為什麼這樣判斷：** 市值為價格 × 股數，來源網站與美元換算均可能變化。
+全球 Top50 合計自 **54.341 兆美元**至 **54.675 兆美元**，跨快照 **+0.615%**；資料籃子含成分及時間差，不是固定成分指數，亦不是資金淨流。**依據：** 以上 儲存庫 原始快照。**為什麼這樣判斷：** 市值為價格 × 股數，來源網站與美元換算均可能變化。
 
 ## 全球 Top50 產業份額
 ![全球 Top50 產業權重前後比較](./trend-global-sectors.svg)
@@ -36,7 +36,7 @@ featured: false
 
 ## 七國 10 年公債殖利率
 ![美澳日德法英中 10 年債趨勢](./trend-sovereign-10y.svg)
-最新 repo 10/11 快照所列值：美國 **5.237%**、澳洲 **5.346%**、日本 **3.016%**、德國 **3.486%**、法國 **4.867%**、英國 **5.423%**、中國 **1.698%**。其 `source_date` 均為 10/10（週末採集標籤），不可稱週日新交易。殖利率非房貸利率；澳洲銀行房貸定價與家庭可支配所得傳導有時差。**依據：** repo sovereign_10y；[澳洲來源](https://tradingeconomics.com/australia/government-bond-yield)。
+最新 儲存庫 10/11 快照所列值：美國 **5.237%**、澳洲 **5.346%**、日本 **3.016%**、德國 **3.486%**、法國 **4.867%**、英國 **5.423%**、中國 **1.698%**。其 `source_date` 均為 10/10（週末採集標籤），不可稱週日新交易。殖利率非房貸利率；澳洲銀行房貸定價與家庭可支配所得傳導有時差。**依據：** 儲存庫 sovereign_10y；[澳洲來源](https://tradingeconomics.com/australia/government-bond-yield)。
 
 ## 總市值快照（不是資金淨流）
 ![全球與台灣市值前後變動](./trend-marketcap-totals.svg)

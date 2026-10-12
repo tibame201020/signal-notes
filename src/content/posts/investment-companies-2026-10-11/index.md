@@ -1,10 +1,10 @@
 ---
-title: "Investment Outlook｜10/11 公司布局：能源供需與 Agent 治理，先核實毛利再談低估"
+title: "投資布局｜10/11 公司布局：能源供需與 代理系統 治理，先核實毛利再談低估"
 slug: "investment-companies-2026-10-11"
 description: "10/11 獨立候選池比較台塑化、長榮航、零壹、日月光；週日無新報價，本期產業模式並公開估值缺口與淘汰理由。"
 publishedAt: 2026-10-11
 category:
-  name: "Investment Outlook"
+  name: "投資布局"
   slug: "investment-outlook"
 tags:
   - name: "公司布局"
@@ -13,7 +13,7 @@ draft: false
 featured: false
 ---
 
-> **10/11 補發；2026-10-11 為週日，非台股交易日。** 本期先完成[國際](https://tibame201020.github.io/signal-notes/articles/daily-world-2026-10-11/)、[財經](https://tibame201020.github.io/signal-notes/articles/daily-finance-2026-10-11/)、[AI](https://tibame201020.github.io/signal-notes/articles/daily-ai-2026-10-11/)、[半導體](https://tibame201020.github.io/signal-notes/articles/daily-semiconductor-2026-10-11/)、[Software](https://tibame201020.github.io/signal-notes/articles/daily-software-2026-10-11/)、[金流與估值](https://tibame201020.github.io/signal-notes/articles/daily-capital-flows-2026-10-11/)，再從當日證據與正式發表的[我的論點](https://tibame201020.github.io/signal-notes/articles/huggingface-agent-civilization/)建立候選。完整 [10/11 候選研究清單](https://github.com/tibame201020/signal-notes/blob/main/data/investment/screenings/2026-10-11.json) 已先於本文提交。昨天的推薦名單沒有進入初篩輸入。
+> **10/11 補發；2026-10-11 為週日，非台股交易日。** 本期先完成[國際](https://tibame201020.github.io/signal-notes/articles/daily-world-2026-10-11/)、[財經](https://tibame201020.github.io/signal-notes/articles/daily-finance-2026-10-11/)、[AI](https://tibame201020.github.io/signal-notes/articles/daily-ai-2026-10-11/)、[半導體](https://tibame201020.github.io/signal-notes/articles/daily-semiconductor-2026-10-11/)、[軟體工程](https://tibame201020.github.io/signal-notes/articles/daily-software-2026-10-11/)、[金流與估值](https://tibame201020.github.io/signal-notes/articles/daily-capital-flows-2026-10-11/)，再從當日證據與正式發表的[我的論點](https://tibame201020.github.io/signal-notes/articles/huggingface-agent-civilization/)建立候選。完整 [10/11 候選研究清單](https://github.com/tibame201020/signal-notes/blob/main/data/investment/screenings/2026-10-11.json) 已先於本文提交。昨天的推薦名單沒有進入初篩輸入。
 
 ## 訊號→終端需求→支出→誰捕捉收入
 
@@ -36,7 +36,7 @@ featured: false
 
 ## 市場估值與我的估值
 
-**本期選用具體產業分析（selectionMode: industry），沒有具名低估股入選。** 週末沒有 10/11 台股新收盤；本次未獨立取得四家最近已結算股價、當期 EPS／FCF、同業 EV／EBITDAR／P/E 與各自新增業務毛利。不能從前日 Investment Outlook 倒填價格，也不能把 10/11 的 USD 市值快照當成台灣普通股新台幣收盤。
+**本期選用具體產業分析（selectionMode: industry），沒有具名低估股入選。** 週末沒有 10/11 台股新收盤；本次未獨立取得四家最近已結算股價、當期 EPS／FCF、同業 EV／EBITDAR／P/E 與各自新增業務毛利。不能從前日 投資布局 倒填價格，也不能把 10/11 的 USD 市值快照當成台灣普通股新台幣收盤。
 
 | 公司 | 保守情境 | 基準情境 | 樂觀情境 | 尚缺可核對欄位 |
 | --- | --- | --- | --- | --- |
@@ -45,7 +45,7 @@ featured: false
 | 長榮航 | 航油及保費高企 | 票貨價格局部轉嫁 | 運價轉嫁超過燃油增幅 | 燃油避險、航線收入、EBITDAR |
 | 日月光 | 折舊與產能閒置 | 產能利用率穩定 | 客戶付費封裝訂單落地 | 客戶訂單、分部獲利、增量資本成本 |
 
-**估值程序已限定：** 收到可比最後交易日報價後，台塑化按正常化 EV/EBITDA 扣除淨負債，零壹與日月光按 forward EPS × 合理 P/E、長榮航按 EV/EBITDAR 與淨債三情境建模；未有可靠輸入前，**不填造數字或宣稱相對市價上行空間**。
+**估值程序已限定：** 收到可比最後交易日報價後，台塑化按正常化 EV/EBITDA 扣除淨負債，零壹與日月光按 前瞻 EPS × 合理 P/E、長榮航按 EV/EBITDAR 與淨債三情境建模；未有可靠輸入前，**不填造數字或宣稱相對市價上行空間**。
 
 ## 推論與選擇
 
