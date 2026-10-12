@@ -1,5 +1,5 @@
 ---
-title: "每日前沿｜Software：Agent 隔離政策、憑證偵測與開發治理"
+title: "每日前沿｜軟體工程：代理隔離政策、憑證偵測與開發治理"
 slug: "daily-software-2026-10-09"
 description: "GitHub 10/07–08 正式更新為一手依據：沙盒、密碼掃描、PR 數量管理；分辨安全功能與實際商業收益。"
 publishedAt: 2026-10-09
@@ -7,7 +7,7 @@ category:
   name: "每日前沿"
   slug: "daily-digest"
 tags:
-  - name: "Software"
+  - name: "軟體工程"
     slug: "software"
 draft: false
 featured: false

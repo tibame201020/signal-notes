@@ -1,5 +1,5 @@
 ---
-title: "每日前沿｜Software：Git基礎設施開始為大量AI代理重做"
+title: "每日前沿｜軟體工程：Git 基礎設施開始因應大量 AI 代理需求"
 slug: "daily-software-2026-10-08"
 description: "2026-10-08 軟體前沿：GitHub正在重建Git基礎設施，以支撐AI代理規模的開發工作。"
 publishedAt: 2026-10-08
@@ -7,7 +7,7 @@ category:
   name: "每日前沿"
   slug: "daily-digest"
 tags:
-  - name: "Software"
+  - name: "軟體工程"
     slug: "software"
 draft: false
 featured: false

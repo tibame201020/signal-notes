@@ -1,11 +1,11 @@
 ---
-title: "Investment Outlook｜10/07 公司布局：從 AI 實體交付與工具安全挑出神達、安碁"
+title: "投資布局｜10/07 公司布局：從 AI 實體交付與工具安全挑出神達、安碁"
 slug: "investment-companies-2026-10-07"
 description: "10/07 獨立篩選四家台灣公司：神達 80.90 元、安碁資訊 178 元列優先；廣達與叡揚留作比較。揭示保守／基準／樂觀估值，以及候選淘汰理由。"
 publishedAt: 2026-10-07
 updatedAt: 2026-10-08
 category:
-  name: "Investment Outlook"
+  name: "投資布局"
   slug: "investment-outlook"
 tags:
   - name: "公司布局"

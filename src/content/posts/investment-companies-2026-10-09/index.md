@@ -1,10 +1,10 @@
 ---
-title: "Investment Outlook｜10/09 公司布局：四家比價後只選台積電"
+title: "投資布局｜10/09 公司布局：四家比價後只選台積電"
 slug: "investment-companies-2026-10-09"
 description: "先由六類前沿建立台積電、零壹、力成、台達電四家候選；核對當日證據、10/08 收盤與三情境估值，選出台積電並公開其餘淘汰理由。"
 publishedAt: 2026-10-09
 category:
-  name: "Investment Outlook"
+  name: "投資布局"
   slug: "investment-outlook"
 tags:
   - name: "公司布局"

@@ -1,11 +1,11 @@
 ---
-title: "Investment Outlook｜10/08 投資自己：權限感知檢索與 Durable Execution"
+title: "投資布局｜10/08 投資自己：權限感知檢索與可恢復的持久執行"
 slug: "investment-skills-2026-10-08"
-description: "從 10/08 GitHub Agent-scale 改造與高資金成本延伸兩項稀缺能力：ACL-aware 檢索資料平面及具租約／冪等的可恢復工作流。附四週交付與量測要求。"
+description: "從 10/08 GitHub Agent-scale 改造與高資金成本延伸兩項稀缺能力：權限感知檢索資料平面及具租約／冪等的可恢復工作流。附四週交付與量測要求。"
 publishedAt: 2026-10-08
 updatedAt: 2026-10-08
 category:
-  name: "Investment Outlook"
+  name: "投資布局"
   slug: "investment-outlook"
 tags:
   - name: "投資自己"

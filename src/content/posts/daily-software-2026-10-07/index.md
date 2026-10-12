@@ -8,7 +8,7 @@ category:
   name: "每日前沿"
   slug: "daily-digest"
 tags:
-  - name: "軟體"
+  - name: "軟體工程"
     slug: "software"
   - name: "GitHub"
     slug: "github"

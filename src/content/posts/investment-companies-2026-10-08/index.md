@@ -1,11 +1,11 @@
 ---
-title: "Investment Outlook｜10/08 公司布局：叡揚、神達的估值競爭"
+title: "投資布局｜10/08 公司布局：叡揚、神達的估值競爭"
 slug: "investment-companies-2026-10-08"
 description: "10/08 重篩台灣四家公司：叡揚訂閱式收入年增20.56%，神達伺服器交付；與安碁、廣達比較後入選。保守／基準／樂觀估值與當日價源一併列出。"
 publishedAt: 2026-10-08
 updatedAt: 2026-10-08
 category:
-  name: "Investment Outlook"
+  name: "投資布局"
   slug: "investment-outlook"
 tags:
   - name: "公司布局"

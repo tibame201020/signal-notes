@@ -1,11 +1,11 @@
 ---
-title: "Investment Outlook｜10/07 投資自己：異質算力成本模型與安全電腦操作"
+title: "投資布局｜10/07 投資自己：異質算力成本模型與安全電腦操作"
 slug: "investment-skills-2026-10-07"
 description: "由 10/07 AI、半導體與資安前沿挑出兩項能力：AI 工作負載的單位成本／容量建模，以及具授權邊界的電腦操作執行層；附四週路線與驗收成果。"
 publishedAt: 2026-10-07
 updatedAt: 2026-10-08
 category:
-  name: "Investment Outlook"
+  name: "投資布局"
   slug: "investment-outlook"
 tags:
   - name: "投資自己"

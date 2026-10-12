@@ -1,10 +1,10 @@
 ---
-title: "Investment Outlook｜10/09 投資自己：政策編譯沙盒與異質算力性能工程"
+title: "投資布局｜10/09 投資自己：政策編譯沙盒與異質算力性能工程"
 slug: "investment-skills-2026-10-09"
 description: "兩項由 10/09 獨立前沿推導的稀缺技能：跨 OS 工具執行政策與異質加速器通訊性能工程；附四週可執行作品及量測門檻。"
 publishedAt: 2026-10-09
 category:
-  name: "Investment Outlook"
+  name: "投資布局"
   slug: "investment-outlook"
 tags:
   - name: "投資自己"
