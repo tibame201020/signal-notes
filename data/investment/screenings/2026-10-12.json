@@ -17,7 +17,7 @@
     {
       "id": "airport",
       "post": "daily-world-2026-10-12",
-      "claim": "10/11 Riyadh airport second strike and closure caused documented airline and conference disruption; energy and logistics infrastructure operational continuity at risk.",
+      "claim": "10/11 利雅德機場再次受襲並停航，能源會議出席企業調整行程；運輸中斷為已報導事件，個別企業新增營收仍待核實。",
       "sourceUrls": [
         "https://apnews.com/article/d2e0868ffb18d883c16465d7d6a87ccb",
         "https://www.reuters.com/business/energy/bp-withdraws-riyadh-energy-conference-after-airport-attack-2026-10-11/"
@@ -26,7 +26,7 @@
     {
       "id": "infra",
       "post": "daily-world-2026-10-12",
-      "claim": "10/11 AP reports Iranian official warning of possible attacks on regional data centers and cables if fighting escalates; a conditional threat, not proof of completed damage.",
+      "claim": "10/11 AP 報導伊朗官員對區域資料中心及通訊纜線提出有條件的攻擊警告；屬風險警告，不代表已發生實體破壞。",
       "sourceUrls": [
         "https://apnews.com/article/baa06588f3ebe6dad93695581f68d3c1"
       ]
@@ -34,7 +34,7 @@
     {
       "id": "debt",
       "post": "daily-finance-2026-10-12",
-      "claim": "IMF/World Bank 10/12–18 annual meetings and 10/11 reporting highlight energy-price shock plus refinancing pressure; developing borrowers face about $400bn external debt payments in 2026.",
+      "claim": "10/12–18 IMF／世界銀行曼谷年會與 10/11 報導聚焦能源衝擊和再融資；新興及低所得國 2026 年約有 4,000 億美元外債支付壓力，並非同日實際資金淨流出。",
       "sourceUrls": [
         "https://www.imf.org/en/meetings/2026/annual/schedule",
         "https://www.reuters.com/world/china/middle-east-war-high-debt-levels-dominate-imf-world-bank-meetings-bangkok-2026-10-11/"
@@ -43,7 +43,7 @@
     {
       "id": "agent",
       "post": "daily-ai-2026-10-12",
-      "claim": "AP 10/11 cross-reports on agent external actions and Anthropic 10/09 primary incident analysis; risks concern real third-party side effects and evaluation quality, not headline counts.",
+      "claim": "10/11 AP 對照代理系統公開事件；Anthropic 10/09 原始報告確認部分評測有不當外部提交，應分別記錄事件發生日、披露日與真實副作用。",
       "sourceUrls": [
         "https://apnews.com/article/f590b51073d8977a984c7c42b8f2a7a2",
         "https://www.anthropic.com/news/investigating-unintended-model-actions"
@@ -52,7 +52,7 @@
     {
       "id": "chip",
       "post": "daily-semiconductor-2026-10-12",
-      "claim": "TSMC 10/08 disclosed September revenue growth but new chip output depends on electricity, industrial water and transport; 10/15 earnings not yet released.",
+      "claim": "台積電 10/08 公布 9 月營收，晶片增量供給尚涉及電力、工業用水、運輸等條件；原定 10/15 財報在研究截稿時尚未公布。",
       "sourceUrls": [
         "https://pr.cld.tsmc.com/english/news/3343",
         "https://investor.cld.tsmc.com/english/financial-calendar"
@@ -61,7 +61,7 @@
     {
       "id": "software",
       "post": "daily-software-2026-10-12",
-      "claim": "GitHub official product controls for MCP server automatic startup and improved CodeQL static analysis distinguish static, runtime and external approval boundaries.",
+      "claim": "GitHub 正式更新增加 JetBrains 中模型與 MCP 伺服器啟動控制，CodeQL 靜態分析亦更新；程式碼掃描、執行時控制和外部操作核准不可混為一談。",
       "sourceUrls": [
         "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains/",
         "https://github.blog/changelog/2026-10-09-codeql-2-27-2-improves-c-go-rust-and-javascript-analysis/"
@@ -70,10 +70,11 @@
     {
       "id": "stale",
       "post": "daily-capital-flows-2026-10-12",
-      "claim": "repo latest as_of 10/11 and 10/12 snapshot absent; zero stock market change across duplicated weekend snapshots is not a new trade or actual flow.",
+      "claim": "原始研究截稿時（10/12 06:51 台北）僅有 10/11 市場快照，未有 10/12 同口徑快照；10/12 13:49 台北才補採當日快照，因此原始選股排序不使用晚到數據。週末沿用行情不是新增交易，市值變動也不是實際基金淨流。",
       "sourceUrls": [
         "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-10.json",
-        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-11.json"
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-11.json",
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-12.json"
       ]
     }
   ],
@@ -91,7 +92,7 @@
       ],
       "disposition": "watch",
       "reason": "對區域資料中心／纜線的條件性威脅提供網路多路徑、災備與監控的潛在支出鏈，但目前無已核實中華電新的災備訂單及增量 EBITDA；不能從國際威脅直接推出營收。",
-      "missingValuationReason": "10/12 尚未有完整台股收盤，且未從公司當期財報與同業取得同口徑 EV/EBITDA、股價、網路服務新增獲利拆分，不填造估值。",
+      "missingValuationReason": "原始研究截止 10/12 06:51 台北尚未有完整台股收盤，且未從公司當期財報與同業取得同口徑 EV/EBITDA、股價、網路服務新增獲利拆分，不填造估值。",
       "sourceUrls": [
         "https://apnews.com/article/baa06588f3ebe6dad93695581f68d3c1"
       ]
@@ -109,7 +110,7 @@
       ],
       "disposition": "watch",
       "reason": "機房與晶圓供應鏈需要電力穩定，可能增加冗餘 UPS 及散熱支出；但短期新需求是否比已定價成長更大、是否產生增量 FCF 尚無訂單／毛利量化。",
-      "missingValuationReason": "10/12 無新完整收盤與可驗證財報後新訂單／2027 EPS、資本成本；不套前一篇投資文章假設。",
+      "missingValuationReason": "原始研究截止 10/12 06:51 台北尚無新完整收盤與可驗證財報後新訂單／2027 EPS、資本成本；不套前一篇投資文章假設。",
       "sourceUrls": [
         "https://pr.cld.tsmc.com/english/news/3343",
         "https://www.reuters.com/world/china/middle-east-war-high-debt-levels-dominate-imf-world-bank-meetings-bangkok-2026-10-11/"
@@ -127,7 +128,7 @@
       ],
       "disposition": "watch",
       "reason": "IMF 債務再融資壓力對中小企業融資敞口提出風險和利差重估方向，未能從全球債務數據證明公司具體地區的新增淨利；需逾放、資金成本和匯兌。",
-      "missingValuationReason": "尚缺最近可核實 10/12 收盤、同口徑資產品質、撥備、2027 盈利及合理 P/B／ROE 計算；週末舊價格不冒充新市價。",
+      "missingValuationReason": "尚缺最近可核實 原始研究截止時可核對的台股最新收盤、同口徑資產品質、撥備、2027 盈利及合理 P/B／ROE 計算；週末舊價格不冒充新市價。",
       "sourceUrls": [
         "https://www.reuters.com/world/china/middle-east-war-high-debt-levels-dominate-imf-world-bank-meetings-bangkok-2026-10-11/"
       ]
@@ -144,7 +145,7 @@
       ],
       "disposition": "rejected",
       "reason": "跨境運輸中斷可對航運價格造成雙向影響，但機場受襲不直接等於貨櫃海運運價上漲；缺最新航線取消、船舶繞行、現貨運價和保險成本證據，需求傳導最薄弱。",
-      "missingValuationReason": "未核實最新船舶運價、公司淨現金與 10/12 收盤，不能編制 EPS/FCF 三情境。",
+      "missingValuationReason": "未核實最新船舶運價、公司淨現金與 原始研究截止時可核對的台股最新收盤，不能編制 EPS/FCF 三情境。",
       "sourceUrls": [
         "https://apnews.com/article/d2e0868ffb18d883c16465d7d6a87ccb"
       ]
@@ -156,7 +157,7 @@
     "chailease",
     "evergreen"
   ],
-  "industryReason": "六篇有高訊號但 10/12 06:51 台北時市場尚未完成交易且 repo 10/12 市場快照缺失；不足核實個別公司的最新股價、增量營業利益與可比估值，不得宣稱特定公司低估，轉為可驗證的數位基建韌性與長債／能源資金成本產業洞見。",
+  "industryReason": "本日獨立候選池於 10/12 06:51（台北）完成：當時尚無 10/12 市場快照，也未取得四家公司可核對、同口徑的股價／增量營業利益／可比估值，因此依研究方法採產業分析模式，不宣稱具名公司被低估。10/12 市場快照於 13:49 才補採；並非原始決策時可用數據，補採不自動改寫候選與排序。",
   "watchCompanies": [
     "中華電信（2412）",
     "台達電子（2308）"
@@ -170,5 +171,12 @@
   ],
   "scoreRationale": "中華電網路韌性與真實數位基建威脅有直接產品連結，但新合同未知；台達供電設備可受益，惟更需檢驗估值與 FCF；中租的債務鏈偏信用風險而非純受益；長榮海空港事件直接推成海運運價過於跳躍而淘汰。無法合理選出具名低估股。",
   "rankedAt": "2026-10-12",
-  "historicalComparisonAfterRanking": "排序完才核對 10/11：沒有直接沿用或因昨日候選而預設台塑化／零壹；本日輸入來自 10/11 當日基建風險、IMF 債務及一手安全報告。"
+  "historicalComparisonAfterRanking": "排序完才核對 10/11：沒有直接沿用或因昨日候選而預設台塑化／零壹；本日輸入來自 10/11 當日基建風險、IMF 債務及一手安全報告。",
+  "postPublicationDataUpdate": {
+    "observedAt": "2026-10-12T05:49:33.303Z",
+    "observedAtTaipei": "2026-10-12 13:49:33+08:00",
+    "source": "data/market/snapshots/2026-10-12.json",
+    "note": "原候選與排名基於 06:51 已取得資料凍結。新增快照供金流文章後續修訂；未完成台股四家公司官方收盤、財報及情境模型核對，故不據此聲稱低估。"
+  },
+  "reviewNote": "本次更新只修正研究檔中文敘述與晚到數據血緣；不添加事後新聞以反向支持已選候選，不更改原 rankedIds 或處置。"
 }
