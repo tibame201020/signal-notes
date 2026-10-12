@@ -33,3 +33,11 @@ collector 會使用 repo 自己累積的 snapshot 計算：
 ## 失敗原則
 
 固定資料抓取或解析失敗時，Action 應直接失敗；不得把昨日資料覆寫成今日資料。文章端若發現 `latest.json` 過期，也應明確標示資料未更新。
+
+## 中文顯示層
+
+來源的 `name`、`ticker`、`sector` 維持原值，作為跨日配對和來源追溯的欄位。不得以中文名稱直接覆寫 `data/market/` 快照。
+
+`scripts/market-data/display-zh.mjs` 以固定對照表提供中文公司名稱及中文產業類別；`render-trends.mjs` 讀入原始值完成計算後，將顯示用文字轉成繁體中文，並輸出**中文欄位置前、保留來源英文字段**的 UTF-8 BOM CSV。未收錄的新公司或產業，必須更新對照表，不能默默回退為全英文。
+
+本機或 CI 可執行 `node scripts/market-data/render-trends.mjs YYYY-MM-DD` 以生成當日圖表和 `global-top50-YYYY-MM-DD.csv`／`taiwan-top20-YYYY-MM-DD.csv`。發布檢查同時檢查圖內 SVG 文字及 CSV 中文欄位。
