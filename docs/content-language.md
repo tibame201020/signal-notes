@@ -19,3 +19,10 @@
 5. 再執行 `npm run validate:investment`、`npm run build`，確認 GitHub Pages 成功部署。
 
 研究輸入仍以 `docs/investment-outlook-method.md` 的獨立研究程序為準。語言偏好不是選股或選題指令。
+
+## 市場資料的顯示層（不可回退為英文）
+
+- 金流圖表中，**全球／台灣公司名稱、產業圖例、軸標題、市值單位**須使用繁體中文。例：台積電、聯發科、鴻海；半導體、電子與硬體、金融。正式品牌名可在中文後括註。
+- 源資料 JSON 的 `name`、`sector`、`ticker` 必須保留原文，供跨日配對及稽核。唯一顯示入口為 `scripts/market-data/display-zh.mjs`，並由 `render-trends.mjs` 套用。新公司或新產業尚未建立中文對照時，**不得直接用英文顯示並宣稱驗收通過**，應補上對照表。
+- 所有金流篇附的下載 CSV，應先呈現「排名、公司名稱、產業分類、市值（美元）」中文欄位，再保留英文原始識別欄位；不得自行改寫舊快照或捨棄數字口徑。
+- `npm run validate:language` 必須檢查**實際被 Markdown 引用的 SVG 文字與 CSV 中文主欄位**，而不只是正文。另執行 `npm run test:market` 驗證中文顯示映射與 CSV 原始來源保留。

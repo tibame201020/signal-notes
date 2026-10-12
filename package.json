@@ -7,7 +7,8 @@
     "build": "astro build",
     "validate:investment": "node scripts/validate-investment-research.mjs",
     "test:investment": "node --test scripts/validate-investment-research.test.mjs",
-    "validate:language": "node scripts/validate-content-language.mjs"
+    "validate:language": "node scripts/validate-content-language.mjs",
+    "test:market": "node --test scripts/market-data/display-zh.test.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.6",

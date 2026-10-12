@@ -57,7 +57,7 @@ function yields(date){
 }
 function totals(date,s,prior){
  const groups=[["全球前五十大企業","global_top50"],["台灣前二十大企業","taiwan_top20"]];
- let inner=t(55,78,"相同資料來源、不同日期 Top 名單總值；名單變更可能影響可比性；市值變化不是現金淨流入",14);
+ let inner=t(55,78,"相同資料來源、不同日期大型企業名單總市值；名單變更可能影響可比性；市值變化不是現金淨流入",14);
  groups.forEach(([label,k],i)=>{const a=rows(s,k),b=rows(prior,k),now=a.reduce((x,r)=>x+r.market_cap_usd,0),old=b.reduce((x,r)=>x+r.market_cap_usd,0),y=135+i*150;
  inner+=t(55,y,label,19); if(old){const delta=(now/old-1)*100,scale=Math.max(now,old)*1.05;inner+=t(55,y+38,"前期 "+short(old),14)+rect(270,y+22,630*old/scale,18,"#4f86bc");inner+=t(55,y+76,"本期 "+short(now),14)+rect(270,y+60,630*now/scale,18,"#ed9250");inner+=t(55,y+108,"變化 "+(delta>=0?"+":"")+delta.toFixed(3)+"%｜"+short(now-old),16);}else inner+=t(55,y+54,"僅有本日 "+short(now)+"；歷史不足，未計算變化",16);});
  return svg("大型企業總市值跨日比較｜"+date,inner,500);

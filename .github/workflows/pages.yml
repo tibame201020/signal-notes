@@ -36,6 +36,9 @@ jobs:
       - name: Validate investment provenance
         run: npm run validate:investment
 
+      - name: Test market-data localization
+        run: npm run test:market
+
       - name: Validate Traditional Chinese editorial language
         run: npm run validate:language
 
