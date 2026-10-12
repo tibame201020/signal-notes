@@ -1,0 +1,137 @@
+{
+  "date": "2026-10-13",
+  "selectionMode": "industry",
+  "sourcePosts": [
+    "daily-world-2026-10-13",
+    "daily-finance-2026-10-13",
+    "daily-ai-2026-10-13",
+    "daily-semiconductor-2026-10-13",
+    "daily-software-2026-10-13",
+    "daily-capital-flows-2026-10-13"
+  ],
+  "beliefPosts": [
+    "huggingface-agent-civilization"
+  ],
+  "signals": [
+    {
+      "id": "gas",
+      "post": "daily-world-2026-10-13",
+      "claim": "10/12 歐洲天然氣價格年內漲逾 150%，11 月初儲氣率估計 75–78%。",
+      "sourceUrls": [
+        "https://www.reuters.com/business/energy/europe-set-another-year-high-gas-prices-reserves-hit-lows-2026-10-12/"
+      ]
+    },
+    {
+      "id": "oil",
+      "post": "daily-finance-2026-10-13",
+      "claim": "10/12 布蘭特原油結算 106.65 美元，能源與債務成本承壓。",
+      "sourceUrls": [
+        "https://www.reuters.com/business/energy/oil-climbs-mideast-conflict-tanker-attacks-persist-2026-10-11/"
+      ]
+    },
+    {
+      "id": "capital",
+      "post": "daily-ai-2026-10-13",
+      "claim": "10/12 博通管理層認為資本可能成為人工智慧擴張主要限制。",
+      "sourceUrls": [
+        "https://www.aol.com/articles/broadcom-ceo-says-biggest-hurdle-065443000.html"
+      ]
+    },
+    {
+      "id": "revenue",
+      "post": "daily-semiconductor-2026-10-13",
+      "claim": "台積電 10/08 公布九月營收年增 54.6%，10/15 季報尚未發布。",
+      "sourceUrls": [
+        "https://pr.cld.tsmc.com/english/news/3343"
+      ]
+    },
+    {
+      "id": "identity",
+      "post": "daily-software-2026-10-13",
+      "claim": "GitHub 10/12 公布推送者身分歸屬有限預覽。",
+      "sourceUrls": [
+        "https://github.blog/changelog/2026-10-12-push-attribution-public-preview/"
+      ]
+    },
+    {
+      "id": "market",
+      "post": "daily-capital-flows-2026-10-13",
+      "claim": "10/13 市場快照缺失，最新為 10/12 台北 13:49 採集。",
+      "sourceUrls": [
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-12.json"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "tsmc",
+      "company": "台積電",
+      "ticker": "2330",
+      "market": "TWSE",
+      "valueLayer": "晶圓與先進封裝",
+      "signalIds": [
+        "capital",
+        "revenue",
+        "market"
+      ],
+      "disposition": "watch",
+      "reason": "月營收增長已證實，但季報與增量自由現金流尚缺。",
+      "missingValuationReason": "缺同日官方收盤、可比本益比、2027 每股盈餘與海外廠折舊。"
+    },
+    {
+      "id": "delta",
+      "company": "台達電子",
+      "ticker": "2308",
+      "market": "TWSE",
+      "valueLayer": "資料中心供電與散熱",
+      "signalIds": [
+        "capital",
+        "gas"
+      ],
+      "disposition": "watch",
+      "reason": "能源效率需求可能提高，缺新訂單與分部毛利證據。",
+      "missingValuationReason": "缺官方收盤、分部獲利、資本支出與同業估值。"
+    },
+    {
+      "id": "ctci",
+      "company": "中鼎工程",
+      "ticker": "9933",
+      "market": "TWSE",
+      "valueLayer": "能源基建工程",
+      "signalIds": [
+        "gas",
+        "oil"
+      ],
+      "disposition": "watch",
+      "reason": "歐洲能源補庫可能推動工程支出，但缺中鼎新增合約證據。",
+      "missingValuationReason": "缺官方收盤、在手訂單利潤、淨負債與同業估值。"
+    },
+    {
+      "id": "systex",
+      "company": "精誠資訊",
+      "ticker": "6214",
+      "market": "TWSE",
+      "valueLayer": "企業資訊整合",
+      "signalIds": [
+        "identity",
+        "capital"
+      ],
+      "disposition": "rejected",
+      "reason": "治理功能不等於公司新訂單，增量獲利連結不足。",
+      "missingValuationReason": "缺官方收盤、相關收入占比與可比估值。"
+    }
+  ],
+  "rankedIds": [
+    "tsmc",
+    "delta",
+    "ctci",
+    "systex"
+  ],
+  "industryReason": "六篇前沿先完成，四家公司跨三種以上價值鏈；10/13 市場快照缺失，官方股價與當期每股盈餘、自由現金流不足以建立可信三情境估值，故只做產業布局。",
+  "watchCompanies": [
+    "台積電（2330）",
+    "台達電子（2308）"
+  ],
+  "valuationApproach": "不以美元市值來源替代台股官方收盤；待核實股價、每股盈餘、自由現金流及可比倍數後才估保守、基準、樂觀合理價。",
+  "historicalComparisonAfterRanking": "今日先排序，舊投資文章不作候選來源。"
+}
