@@ -19,23 +19,23 @@ featured: false
 
 **當日證據：** 10/11 機場再次中斷、BP 因旅行受阻取消出席；同日 AP 報導有人威脅區域資料中心與通信纜線，但該威脅**不能寫成已造成資料中心受損**。**依據：** [AP 機場事件](https://apnews.com/article/d2e0868ffb18d883c16465d7d6a87ccb)、[AP 區域數位基建威脅](https://apnews.com/article/baa06588f3ebe6dad93695581f68d3c1)、[Reuters BP 決策](https://www.reuters.com/business/energy/bp-withdraws-riyadh-energy-conference-after-airport-attack-2026-10-11/)。
 
-**目標不是讀幾篇災難復原文章，而是設計可實際運行的 region-failover lab。**
+**目標不是讀幾篇災難復原文章，而是設計可實際運行的跨區域容錯實驗室（region-failover lab）。**
 
 ### 系統架構／取捨
 
-- **依賴圖 資料結構規格：** `serviceId, region, powerZone, uplink, carrier, dataReplica, replicationLag, rpoSeconds, rtoSeconds, failoverOwner`。以 有向圖 找出電源、實體路由和控制平面的共因失效點。
+- **依賴圖的資料結構規格：** `serviceId, region, powerZone, uplink, carrier, dataReplica, replicationLag, rpoSeconds, rtoSeconds, failoverOwner`。以有向圖 找出電源、實體路由和控制平面的共因失效點。
 - **切換模型：** 用戶端 → 健康檢查／法定多數檢查 → 流量導向 → 備援區域 → 資料核對。測 非同步 replication 丟資料窗口及跨區域同步一致性延遲；將 RTO／RPO 與成本一起報告。
 - **容量工程：** 失去一個區域後，剩餘兩區需有容納尖峰需求的容量；以 N+1／N+2 方案比較多買備援設備與停機預期損失。
-- **故障安全：** 不允許只有代理訊息聲稱「已復原」；用外部 模擬探針、資料 校驗碼、操作簽核與可查稽核驗證。
+- **故障安全：** 不允許只有代理訊息聲稱「已復原」；用外部模擬探針、資料校驗碼、操作簽核與可查稽核驗證。
 
 | 週 | 可運行交付 | 可量測驗收 |
 | --- | --- | --- |
-| 1 | 三區服務拓樸 YAML + dependency graph | 正確辨識 10 個共因失效案例 |
+| 1 | 三區服務拓樸 YAML + 依賴關係圖 | 正確辨識 10 個共因失效案例 |
 | 2 | Docker 服務、複本與路由切換 | 單區不可用可自動切換且 RTO <120 秒 |
-| 3 | 模擬斷網／停電／延遲同步與重試 | RPO <30 秒；不把 腦裂 寫成成功 |
-| 4 | 成本／容量比較與公開測試 儀表板 | 20 次故障注入完成報告；所有 SLA 失敗具 追蹤紀錄 |
+| 3 | 模擬斷網／停電／延遲同步與重試 | RPO <30 秒；不把腦裂狀態寫成成功 |
+| 4 | 成本／容量比較與公開測試儀表板 | 20 次故障注入完成報告；所有 SLA 失敗具備追蹤紀錄 |
 
-以上門檻是專案自訂目標，非某公司對外保證。**市場價值：** 雲端 SRE、電信可用性、金融災難復原、資料中心可靠性與跨境服務連續性。作品 `region-continuity-lab` 可附測試影片和不同預算下的 RTO/RPO 曲線。
+以上門檻是專案自訂目標，非某公司對外保證。**市場價值：** 雲端 網站可靠性工程（SRE）、電信可用性、金融災難復原、資料中心可靠性與跨境服務連續性。作品 `region-continuity-lab` 可附測試影片和不同預算下的 RTO/RPO 曲線。
 
 ## 二、能源／利率雙衝擊的償債與投資模型：現金流情境工程
 
@@ -43,19 +43,19 @@ featured: false
 
 ### 具體模型與口徑
 
-- **資料 資料結構規格：** `financialPeriod, currency, spotFxAsOf, debtId, principal, rateType, resetDate, maturity, capexCommitment, operatingCashFlow, commodityExposure, hedgedPct, sourceUrl`；價格觀測日期與報告發布日期必須分開。
+- **資料結構規格：** `financialPeriod, currency, spotFxAsOf, debtId, principal, rateType, resetDate, maturity, capexCommitment, operatingCashFlow, commodityExposure, hedgedPct, sourceUrl`；價格觀測日期與報告發布日期必須分開。
 - **現金流公式：** `CFADS = EBITDA - cashTax - maintenanceCapex - workingCapitalIncrease`；`DSCR = CFADS / (interest + scheduledPrincipal)`。不得把市值減少當資金淨流、把宣示資本支出當已支付。
 - **壓力情境：** 油價 +20%、可變利率 +100bp、航線中斷 14 日，測三者獨立與聯合衝擊；匯率、利潤轉嫁率與浮息曝險是可編參數。
-- **重要取捨：** 單一 WACC DCF 可以隱藏再融資現金缺口；先以月／季 逐期現金流明細 驗證 DSCR 和最低現金，再做股權敏感度。缺市場數據標 `stale`、缺企業曝險標 `unknown`，不填零。
+- **重要取捨：** 單一 加權平均資本成本（WACC）下的現金流折現模型（DCF） 可以隱藏再融資現金缺口；先以按月／季列示逐期現金流明細 驗證 DSCR 和最低現金，再做股權敏感度。缺市場數據標 `stale`、缺企業曝險標 `unknown`，不填零。
 
 | 週 | 可運作成果 | 驗收 |
 | --- | --- | --- |
-| 1 | 財務與市場 歷史版本 資料結構規格、範例公司情境 | 100% 顯示來源／交易日／報告日 |
+| 1 | 財務與市場歷史版本的資料結構規格、範例公司情境 | 100% 顯示來源／交易日／報告日 |
 | 2 | Python／JS 狀態機算 CFADS、利息、DSCR | 10 個單位測試與手算誤差 <0.1% |
 | 3 | 燃油＋利率＋匯率聯合情境、違約門檻 | 五種反例能指出首次現金缺口月份 |
-| 4 | 可重播情境 儀表板、CSV 與報告 | 同輸入重跑結果一致，保守／基準／樂觀皆可追假設 |
+| 4 | 可重播情境儀表板、CSV 與報告 | 同輸入重跑結果一致，保守／基準／樂觀皆可追假設 |
 
-**可展示作品：** `cashflow-shock-engine`，含 資料結構規格、scenario.yaml、償債 逐期現金流明細、來源表及 CI。可遷移至信評、公司財務、基建融資、商品風控與投資研究。
+**可展示作品：** `cashflow-shock-engine`，包含資料結構規格、scenario.yaml、償債逐期現金流明細、來源表及 CI。可遷移至信評、公司財務、基建融資、商品風控與投資研究。
 
 ## 今日排序理由
 

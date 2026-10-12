@@ -13,7 +13,7 @@ draft: false
 featured: false
 ---
 
-> **補發基準：** 台北 2026-10-12 早晨；主要完整事件日為 10/11，10/12 亞洲市場當日收盤尚不存在。窗口：昨日 10/11、近三日 10/09–11、近七日 10/05–11。週末與假期無新交易的資料必須顯示原始市場日期，不將事後來源回寫成 05:00 當時已發布。
+> **原始研究基準：** 台北 2026-10-12 早晨；主要完整事件日為 10/11，10/12 亞洲市場當日收盤尚不存在。窗口：昨日 10/11、近三日 10/09–11、近七日 10/05–11。週末與假期無新交易的資料必須顯示原始市場日期，不將事後來源回寫成 05:00 當時已發布。
 
 ## 全球｜10/11 IMF／世銀曼谷年會前瞻
 IMF／世界銀行年會定於 **10/12–18** 舉行。Reuters 10/11 報導：能源供應衝擊、全球公共債務與高利率是會議核心議題；新興及低所得國 2026 對外債務支付合計約 **4,000 億美元**，這是政策風險背景，不等於同日市場淨流出。**依據：** [IMF 官方行事曆](https://www.imf.org/en/meetings/2026/annual/schedule)、[Reuters｜10/11 年會前瞻](https://www.reuters.com/world/china/middle-east-war-high-debt-levels-dominate-imf-world-bank-meetings-bangkok-2026-10-11/)。
@@ -24,9 +24,9 @@ IMF／世界銀行年會定於 **10/12–18** 舉行。Reuters 10/11 報導：�
 截至本期尚無 10/12 完整美歐交易日收盤。10/09 美國股票市場週五反彈，10/11 海灣部分股市受攻擊影響，並不能跨交易日直接換算成美股今早走勢。**依據：** [Reuters｜10/09 全球市場收盤](https://www.reuters.com/world/china/global-markets-wrapup-1-2026-10-09/)、[Reuters｜10/11 海灣市場](https://www.reuters.com/world/middle-east/saudi-stocks-slide-after-attack-riyadh-airport-2026-10-11/)。
 
 ## 澳洲｜長債、浮動房貸和消費支出分別觀察
-儲存庫 最新可用為 **10/11 07:39 台北市場快照**：澳洲 10 年債 **5.346%**、美國 **5.237%**、英國 **5.423%**，來源 `source_date=10/10`；**10/12 今日新快照缺失，這些不是 10/12 新價**。澳洲長債高平台與 AI 資料中心建置支出並存，但家庭房貸重定價需銀行利率與家庭支出資料核實。
+**版本校正（10/12 下午補採）：**本文原始截稿時僅有 **10/11 07:39 台北**採集資料，當時澳洲十年債來源值 **5.346%**、美國 **5.237%**、英國約 **5.423%**。此後儲存庫於 **10/12 13:49 台北時間**補採當日快照（UTC `2026-10-12T05:49:33.303Z`）：澳洲 **5.330%**、美國 **5.237%**、英國約 **5.412%**；來源日期標記為 10/12，但不代表三個市場都已完成當日交易。比較兩個**採集版本**，不可冒充兩個完整交易日收盤。澳洲長債仍在較高平台，家庭房貸重定價需銀行利率與家庭支出資料核實。
 
-**依據：** [儲存庫 10/11 快照](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-11.json)、[Reuters｜10/08 澳洲 AI 投資與通膨](https://www.reuters.com/world/asia-pacific/ai-boom-fuel-australia-inflation-despite-higher-rates-ex-rba-official-says-2026-10-08/)。
+**依據：** [10/11 快照](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-11.json)、[10/12 13:49 補採快照](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-12.json)、[Reuters｜10/08 澳洲 AI 投資與通膨](https://www.reuters.com/world/asia-pacific/ai-boom-fuel-australia-inflation-despite-higher-rates-ex-rba-official-says-2026-10-08/)。
 
 **為什麼這樣判斷：** 高利率影響家庭現金流有定價與重設時滯；利率變化量與存量借款人的當期付款不可視為同一數字。
 

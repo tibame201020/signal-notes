@@ -13,7 +13,7 @@ draft: false
 featured: false
 ---
 
-> 本期 10/12 台北清晨補發。**研究順序：**先讀[10/12 六類每日前沿](https://tibame201020.github.io/signal-notes/categories/daily-digest/)、[正式已發表的多 代理系統 論點](https://tibame201020.github.io/signal-notes/articles/huggingface-agent-civilization/)，蒐集 10/11 有日期的新消息，再建立候選池。完整 [screenings.json](https://github.com/tibame201020/signal-notes/blob/main/data/investment/screenings/2026-10-12.json) **已先於本文提交**。不從昨天推薦或聊天範例預設今天入選公司。
+> 本期 10/12 台北清晨補發。**研究順序：**先讀[10/12 六類每日前沿](https://tibame201020.github.io/signal-notes/categories/daily-digest/)、[正式已發表的多代理系統論點](https://tibame201020.github.io/signal-notes/articles/huggingface-agent-civilization/)，蒐集 10/11 有日期的新消息，再建立候選池。完整[候選研究清單（JSON）](https://github.com/tibame201020/signal-notes/blob/main/data/investment/screenings/2026-10-12.json) **已先於本文提交**。不從昨天推薦或聊天範例預設今天入選公司。
 
 ## 先凍結新訊號與傳導機制
 
@@ -38,16 +38,16 @@ featured: false
 
 ## 市場估值與我的估值
 
-本期採 **selectionMode: industry**，因截至 10/12 早晨**沒有 10/12 完整台股收盤**，儲存庫 市場最新快照的 `as_of` 仍為 10/11，其股票數值與 10/10 一樣，不能冒充今日交易價格。另缺這四家在新事件後可核對的個別訂單毛利、當期 EPS／FCF、同業定價和股權／企業價值銜接資料。因此**不給虛假的每股目標價與相對市價報酬**。
+本期原始研究於 **10/12 06:51（台北）**凍結，採**產業分析模式**（`selectionMode: industry`）。當時沒有 10/12 市場快照或當日台股完整收盤；10/11 快照的股票數值又與 10/10 相同，不能冒充新交易。儲存庫於 **10/12 13:49（台北）**才補採[當日市場快照](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-12.json)，屬發稿後補充證據，**並非原始排名時已知的資料**。該快照也不提供四家個股可核實的同口徑股價、最新增量訂單毛利、當期每股盈餘／自由現金流和完整股權估值銜接。因此本期不因補採數據自動重排名，亦**不填造每股目標價或相對市價報酬**。
 
 | 公司 | 保守／下行情境 | 基準估值模型及必要假設 | 樂觀／催化情境 |
 | --- | --- | --- | --- |
 | 中華電 | 災備支出未形成新合約，折舊上升 | 下一年度 FCF × 可核實合理 FCF 倍數；扣網路增量資本支出 | 多路徑、機房服務可確認的新訂單和續約 |
-| 台達電 | 已有高期待，利率上升壓縮倍數 | 具來源之 前瞻 EPS × 合理 P/E，先確認新增機房營業利益 | 備援電力與熱管理新訂單高於市場估計 |
+| 台達電 | 已有高期待，利率上升壓縮倍數 | 具來源之前瞻每股盈餘（EPS） × 合理 P/E，先確認新增機房營業利益 | 備援電力與熱管理新訂單高於市場估計 |
 | 中租-KY | 撥備、匯率與融資成本共同惡化 | P/B × 可持續 ROE，含風險調整資金成本 | 逾放受控且淨利差改善 |
 | 長榮海 | 保費、繞航與貨運量下滑 | 正常化航運 FCF 或 EV/EBITDA，扣船舶淨負債 | 實際貨櫃運價與供需資料證實增量利潤 |
 
-**估值缺口與來源：** 上述不涉及 10/12 已存在之最新收盤；必要來源是 TWSE、各公司月營收／財報、同業可比 EV／市值和實際合約。以 [10/11 市場快照](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-11.json) 的美元榜單直接折算台灣普通股估值，會混淆 ADR、匯率與股數，故不採用。
+**估值缺口與來源：** 必要來源是臺灣證交所、四家公司月營收／正式財報、同業可比企業價值與實際合約。即便 10/12 已有補採快照，也不能將其中的美元市值榜單直接當作各公司新台幣普通股收盤價；否則會混淆股票類別、匯率、股數與交易時點。[原研究時點 10/11 快照](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-11.json)、[13:49 補採快照](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-12.json)。
 
 ## 推論與選擇
 
@@ -56,6 +56,6 @@ featured: false
 - **網路與數位基建韌性：** 實際停運事件提醒投資人看備援與恢復時間。觀察中華電是否有可拆分的備援服務收入，以及台達電是否有帶動營業利潤的新供電專案。
 - **高資金成本下的現金回收：** 在 IMF 與油價事件影響下，評估合約收款、企業淨負債與現金流期限，比籠統宣稱 AI 或能源產業受益更精確。
 
-**反證與催化：** 若地區運輸復常、企業並未增加基建災備預算，或台達新增訂單僅是原本市場已預期的交付，則收益推導應下修。下一交易日核價與公司新增合約是入選前必要門檻。
+**反證與催化：** 若地區運輸復常、企業並未增加基建災備預算，或台達新增訂單僅是原本市場已預期的交付，則收益推導應下修。以同口徑的交易所價格和公司新增合約核實是入選前必要門檻。
 
 完成以上排序後才回看 10/11 投資篇；昨日的公司名不構成今日預設候選。信號來源、各企業淘汰／保留和估值缺口見[研究 JSON](https://github.com/tibame201020/signal-notes/blob/main/data/investment/screenings/2026-10-12.json)。
