@@ -1,10 +1,10 @@
 ---
-title: "Investment Outlook｜10/12 公司布局：數位基建韌性與能源衝擊的可驗證受益者"
+title: "投資布局｜10/12 公司布局：數位基建韌性與能源衝擊的可驗證受益者"
 slug: "investment-companies-2026-10-12"
 description: "從 10/11 當日國際、財經與 AI 證據獨立篩選中華電、台達電、中租、長榮海；四家排序及完整缺失口徑公開。"
 publishedAt: 2026-10-12
 category:
-  name: "Investment Outlook"
+  name: "投資布局"
   slug: "investment-outlook"
 tags:
   - name: "公司布局"
@@ -13,7 +13,7 @@ draft: false
 featured: false
 ---
 
-> 本期 10/12 台北清晨補發。**研究順序：**先讀[10/12 六類每日前沿](https://tibame201020.github.io/signal-notes/categories/daily-digest/)、[正式已發表的多 Agent 論點](https://tibame201020.github.io/signal-notes/articles/huggingface-agent-civilization/)，蒐集 10/11 有日期的新消息，再建立候選池。完整 [screenings.json](https://github.com/tibame201020/signal-notes/blob/main/data/investment/screenings/2026-10-12.json) **已先於本文提交**。不從昨天推薦或聊天範例預設今天入選公司。
+> 本期 10/12 台北清晨補發。**研究順序：**先讀[10/12 六類每日前沿](https://tibame201020.github.io/signal-notes/categories/daily-digest/)、[正式已發表的多 代理系統 論點](https://tibame201020.github.io/signal-notes/articles/huggingface-agent-civilization/)，蒐集 10/11 有日期的新消息，再建立候選池。完整 [screenings.json](https://github.com/tibame201020/signal-notes/blob/main/data/investment/screenings/2026-10-12.json) **已先於本文提交**。不從昨天推薦或聊天範例預設今天入選公司。
 
 ## 先凍結新訊號與傳導機制
 
@@ -38,12 +38,12 @@ featured: false
 
 ## 市場估值與我的估值
 
-本期採 **selectionMode: industry**，因截至 10/12 早晨**沒有 10/12 完整台股收盤**，repo 市場最新快照的 `as_of` 仍為 10/11，其股票數值與 10/10 一樣，不能冒充今日交易價格。另缺這四家在新事件後可核對的個別訂單毛利、當期 EPS／FCF、同業定價和股權／企業價值銜接資料。因此**不給虛假的每股目標價與相對市價報酬**。
+本期採 **selectionMode: industry**，因截至 10/12 早晨**沒有 10/12 完整台股收盤**，儲存庫 市場最新快照的 `as_of` 仍為 10/11，其股票數值與 10/10 一樣，不能冒充今日交易價格。另缺這四家在新事件後可核對的個別訂單毛利、當期 EPS／FCF、同業定價和股權／企業價值銜接資料。因此**不給虛假的每股目標價與相對市價報酬**。
 
 | 公司 | 保守／下行情境 | 基準估值模型及必要假設 | 樂觀／催化情境 |
 | --- | --- | --- | --- |
 | 中華電 | 災備支出未形成新合約，折舊上升 | 下一年度 FCF × 可核實合理 FCF 倍數；扣網路增量資本支出 | 多路徑、機房服務可確認的新訂單和續約 |
-| 台達電 | 已有高期待，利率上升壓縮倍數 | 具來源之 forward EPS × 合理 P/E，先確認新增機房營業利益 | 備援電力與熱管理新訂單高於市場估計 |
+| 台達電 | 已有高期待，利率上升壓縮倍數 | 具來源之 前瞻 EPS × 合理 P/E，先確認新增機房營業利益 | 備援電力與熱管理新訂單高於市場估計 |
 | 中租-KY | 撥備、匯率與融資成本共同惡化 | P/B × 可持續 ROE，含風險調整資金成本 | 逾放受控且淨利差改善 |
 | 長榮海 | 保費、繞航與貨運量下滑 | 正常化航運 FCF 或 EV/EBITDA，扣船舶淨負債 | 實際貨櫃運價與供需資料證實增量利潤 |
 
