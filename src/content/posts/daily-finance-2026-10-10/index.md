@@ -41,9 +41,9 @@ featured: false
 
 ## 澳洲殖利率與房貸／消費傳導
 
-Repo 最新可用 **10/09 08:28 台北快照**顯示澳洲 10 年債 **5.346%**、美國 **5.237%**、英國 **5.489%**；**10/10 新快照截至截稿未取得，以上不能當成 10/10 最新價**。澳洲政策利率約 4.6%（10/08 Reuters），家庭浮動房貸重定價會逐步擠壓可支配所得；AI 資料中心同時可能推高電力、土地與施工需求。
+儲存庫 最新可用 **10/09 08:28 台北快照**顯示澳洲 10 年債 **5.346%**、美國 **5.237%**、英國 **5.489%**；**10/10 新快照截至截稿未取得，以上不能當成 10/10 最新價**。澳洲政策利率約 4.6%（10/08 Reuters），家庭浮動房貸重定價會逐步擠壓可支配所得；AI 資料中心同時可能推高電力、土地與施工需求。
 
-**依據：** [repo 10/09 快照](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-09.json)、[Reuters｜澳洲 AI 投資與通膨](https://www.reuters.com/world/asia-pacific/ai-boom-fuel-australia-inflation-despite-higher-rates-ex-rba-official-says-2026-10-08/)。
+**依據：** [儲存庫 10/09 快照](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-09.json)、[Reuters｜澳洲 AI 投資與通膨](https://www.reuters.com/world/asia-pacific/ai-boom-fuel-australia-inflation-despite-higher-rates-ex-rba-official-says-2026-10-08/)。
 
 **為什麼這樣判斷：** 長債殖利率不等於當期房貸利率，還要經央行、銀行定價與合約重設。Firmus 的上市失敗更像**融資方要求更強的可交付現金流**，不是澳洲家庭已減少消費的直接證據。
 

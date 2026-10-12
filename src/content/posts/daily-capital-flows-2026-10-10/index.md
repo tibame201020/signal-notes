@@ -17,7 +17,7 @@ featured: false
 
 ## 資料時效：10/10 快照未到，不把舊資料冒充今日
 
-截稿 **10/10 05:00 台北**，repo `data/market/latest.json` 仍是 **10/09 08:28 台北採集**，沒有 `data/market/snapshots/2026-10-10.json`。以下全球 Top50、台灣 Top20 只能比較 **10/07、10/08、10/09 的歷史快照**；最後一筆**並未包含美股 10/09 完整收盤**。台灣 10/09 國慶假期休市。圖表上「10/09」是**資料採集日**，不是所有交易所的新收盤價。
+截稿 **10/10 05:00 台北**，儲存庫 `data/market/latest.json` 仍是 **10/09 08:28 台北採集**，沒有 `data/market/snapshots/2026-10-10.json`。以下全球 Top50、台灣 Top20 只能比較 **10/07、10/08、10/09 的歷史快照**；最後一筆**並未包含美股 10/09 完整收盤**。台灣 10/09 國慶假期休市。圖表上「10/09」是**資料採集日**，不是所有交易所的新收盤價。
 
 **依據：** [最新可用快照](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-09.json)、[10/08 快照](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-08.json)、[10/07 快照](https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-07.json)。
 

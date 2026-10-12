@@ -1,10 +1,10 @@
 ---
-title: "Investment Outlook｜10/10 公司布局：從韓日資安與晶圓廠供電選出兩家"
+title: "投資布局｜10/10 公司布局：從韓日資安與晶圓廠供電選出兩家"
 slug: "investment-companies-2026-10-10"
 description: "從 10/09 六類前沿獨立建立中華資安、中興電、安碁資訊、南亞科四家候選，核對 10/08 休市前股價與 EPS，依證據、估值和風險選兩家。"
 publishedAt: 2026-10-10
 category:
-  name: "Investment Outlook"
+  name: "投資布局"
   slug: "investment-outlook"
 tags:
   - name: "公司布局"
@@ -21,7 +21,7 @@ featured: false
 
 **10/09 新訊號一：** 韓國九家銀行與日本金融、電信、零售企業正在調查網攻；多起案件是否使用 AI 尚待查證。同日 SemiAnalysis 調查發現，857 次中國模型發布只有 31 次公開可對應模型版本的安全測試結果。這指向企業需要 **SOC 監控、事件回應、模型／工具審計證據**，但不是台灣供應商已取得海外訂單的證據。
 
-**依據：** [Software 前沿](https://tibame201020.github.io/signal-notes/articles/daily-software-2026-10-10/)、[Reuters｜韓日網攻](https://www.reuters.com/legal/litigation/south-korea-japan-buffeted-by-hacks-ai-lowers-bar-cybercriminals-2026-10-09/)、[Reuters｜模型安全揭露](https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/)。
+**依據：** [軟體工程 前沿](https://tibame201020.github.io/signal-notes/articles/daily-software-2026-10-10/)、[Reuters｜韓日網攻](https://www.reuters.com/legal/litigation/south-korea-japan-buffeted-by-hacks-ai-lowers-bar-cybercriminals-2026-10-09/)、[Reuters｜模型安全揭露](https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/)。
 
 **為什麼這樣判斷：** 防禦需求要經**企業預算→安全服務合約→供應商續約／高毛利服務收入**才能形成增量利潤；安全事件本身不等於上市公司營收。
 

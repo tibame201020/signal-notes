@@ -1,10 +1,10 @@
 ---
-title: "Investment Outlook｜10/10 投資自己：模型安全證據工程與基建現金流審核"
+title: "投資布局｜10/10 投資自己：模型安全證據工程與基建現金流審核"
 slug: "investment-skills-2026-10-10"
 description: "從 10/09 模型安全揭露缺口及 Firmus IPO 失利、SK 擴廠水電瓶頸，推導兩項可驗收技能：可追溯評測證據與資料中心專案財務建模。"
 publishedAt: 2026-10-10
 category:
-  name: "Investment Outlook"
+  name: "投資布局"
   slug: "investment-outlook"
 tags:
   - name: "投資自己"
@@ -21,13 +21,13 @@ featured: false
 
 **當日證據：** 10/09 SemiAnalysis 調查 857 次中國模型發布，只有 31 次有可對應特定模型的公開安全測試結果，9 次在發布前或當時公開。這衡量的是**公開揭露**，不是證明其餘模型沒做測試。10/09 韓日資安事件則增加企業對工具和模型審計的實務需求。
 
-**依據：** [Reuters｜模型安全揭露](https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/)、[Reuters｜韓日網攻](https://www.reuters.com/legal/litigation/south-korea-japan-buffeted-by-hacks-ai-lowers-bar-cybercriminals-2026-10-09/)、[當日 Software 前沿](https://tibame201020.github.io/signal-notes/articles/daily-software-2026-10-10/)。
+**依據：** [Reuters｜模型安全揭露](https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/)、[Reuters｜韓日網攻](https://www.reuters.com/legal/litigation/south-korea-japan-buffeted-by-hacks-ai-lowers-bar-cybercriminals-2026-10-09/)、[當日 軟體工程 前沿](https://tibame201020.github.io/signal-notes/articles/daily-software-2026-10-10/)。
 
 **為什麼值得投入：** 企業採購與合規不只要知道模型「聲稱安全」，還要能把每次執行結果連到**確切模型版本、評測集、測試時間、執行環境與核准決策**。這是可轉移到模型平台、資安治理與軟體供應鏈的稀缺工程能力。
 
 ### 必須深入的技術
 
-- **證據 Schema：** `modelId`、`weightsDigest`、`runtimeDigest`、`evalSuiteDigest`、`datasetVersion`、`policyVersion`、`sampleCount`、`failures`、`confidenceInterval`、`timestamp`、`attestor`、`signature`。區分不可公開的原始測試資料與可供第三方驗證的摘要。
+- **證據 資料結構規格：** `modelId`、`weightsDigest`、`runtimeDigest`、`evalSuiteDigest`、`datasetVersion`、`policyVersion`、`sampleCount`、`failures`、`confidenceInterval`、`timestamp`、`attestor`、`signature`。區分不可公開的原始測試資料與可供第三方驗證的摘要。
 - **來源鏈：** release → build provenance → evaluation run → signed attestation → deployment gate。可研究 in-toto / SLSA provenance、Sigstore DSSE，實作簽章與驗證，但不要把簽名本身當作測試品質證明。
 - **統計取捨：** 風險事件低基率下，只報成功率容易誤導；用 Wilson interval、分層抽樣、資料洩漏檢查與 false-negative 率。評測版本更換時禁止跨版混算。
 - **安全閘：** 若簽章不符、版本漂移、樣本不足或超出 TTL，阻擋部署並產生具體原因。安全測試失敗不應自動改寫評測資料。
@@ -36,12 +36,12 @@ featured: false
 
 | 週次 | 產物 | 驗收門檻 |
 | --- | --- | --- |
-| 1 | JSON Schema + 20 組合法／非法 manifest | 不合法版本或欄位拒絕率 100% |
+| 1 | JSON 資料結構規格 + 20 組合法／非法 manifest | 不合法版本或欄位拒絕率 100% |
 | 2 | 評測 runner + Wilson CI + 版本化 dataset | 固定種子重跑，結果差異可解釋 |
 | 3 | DSSE 簽署與 release gate | 10 組偽造／過期證據全部拒絕 |
-| 4 | 可查詢 dashboard + CI 發布決策 | 每個 release 100% 可追到 digest 與評測 run |
+| 4 | 可查詢 儀表板 + CI 發布決策 | 每個 release 100% 可追到 digest 與評測 run |
 
-**展示方式：** GitHub repo + 一個假模型的 release pipeline，展示「版本改了但評測沒重跑」被 gate 拒絕。**市場價值：** 模型供應商、金融企業 AI 採購、平台資安、第三方模型驗證。門檻是自訂作品驗收，不是產業認證。
+**展示方式：** GitHub 儲存庫 + 一個假模型的 release pipeline，展示「版本改了但評測沒重跑」被 gate 拒絕。**市場價值：** 模型供應商、金融企業 AI 採購、平台資安、第三方模型驗證。門檻是自訂作品驗收，不是產業認證。
 
 ## 二、AI 資料中心／晶圓廠的專案現金流與電力瓶頸建模
 
@@ -66,7 +66,7 @@ featured: false
 | 1 | `project.yaml`（MW/PUE/水電／施工里程碑）與檢查器 | 20 組非法輸入全部拒絕 |
 | 2 | 60 個月現金流、CAPEX drawdown、NPV/IRR | 對 3 個手算基準誤差 <0.1% |
 | 3 | 電力延遲、利用率、利率敏感度與 DSCR | 5×5 情境矩陣可重播，顯示 DSCR <1.0 的月份 |
-| 4 | Web dashboard + CSV + 可讀投資備忘錄 | 改動供電日期能即時重算股權價值與融資缺口 |
+| 4 | Web 儀表板 + CSV + 可讀投資備忘錄 | 改動供電日期能即時重算股權價值與融資缺口 |
 
 **展示方式：** 一個 100MW **虛構案例**，輸入 YAML、生成月度 cash-flow CSV、DSCR/IRR 圖表與反證報告；對比「看似高估值」與「實際可融資」的差距。**市場價值：** AI 基建投資、半導體建廠、能源設備供應鏈、銀行授信與資本配置分析。
 

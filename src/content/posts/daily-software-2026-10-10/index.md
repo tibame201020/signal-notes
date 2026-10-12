@@ -1,5 +1,5 @@
 ---
-title: "每日前沿｜Software：安全供應鏈從模型揭露延伸到 PR 治理"
+title: "每日前沿｜軟體工程：安全供應鏈從模型揭露延伸到 PR 治理"
 slug: "daily-software-2026-10-10"
 description: "10/09 GitHub 公告核對、模型安全測試透明度、韓日網攻與可審計的軟體交付。"
 publishedAt: 2026-10-10
@@ -7,7 +7,7 @@ category:
   name: "每日前沿"
   slug: "daily-digest"
 tags:
-  - name: "Software"
+  - name: "軟體工程"
     slug: "software"
 draft: false
 featured: false
@@ -17,7 +17,7 @@ featured: false
 
 ## 10/09｜GitHub 當日未新增重大 Changelog，不將舊公告重寫成新功能
 
-查核 [GitHub 2026 年 10 月 Changelog](https://github.blog/changelog/month/10-2026/)：最近可確認功能公告為 **10/08** 的 PR 封存權限、螢幕閱讀器 timeline、draft PR 限額。10/09 官方發表一篇 [Hack the World](https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/) 工程文化文章，並非新的 Agent SDK 發布。
+查核 [GitHub 2026 年 10 月 Changelog](https://github.blog/changelog/month/10-2026/)：最近可確認功能公告為 **10/08** 的 PR 封存權限、螢幕閱讀器 timeline、draft PR 限額。10/09 官方發表一篇 [Hack the World](https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/) 工程文化文章，並非新的 代理系統 SDK 發布。
 
 **依據：** [GitHub｜10 月 Changelog](https://github.blog/changelog/month/10-2026/)、[GitHub｜10/09 Hack the World](https://github.blog/developer-skills/career-growth/hack-the-world-why-hackathons-are-still-the-best-place-to-learn-to-build/)。
 
@@ -29,7 +29,7 @@ featured: false
 
 **依據：** [GitHub｜10/07 sandbox GA](https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available/)、[GitHub｜10/07 leaked secret detection](https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection/)、[GitHub｜10/08 PR 限額](https://github.blog/changelog/2026-10-08-draft-pull-requests-count-toward-pull-request-limits/)。
 
-**為什麼這樣判斷：** Agent 大量提交程式碼使審查成本、CI 排程與權限外溢成為瓶頸。即使 patch 生成成本降低，軟體交付總成本不一定下降。
+**為什麼這樣判斷：** 代理系統 大量提交程式碼使審查成本、CI 排程與權限外溢成為瓶頸。即使 patch 生成成本降低，軟體交付總成本不一定下降。
 
 ## 10/09｜韓日資安事件讓軟體治理更具體
 
@@ -45,20 +45,20 @@ SemiAnalysis 發現 857 個中國模型發布中僅 31 個有可對應具名模�
 
 **依據：** [Reuters｜10/09 安全揭露研究](https://www.reuters.com/legal/litigation/china-ai-developers-publish-safety-tests-just-36-model-releases-report-finds-2026-10-09/)。
 
-**為什麼這樣判斷：** 企業採購應要求 modelId、版本 hash、評測集、失敗率、評測時間、權限政策及稽核紀錄；不能只接受「已完成安全訓練」文字聲明。
+**為什麼這樣判斷：** 企業採購應要求 modelId、版本 雜湊值、評測集、失敗率、評測時間、權限政策及稽核紀錄；不能只接受「已完成安全訓練」文字聲明。
 
 ## 地區觀察與跨期
 
-美國：平台治理能力持續更新；中國大陸：模型公開安全測試不足的調查；台灣：10/09 無可核實新的本地 Agent SDK 發表；日本與韓國：企業資安壓力上升；歐洲：資料治理與供應鏈合規需有證據追溯。
+美國：平台治理能力持續更新；中國大陸：模型公開安全測試不足的調查；台灣：10/09 無可核實新的本地 代理系統 SDK 發表；日本與韓國：企業資安壓力上升；歐洲：資料治理與供應鏈合規需有證據追溯。
 
 | 期間 | 變化 | 需要的工程能力 |
 | --- | --- | --- |
 | 昨日 10/09 | 模型安全揭露與韓日資安事件 | 版本化證據、事件關聯 |
 | 近三日 10/07–09 | sandbox、secret detection、PR 限額 | 權限邊界與審查配額 |
-| 近七日 10/03–09 | GitHub Agent-scale 基建、ReviewBench | 可擴展審查、可重演基準 |
+| 近七日 10/03–09 | GitHub 代理系統-scale 基建、ReviewBench | 可擴展審查、可重演基準 |
 
 **推論：** 下一輪高價值軟體不是「更多生成內容」，而是**能量化驗證的安全交付與運行治理**。
 
-**依據：** [GitHub｜Agent-scale Git infrastructure](https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/)、上述 Reuters 及 GitHub 公告。
+**依據：** [GitHub｜代理系統-scale Git infrastructure](https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/)、上述 Reuters 及 GitHub 公告。
 
 **為什麼這樣判斷：** 安全證據和審查負荷是部署成本的一部分，必須以每次成功交付的總成本衡量，而非只計模型呼叫費。
