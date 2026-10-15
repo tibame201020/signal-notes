@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-15",
+  "selectionMode": "industry",
+  "sourcePosts": [
+    "daily-world-2026-10-15",
+    "daily-finance-2026-10-15",
+    "daily-ai-2026-10-15",
+    "daily-semiconductor-2026-10-15",
+    "daily-software-2026-10-15",
+    "daily-capital-flows-2026-10-15"
+  ],
+  "beliefPosts": [
+    "huggingface-agent-civilization"
+  ],
+  "signals": [
+    {
+      "id": "us-inflation",
+      "post": "daily-finance-2026-10-15",
+      "claim": "美國十月十四日公布九月消費物價年增百分之三點七，重新提高高資本支出企業的資金成本敏感度。",
+      "sourceUrls": [
+        "https://www.bls.gov/news.release/archives/cpi_10142026.htm"
+      ]
+    },
+    {
+      "id": "china-exports",
+      "post": "daily-world-2026-10-15",
+      "claim": "中國大陸九月出口年增百分之三十六點三，顯示外需增長但不代表台灣個別供應商已有訂單。",
+      "sourceUrls": [
+        "https://www.reuters.com/world/asia-pacific/chinas-exports-surge-363-yy-september-imports-up-31-2026-10-14/"
+      ]
+    },
+    {
+      "id": "chip-profit",
+      "post": "daily-semiconductor-2026-10-15",
+      "claim": "台積電十月十五日十四時才舉行季報法說，應將分析師預測與已公告的月營收分開，檢查擴產後現金流。",
+      "sourceUrls": [
+        "https://investor.cld.tsmc.com/english/quarterly-results/2026/q3",
+        "https://pr.cld.tsmc.com/english/news/3343"
+      ]
+    },
+    {
+      "id": "software-integrity",
+      "post": "daily-software-2026-10-15",
+      "claim": "十月十四日 GitHub 公布工作流程依賴鎖定與多模型工程更新，企業採用需求須再驗證本地供應商的付費收入。",
+      "sourceUrls": [
+        "https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview/",
+        "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option/"
+      ]
+    },
+    {
+      "id": "market-reprice",
+      "post": "daily-capital-flows-2026-10-15",
+      "claim": "十月十五日七時十八分補採市場資料顯示大型企業市值下降，屬補採研究，不假裝五時已知，也不等於資金實際淨流出。",
+      "sourceUrls": [
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-15.json",
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-14.json"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "tsmc",
+      "company": "台積電",
+      "ticker": "2330",
+      "market": "TWSE",
+      "valueLayer": "先進晶圓與封裝",
+      "signalIds": [
+        "chip-profit",
+        "us-inflation"
+      ],
+      "disposition": "watch",
+      "reason": "正式月營收與製程地位可核實，但第三季法說尚未舉行；不能把未來獲利與擴產自由現金流當成確定數字。",
+      "missingValuationReason": "10/14 官方收盤新台幣2490元已核實，尚缺第三季正式淨利、後續資本支出和同口徑完整三情境 EPS/FCF，價格資料不足以證明低估。"
+    },
+    {
+      "id": "unimicron",
+      "company": "欣興",
+      "ticker": "3037",
+      "market": "TWSE",
+      "valueLayer": "先進封裝基板材料",
+      "signalIds": [
+        "chip-profit",
+        "china-exports"
+      ],
+      "disposition": "watch",
+      "reason": "新增運算需求可能帶動基板，但中國出口總額不是公司出貨，須查正式訂單、產能利用率與毛利。",
+      "missingValuationReason": "尚缺同日官方收盤、可確認分部利潤與全年自由現金流，不填三情境價格。"
+    },
+    {
+      "id": "delta",
+      "company": "台達電",
+      "ticker": "2308",
+      "market": "TWSE",
+      "valueLayer": "電力轉換與節能系統",
+      "signalIds": [
+        "us-inflation",
+        "market-reprice"
+      ],
+      "disposition": "rejected",
+      "reason": "較高融資成本提高節能價值但亦折損遠期現金流，當日未見新增分部訂單與增量利潤的正式證據。",
+      "missingValuationReason": "已知10/14官方收盤1785元，缺可同口徑計算的分部新訂單、現金流與企業價值。"
+    },
+    {
+      "id": "systex",
+      "company": "精誠資訊",
+      "ticker": "6214",
+      "market": "TWSE",
+      "valueLayer": "企業軟體系統整合與供應鏈治理",
+      "signalIds": [
+        "software-integrity",
+        "us-inflation"
+      ],
+      "disposition": "rejected",
+      "reason": "官方新功能不等於台灣企業已採購公司服務，缺正式相關營收、續約與可對照利潤。",
+      "missingValuationReason": "缺官方同時點成交價格、分部獲利和正式新客戶資訊，不建立三情境估值。"
+    }
+  ],
+  "rankedIds": [
+    "tsmc",
+    "unimicron",
+    "delta",
+    "systex"
+  ],
+  "industryReason": "四家橫跨先進製程、基板、電力、企業整合且至少兩種來源訊號；正式季報與可重算分部增量利潤/估值不完整，所以採產業研究、不宣稱有已證實低估股票。",
+  "watchCompanies": [
+    "台積電（2330）",
+    "欣興（3037）"
+  ],
+  "historicalComparisonAfterRanking": "先依10/15新訊號完成獨立候選與排名，再對照10/14歷史稿；重複出現的公司不等於自動保留，入池理由與缺口另列。"
+}
