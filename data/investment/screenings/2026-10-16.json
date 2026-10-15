@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-16",
+  "selectionMode": "industry",
+  "sourcePosts": [
+    "daily-world-2026-10-16",
+    "daily-finance-2026-10-16",
+    "daily-ai-2026-10-16",
+    "daily-semiconductor-2026-10-16",
+    "daily-software-2026-10-16",
+    "daily-capital-flows-2026-10-16"
+  ],
+  "beliefPosts": [
+    "huggingface-agent-civilization"
+  ],
+  "signals": [
+    {
+      "id": "foundry",
+      "post": "daily-semiconductor-2026-10-16",
+      "claim": "10/15 台積電正式公布第三季淨利約7631億元、年增約69%，證明代工供應鏈有實際獲利，但仍須核實未來擴產現金流。",
+      "sourceUrls": [
+        "https://www.reuters.com/world/asia-pacific/tsmc-q3-profit-jumps-69-record-beating-expectations-2026-10-15/",
+        "https://investor.tsmc.com/english/quarterly-results/2026/q3"
+      ]
+    },
+    {
+      "id": "finance",
+      "post": "daily-finance-2026-10-16",
+      "claim": "美國九月消費物價年增3.7%，市場重新估算高資本支出事業的資金成本。",
+      "sourceUrls": [
+        "https://www.bls.gov/news.release/archives/cpi_10142026.htm"
+      ]
+    },
+    {
+      "id": "security",
+      "post": "daily-software-2026-10-16",
+      "claim": "10/15 GitHub 公告 AI 弱點掃描及代理修補正式可用，企業資安工具需求可能上升，但不等於個別台灣廠商立即新增營收。",
+      "sourceUrls": [
+        "https://github.blog/changelog/month/10-2026/"
+      ]
+    },
+    {
+      "id": "market",
+      "post": "daily-capital-flows-2026-10-16",
+      "claim": "06:42 補採全球及台灣大型企業市值下降，屬晚到觀測，不等於05:00已知或實際基金淨流。",
+      "sourceUrls": [
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-16.json"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "tsmc",
+      "company": "台積電",
+      "ticker": "2330",
+      "market": "TWSE",
+      "valueLayer": "先進晶圓代工與封裝",
+      "signalIds": [
+        "foundry",
+        "finance"
+      ],
+      "disposition": "watch",
+      "reason": "季度淨利已核實且需求有實績，但海外擴產及資本成本對未來股東現金流仍需正式逐年資料。",
+      "missingValuationReason": "10/15 官方收盤2440元，缺同口徑未來 EPS、自由現金流、成長資本支出與折現率的三情境可驗證組合。"
+    },
+    {
+      "id": "ase",
+      "company": "日月光投控",
+      "ticker": "3711",
+      "market": "TWSE",
+      "valueLayer": "先進封裝與測試服務",
+      "signalIds": [
+        "foundry",
+        "market"
+      ],
+      "disposition": "watch",
+      "reason": "晶圓業績支持封裝需求研究，但未核對公司獨立訂單及新增毛利，不能直接轉移台積電成長率。",
+      "missingValuationReason": "缺同日官方收盤、分部利潤、資本支出與正式三情境模型。"
+    },
+    {
+      "id": "gigabyte",
+      "company": "技嘉",
+      "ticker": "2376",
+      "market": "TWSE",
+      "valueLayer": "伺服器與系統組裝",
+      "signalIds": [
+        "foundry",
+        "finance"
+      ],
+      "disposition": "rejected",
+      "reason": "晶片需求不自動證明組裝廠獲得相同比例增量利潤；高營運資金和客戶議價須核對。",
+      "missingValuationReason": "缺同日價格、可歸屬 AI 系統收入、毛利、自由現金流與可比估值。"
+    },
+    {
+      "id": "acsi",
+      "company": "安碁資訊",
+      "ticker": "6690",
+      "market": "TPEx",
+      "valueLayer": "資安及企業監控服務",
+      "signalIds": [
+        "security",
+        "finance"
+      ],
+      "disposition": "rejected",
+      "reason": "GitHub 自有工具正式發布並不證明台灣資安公司新增客戶；缺正式合約與分部增量獲利。",
+      "missingValuationReason": "缺同日官方上櫃報價、相關合約收入與三情境估值輸入。"
+    }
+  ],
+  "rankedIds": [
+    "tsmc",
+    "ase",
+    "gigabyte",
+    "acsi"
+  ],
+  "industryReason": "由正式季報、資金成本及官方資安新功能獨立建立四家跨三價值層候選；未取得公司未來可驗證 EPS/FCF 與同口徑完整估值，僅列產業觀察，不虛構便宜價格。",
+  "watchCompanies": [
+    "台積電（2330）",
+    "日月光投控（3711）"
+  ],
+  "historicalComparisonAfterRanking": "排名完成後才回看前日觀察股；本日沒有因昨日入選而自動續留。"
+}
