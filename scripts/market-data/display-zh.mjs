@@ -18,6 +18,7 @@ export const COMPANY_NAME_ZH = Object.freeze({
   "Micron Technology":"美光科技",
   "Berkshire Hathaway":"波克夏",
   "Eli Lilly":"禮來",
+  "Home Depot":"家得寶",
   "Philip Morris International":"菲利普莫里斯國際",
   "AMD":"超微（AMD）",
   "SK Hynix":"SK 海力士",
