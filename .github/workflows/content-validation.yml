@@ -28,4 +28,6 @@ jobs:
       - run: npm run validate:investment
       - run: npm run test:market
       - run: npm run validate:language
+      - run: npm run test:entry
+      - run: npm run validate:entry
       - run: npm run build

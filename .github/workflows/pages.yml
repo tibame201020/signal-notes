@@ -42,6 +42,12 @@ jobs:
       - name: Validate Traditional Chinese editorial language
         run: npm run validate:language
 
+      - name: Test Taiwan stock entry screening
+        run: npm run test:entry
+
+      - name: Validate Taiwan stock entry data
+        run: npm run validate:entry
+
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5

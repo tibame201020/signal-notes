@@ -14,6 +14,7 @@ const topics = [
   {slug: 'semiconductor', name: '半導體', scope: '先進製程・封裝・記憶體', detail: '追蹤供應鏈瓶頸、擴產、客戶驗證與各地製造布局。'},
   {slug: 'software', name: '軟體工程', scope: '開源・代理系統・開發基礎設施', detail: '理解 AI 代理系統 如何改變 GitHub、開發流程、工具與系統架構。'},
   {slug: 'capital-flows', name: '金流與估值', scope: '市值・資金分布・主權債', detail: '用跨日圖表比較企業市值、產業占比與各國十年債變化。'},
+  {slug: 'stock-prices', name: '台股買入價篩選', scope: '成交額・基本面・買入觀察區間', detail: '用已收盤行情、成交額及波動方法推導可驗算的台股買入觀察價格。'},
 ];
 
 const latestFor = (tag: string) => daily.find(post => post.data.tags.some(item => item.slug === tag));
@@ -88,7 +89,7 @@ const latestInvestmentDate = investmentPosts.length ? investmentPosts[0].data.pu
       <div>
         <p class="home-overline">02 / 每日前沿</p>
         <h2 id="daily-heading">每日前沿</h2>
-        <p class="home-section-lede">六個固定觀察領域。每格顯示本期關注的問題與更新日期；點擊進入當期分析。</p>
+        <p class="home-section-lede">七個固定觀察領域。每格顯示本期關注的問題與更新日期；點擊進入當期分析。</p>
       </div>
       <a href={withBase('/categories/daily-digest/')}>查看歷期文章 →</a>
     </div>

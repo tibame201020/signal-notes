@@ -7,7 +7,7 @@ const postsDir = path.join(root, 'src/content/posts');
 const failures = [];
 const since = '2026-10-10';
 const dirs = fs.readdirSync(postsDir).filter(n =>
-  /^(?:daily-(?:world|finance|ai|semiconductor|software|capital-flows)|investment-(?:companies|skills))-\d{4}-\d{2}-\d{2}$/.test(n) &&
+  /^(?:daily-(?:world|finance|ai|semiconductor|software|capital-flows|stock-prices)|investment-(?:companies|skills))-\d{4}-\d{2}-\d{2}$/.test(n) &&
   n.slice(-10) >= since
 );
 const field = (yaml, name) => yaml.match(new RegExp('^' + name + ':\\s*"?([^"\\n]+)"?', 'm'))?.[1]?.trim() ?? '';
