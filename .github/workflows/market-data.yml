@@ -4,6 +4,8 @@ on:
   schedule:
     # 04:20 Asia/Taipei = 20:20 UTC (previous calendar day).
     - cron: "20 20 * * *"
+    # 04:45 backup; skip when the Taipei-date snapshot already exists.
+    - cron: "45 20 * * *"
   workflow_dispatch:
   # A workflow-file push permits a GitHub-only recovery trigger if a scheduled event is missed.
   push:
@@ -32,15 +34,29 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Check Taipei-date snapshot
+        id: freshness
+        run: |
+          day=$(TZ=Asia/Taipei date +%F)
+          if [ -s "data/market/snapshots/${day}.json" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Taipei-date snapshot already exists: ${day}"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Collect fixed market data
+        if: steps.freshness.outputs.skip != 'true'
         run: node scripts/market-data/collect.mjs
 
       - name: Validate snapshot
+        if: steps.freshness.outputs.skip != 'true'
         run: |
           test -s data/market/latest.json
           node -e 'const d=require("./data/market/latest.json"); if(d.market_cap.global_top50.rows.length!==50) process.exit(1); if(d.market_cap.taiwan_top20.rows.length!==20) process.exit(1); if(Object.keys(d.sovereign_10y).length<6) process.exit(1);'
 
       - name: Commit snapshot
+        if: steps.freshness.outputs.skip != 'true'
         run: |
           if [ -z "$(git status --porcelain -- data/market)" ]; then
             echo "No market data changes."
