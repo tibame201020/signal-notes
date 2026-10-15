@@ -1,0 +1,139 @@
+{
+  "date": "2026-10-14",
+  "selectionMode": "industry",
+  "sourcePosts": [
+    "daily-world-2026-10-14",
+    "daily-finance-2026-10-14",
+    "daily-ai-2026-10-14",
+    "daily-semiconductor-2026-10-14",
+    "daily-software-2026-10-14",
+    "daily-capital-flows-2026-10-14"
+  ],
+  "beliefPosts": [
+    "huggingface-agent-civilization"
+  ],
+  "signals": [
+    {
+      "id": "energy",
+      "post": "daily-world-2026-10-14",
+      "claim": "截至十月十二日已確認的歐洲天然氣供應與價格壓力，可能影響能源效率投資，尚非個別公司新合約。",
+      "sourceUrls": [
+        "https://www.reuters.com/business/energy/europe-set-another-year-high-gas-prices-reserves-hit-lows-2026-10-12/"
+      ]
+    },
+    {
+      "id": "yield",
+      "post": "daily-finance-2026-10-14",
+      "claim": "十月十三日快照澳洲十年債殖利率百分之五點三零二，美國百分之五點一九一；長債利率到企業融資有時滯。",
+      "sourceUrls": [
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-13.json",
+        "https://www.rba.gov.au/publications/fsr/2026/mar/the-global-macro-financial-environment.html"
+      ]
+    },
+    {
+      "id": "deployment",
+      "post": "daily-ai-2026-10-14",
+      "claim": "十月十三日官方模型更新展現部署競爭，模型採用需經單位任務成本與企業付款驗證。",
+      "sourceUrls": [
+        "https://gemini.google/release-notes/"
+      ]
+    },
+    {
+      "id": "chip",
+      "post": "daily-semiconductor-2026-10-14",
+      "claim": "十月十三日記憶體競爭消息引發估值修正，消息不等於量產；台積電九月營收已正式揭露。",
+      "sourceUrls": [
+        "https://www.reuters.com/world/china/us-chip-stocks-extend-slide-china-memory-report-ai-spending-jitters-hit-sector-2026-10-13/",
+        "https://pr.cld.tsmc.com/english/news/3343"
+      ]
+    },
+    {
+      "id": "permissions",
+      "post": "daily-software-2026-10-14",
+      "claim": "十月十三日 GitHub 公告更細權限管理；工具變動不等於台灣軟體業者已新增訂單。",
+      "sourceUrls": [
+        "https://github.blog/changelog/2026-10-13-github-app-improvements-for-least-privilege-and-management/"
+      ]
+    },
+    {
+      "id": "reprice",
+      "post": "daily-capital-flows-2026-10-14",
+      "claim": "十月十三日已可用採集版全球前五十大市值總額低於十月十二日；市值變動不是實際資金淨流。",
+      "sourceUrls": [
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-13.json",
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-12.json"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "tsmc",
+      "company": "台積電",
+      "ticker": "2330",
+      "market": "TWSE",
+      "valueLayer": "先進晶圓製程及封裝",
+      "signalIds": [
+        "chip",
+        "reprice"
+      ],
+      "disposition": "watch",
+      "reason": "九月營收可核實；美國半導體估值修正不代表台積電增量自由現金流同幅變動。",
+      "missingValuationReason": "官方十月十三日收盤為新台幣二四九零元，但截稿時第三季正式獲利、下一年度每股盈餘、自由現金流及可比估值尚不足以建立三情境合理股價。"
+    },
+    {
+      "id": "delta",
+      "company": "台達電",
+      "ticker": "2308",
+      "market": "TWSE",
+      "valueLayer": "電力轉換與能源效率設備",
+      "signalIds": [
+        "energy",
+        "yield"
+      ],
+      "disposition": "watch",
+      "reason": "能源成本和融資成本可能提高效率設備價值，但當期新增客戶訂單和分部增量利潤未核實。",
+      "missingValuationReason": "可核實十月十三日官方收盤新台幣一七七五元，但缺分部現金流、資本支出與可比估值，未建立三情境合理價。"
+    },
+    {
+      "id": "nanya",
+      "company": "南亞科技",
+      "ticker": "2408",
+      "market": "TWSE",
+      "valueLayer": "記憶體製造",
+      "signalIds": [
+        "chip",
+        "reprice"
+      ],
+      "disposition": "rejected",
+      "reason": "記憶體競爭消息的量產及售價傳導尚待確認，未見能支撐增量獲利的當日新資料。",
+      "missingValuationReason": "缺截稿前同口徑官方收盤、當期自由現金流、平均售價與保守情境基準。"
+    },
+    {
+      "id": "mediatek",
+      "company": "聯發科",
+      "ticker": "2454",
+      "market": "TWSE",
+      "valueLayer": "晶片設計與運算平台",
+      "signalIds": [
+        "deployment",
+        "chip"
+      ],
+      "disposition": "rejected",
+      "reason": "模型發布並不直接證明特定晶片設計公司的新增出貨、權利金或獲利。",
+      "missingValuationReason": "缺符合本時點的官方收盤、可比預估獲利與產品營收歸屬。"
+    }
+  ],
+  "rankedIds": [
+    "tsmc",
+    "delta",
+    "nanya",
+    "mediatek"
+  ],
+  "industryReason": "四家橫跨晶圓代工、電力、記憶體和晶片設計；當日訊號及部分價格可追溯，但缺可交叉核實且可重算的增量獲利和保守／基準／樂觀價格組合，所以只發布產業與具名觀察，不宣稱低估。",
+  "watchCompanies": [
+    "台積電（2330）",
+    "台達電（2308）"
+  ],
+  "historicalComparisonAfterRanking": "先依本日六篇完成候選與排序，昨日文章不是本次入池依據。",
+  "valuationApproach": "有官方日收盤不等於可以直接推三情境內在價；需正式獲利、資本支出、自由現金流、適當同業倍數和假設。"
+}
