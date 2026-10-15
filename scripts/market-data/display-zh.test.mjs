@@ -6,6 +6,7 @@ test("原始公司與產業識別碼保留，顯示名稱轉繁體中文", () =>
   assert.equal(displayCompanyName("TSMC"),"台積電");
   assert.equal(displayCompanyName("Foxconn (Hon Hai Precision Industry)"),"鴻海");
   assert.equal(displayCompanyName("NVIDIA"),"輝達（NVIDIA）");
+  assert.equal(displayCompanyName("Philip Morris International"),"菲利普莫里斯國際");
   assert.equal(displaySectorName("Semiconductors"),"半導體");
   assert.equal(displaySectorName("Electronics/Hardware"),"電子與硬體");
   assert.throws(()=>displaySectorName("Unknown"),/未建立中文/);
