@@ -3,7 +3,7 @@ import path from 'node:path';
 export const average = xs => xs.reduce((a,b)=>a+b,0)/xs.length;
 export function checkScreening(s){
  const e=[];const err=m=>e.push(m);
- if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(s.date||'')||!s.cutoffAt)err('日期／截稿缺漏');
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(s.date||'')||!s.cutoffAt)err('日期／截稿缺漏');
  if(s.liquidityRule?.minPreviousTurnoverTwd!==100000000||s.liquidityRule?.minAverage20DayTurnoverTwd!==100000000)err('成交額門檻不同');
  if(!Array.isArray(s.candidates)||!s.candidates.length)err('候選缺漏');
  const seen=new Set();
@@ -24,6 +24,6 @@ export function checkScreening(s){
 const direct=process.argv[1]&&path.resolve(process.argv[1])===path.resolve(new URL(import.meta.url).pathname);
 if(direct){
  const root=process.cwd(),base='data/investment/entry-screenings',dir='src/content/posts',fail=[];
- for(const name of fs.readdirSync(dir).filter(n=>/^daily-stock-prices-\\d{4}-\\d{2}-\\d{2}$/.test(n))){const d=name.slice(-10),f=path.join(base,d+'.json');if(!fs.existsSync(f)){fail.push(d+' 缺研究資料');continue;}const s=JSON.parse(fs.readFileSync(f,'utf8'));fail.push(...checkScreening(s).map(e=>d+': '+e));const md=fs.readFileSync(path.join(dir,name,'index.md'),'utf8');if(s.date!==d||!md.includes('slug: "daily-stock-prices-'+d+'"'))fail.push(d+' 文章／研究日期不符');}
- if(fail.length){console.error(fail.join('\\n'));process.exitCode=1;}else console.log('PASS: 台股買入價研究資料與價位計算可重算。');
+ for(const name of fs.readdirSync(dir).filter(n=>/^daily-stock-prices-\d{4}-\d{2}-\d{2}$/.test(n))){const d=name.slice(-10),f=path.join(base,d+'.json');if(!fs.existsSync(f)){fail.push(d+' 缺研究資料');continue;}const s=JSON.parse(fs.readFileSync(f,'utf8'));fail.push(...checkScreening(s).map(e=>d+': '+e));const md=fs.readFileSync(path.join(dir,name,'index.md'),'utf8');if(s.date!==d||!md.includes('slug: "daily-stock-prices-'+d+'"'))fail.push(d+' 文章／研究日期不符');}
+ if(fail.length){console.error(fail.join('\n'));process.exitCode=1;}else console.log('PASS: 台股買入價研究資料與價位計算可重算。');
 }
