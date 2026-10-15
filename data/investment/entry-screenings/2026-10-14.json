@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-14",
+  "cutoffAt": "2026-10-13T21:00:00Z",
+  "publishedAsBackfill": true,
+  "actualBackfillDate": "2026-10-15",
+  "marketObservationDate": "2026-10-13",
+  "quoteCurrency": "TWD",
+  "sourceUrls": [
+    "https://www.twse.com.tw/exchangeReport/STOCK_DAY?date=20260918&response=html&stockNo=2330",
+    "https://www.twse.com.tw/exchangeReport/STOCK_DAY?date=20261013&response=html&stockNo=2330",
+    "https://www.twse.com.tw/exchangeReport/STOCK_DAY?date=20261013&response=html&stockNo=2308",
+    "https://pr.cld.tsmc.com/english/news/3343"
+  ],
+  "liquidityRule": {
+    "minPreviousTurnoverTwd": 100000000,
+    "minAverage20DayTurnoverTwd": 100000000
+  },
+  "universeLimitation": "此期補刊只取得台積電完整可核實二十日成交資訊；未宣稱全市場系統性排名，其餘為資料不足待查，不以未知資料填補樣本。",
+  "candidates": [
+    {
+      "id": "2330",
+      "company": "台積電",
+      "ticker": "2330",
+      "market": "TWSE",
+      "disposition": "formal-watch",
+      "previous": {
+        "date": "2026-10-13",
+        "closeTwd": 2490,
+        "volumeShares": 40796261,
+        "turnoverTwd": 101920437251
+      },
+      "turnover20": {
+        "dates": [
+          "2026-09-10",
+          "2026-09-11",
+          "2026-09-14",
+          "2026-09-15",
+          "2026-09-16",
+          "2026-09-17",
+          "2026-09-18",
+          "2026-09-21",
+          "2026-09-22",
+          "2026-09-23",
+          "2026-09-24",
+          "2026-09-29",
+          "2026-10-01",
+          "2026-10-02",
+          "2026-10-05",
+          "2026-10-06",
+          "2026-10-07",
+          "2026-10-08",
+          "2026-10-12",
+          "2026-10-13"
+        ],
+        "turnoverTwd": [
+          48523945987,
+          51050141409,
+          51353895701,
+          36376152215,
+          49812874845,
+          43933226530,
+          100394074139,
+          39772729100,
+          54678491997,
+          56893530280,
+          36107476243,
+          66658833984,
+          51702445610,
+          39508159297,
+          68799148330,
+          53639152613,
+          43643595922,
+          59167379273,
+          59600136896,
+          101920437251
+        ],
+        "averageTwd": 55676791381.1
+      },
+      "close20": {
+        "valuesTwd": [
+          2450,
+          2410,
+          2380,
+          2385,
+          2380,
+          2425,
+          2460,
+          2480,
+          2460,
+          2500,
+          2475,
+          2475,
+          2510,
+          2500,
+          2575,
+          2585,
+          2585,
+          2550,
+          2540,
+          2490
+        ],
+        "averageTwd": 2480.75
+      },
+      "atr14": {
+        "method": "十四期真實波幅之簡單平均",
+        "twd": 37.5,
+        "valuesTwd": [
+          35,
+          40,
+          50,
+          45,
+          30,
+          20,
+          35,
+          20,
+          80,
+          25,
+          25,
+          35,
+          40,
+          50
+        ]
+      },
+      "entryBandTwd": {
+        "low": 2395,
+        "high": 2435,
+        "rule": "昨日收盤價減 2.5 至 1.5 倍 ATR14，按台股適用價格級距取整",
+        "discountPctLow": 2.208835341365462,
+        "discountPctHigh": 3.815261044176707,
+        "alreadyReachedAtPreviousClose": false
+      },
+      "fundamentalValuation": {
+        "status": "missing",
+        "reason": "截稿前尚未公布 2026 年第三季季報；不能用尚未揭露的 EPS／自由現金流構造保守／基準／樂觀內在價。"
+      },
+      "triggerWindow": "次一至三個有效交易日僅供情境觀察",
+      "invalidation": "新財報或現金流變動、連續跌破區間且量增、或 ATR regime 顯著變動需重算",
+      "sourceUrls": [
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?date=20260918&response=html&stockNo=2330",
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?date=20261013&response=html&stockNo=2330"
+      ]
+    },
+    {
+      "id": "2308",
+      "company": "台達電",
+      "ticker": "2308",
+      "market": "TWSE",
+      "disposition": "pending-data",
+      "previous": {
+        "date": "2026-10-13",
+        "closeTwd": 1775,
+        "volumeShares": 15203082,
+        "turnoverTwd": 27348706390
+      },
+      "missingDataReason": "二十有效交易日完整官方成交金額未取得，不能正式通過流動性與波幅門檻。",
+      "sourceUrls": [
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?date=20261013&response=html&stockNo=2308"
+      ]
+    }
+  ],
+  "qualifiedIds": [
+    "2330"
+  ],
+  "alreadyReachedIds": [],
+  "pendingTouchIds": [
+    "2330"
+  ]
+}
