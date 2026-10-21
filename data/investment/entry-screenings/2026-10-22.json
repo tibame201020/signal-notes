@@ -1,0 +1,138 @@
+{
+  "date": "2026-10-22",
+  "cutoffAt": "2026-10-21T21:00:00.000Z",
+  "marketObservationDate": "2026-10-21",
+  "quoteCurrency": "TWD",
+  "sourceObservations": [
+    {
+      "source": "TWSE",
+      "observationDate": "2026-10-21",
+      "collectedAt": null,
+      "status": "unverified"
+    },
+    {
+      "source": "美國、日本、韓國已收市行情",
+      "observationDate": "2026-10-21",
+      "collectedAt": null,
+      "status": "unverified"
+    }
+  ],
+  "liquidityRule": {
+    "minPreviousTurnoverTwd": 100000000,
+    "minAverage20DayTurnoverTwd": 100000000
+  },
+  "formula": {
+    "ma20": "二十個有效交易日官方收盤簡單平均",
+    "atr14": "十四期真實波幅平均",
+    "provisionalBand": "前收減去 2.5 至 1.5 倍 ATR14，依報價級距調整",
+    "result": null
+  },
+  "universeLimitation": "以本日輝達正式供應商公告衍生跨供電、組裝、晶圓候選；官方全市場 OHLCV 與連續二十日成交額未取得，非全市場完成排序。",
+  "crossMarket": "美日韓十月二十一日交易日理論上已收市，但未取得可稽核正式收盤與採集時分，不填方向與漲跌；風險偏好、半導體需求、匯率與資金成本僅列待驗證傳導。",
+  "candidates": [
+    {
+      "id": "2308",
+      "ticker": "2308",
+      "company": "台達電",
+      "market": "TWSE",
+      "disposition": "pending-data",
+      "previous": {
+        "date": "2026-10-21"
+      },
+      "missingDataReason": "未取得 10/21 官方開高低收、股數、成交額、二十日成交額、十四期真實波幅及同時點估值；流動性不視為通過。",
+      "sourceUrls": [
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?date=20261021&response=html&stockNo=2308"
+      ]
+    },
+    {
+      "id": "2317",
+      "ticker": "2317",
+      "company": "鴻海",
+      "market": "TWSE",
+      "disposition": "pending-data",
+      "previous": {
+        "date": "2026-10-21"
+      },
+      "missingDataReason": "未取得 10/21 官方開高低收、股數、成交額、二十日成交額、十四期真實波幅及同時點估值；流動性不視為通過。",
+      "sourceUrls": [
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?date=20261021&response=html&stockNo=2317"
+      ]
+    },
+    {
+      "id": "2382",
+      "ticker": "2382",
+      "company": "廣達",
+      "market": "TWSE",
+      "disposition": "pending-data",
+      "previous": {
+        "date": "2026-10-21"
+      },
+      "missingDataReason": "未取得 10/21 官方開高低收、股數、成交額、二十日成交額、十四期真實波幅及同時點估值；流動性不視為通過。",
+      "sourceUrls": [
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?date=20261021&response=html&stockNo=2382"
+      ]
+    },
+    {
+      "id": "3231",
+      "ticker": "3231",
+      "company": "緯創",
+      "market": "TWSE",
+      "disposition": "pending-data",
+      "previous": {
+        "date": "2026-10-21"
+      },
+      "missingDataReason": "未取得 10/21 官方開高低收、股數、成交額、二十日成交額、十四期真實波幅及同時點估值；流動性不視為通過。",
+      "sourceUrls": [
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?date=20261021&response=html&stockNo=3231"
+      ]
+    },
+    {
+      "id": "2376",
+      "ticker": "2376",
+      "company": "技嘉",
+      "market": "TWSE",
+      "disposition": "pending-data",
+      "previous": {
+        "date": "2026-10-21"
+      },
+      "missingDataReason": "未取得 10/21 官方開高低收、股數、成交額、二十日成交額、十四期真實波幅及同時點估值；流動性不視為通過。",
+      "sourceUrls": [
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?date=20261021&response=html&stockNo=2376"
+      ]
+    },
+    {
+      "id": "4938",
+      "ticker": "4938",
+      "company": "和碩",
+      "market": "TWSE",
+      "disposition": "pending-data",
+      "previous": {
+        "date": "2026-10-21"
+      },
+      "missingDataReason": "未取得 10/21 官方開高低收、股數、成交額、二十日成交額、十四期真實波幅及同時點估值；流動性不視為通過。",
+      "sourceUrls": [
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?date=20261021&response=html&stockNo=4938"
+      ]
+    },
+    {
+      "id": "2330",
+      "ticker": "2330",
+      "company": "台積電",
+      "market": "TWSE",
+      "disposition": "pending-data",
+      "previous": {
+        "date": "2026-10-21"
+      },
+      "missingDataReason": "未取得 10/21 官方開高低收、股數、成交額、二十日成交額、十四期真實波幅及同時點估值；流動性不視為通過。",
+      "sourceUrls": [
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?date=20261021&response=html&stockNo=2330"
+      ]
+    }
+  ],
+  "qualifiedIds": [],
+  "alreadyReachedIds": [],
+  "pendingTouchIds": [],
+  "excludedReasons": [
+    "未取得完整官方母體及連續二十交易日資料，所有候選暫不具正式入選資格。"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-22",
+  "selectionMode": "industry",
+  "sourcePosts": [
+    "daily-world-2026-10-22",
+    "daily-finance-2026-10-22",
+    "daily-ai-2026-10-22",
+    "daily-semiconductor-2026-10-22",
+    "daily-software-2026-10-22",
+    "daily-capital-flows-2026-10-22"
+  ],
+  "beliefPosts": [
+    "huggingface-agent-civilization"
+  ],
+  "signals": [
+    {
+      "id": "a",
+      "post": "daily-ai-2026-10-22",
+      "claim": "輝達十月二十一日公布模組化算力設計及合作夥伴。",
+      "sourceUrls": [
+        "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment"
+      ]
+    },
+    {
+      "id": "s",
+      "post": "daily-semiconductor-2026-10-22",
+      "claim": "台積電十月十五日公布正式季度財報，作為製造端已實現營運基準。",
+      "sourceUrls": [
+        "https://investor.tsmc.com/english/quarterly-results/2026/q3"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "delta",
+      "company": "台達電",
+      "ticker": "2308",
+      "market": "TWSE",
+      "valueLayer": "供電與液冷",
+      "signalIds": [
+        "a",
+        "s"
+      ],
+      "disposition": "watch",
+      "reason": "由當日官方需求證據納入；未核實個別增量毛利與市場估值。",
+      "missingValuationReason": "缺截止前官方同步收盤、年度 EPS、自由現金流及折現輸入，不編造合理價。"
+    },
+    {
+      "id": "foxconn",
+      "company": "鴻海",
+      "ticker": "2317",
+      "market": "TWSE",
+      "valueLayer": "系統整合",
+      "signalIds": [
+        "a",
+        "s"
+      ],
+      "disposition": "watch",
+      "reason": "由當日官方需求證據納入；未核實個別增量毛利與市場估值。",
+      "missingValuationReason": "缺截止前官方同步收盤、年度 EPS、自由現金流及折現輸入，不編造合理價。"
+    },
+    {
+      "id": "quanta",
+      "company": "廣達",
+      "ticker": "2382",
+      "market": "TWSE",
+      "valueLayer": "伺服器製造",
+      "signalIds": [
+        "a",
+        "s"
+      ],
+      "disposition": "rejected",
+      "reason": "由當日官方需求證據納入；未核實個別增量毛利與市場估值。",
+      "missingValuationReason": "缺截止前官方同步收盤、年度 EPS、自由現金流及折現輸入，不編造合理價。"
+    },
+    {
+      "id": "tsmc",
+      "company": "台積電",
+      "ticker": "2330",
+      "market": "TWSE",
+      "valueLayer": "晶圓製造",
+      "signalIds": [
+        "a",
+        "s"
+      ],
+      "disposition": "rejected",
+      "reason": "由當日官方需求證據納入；未核實個別增量毛利與市場估值。",
+      "missingValuationReason": "缺截止前官方同步收盤、年度 EPS、自由現金流及折現輸入，不編造合理價。"
+    }
+  ],
+  "rankedIds": [
+    "delta",
+    "foxconn",
+    "quanta",
+    "tsmc"
+  ],
+  "industryReason": "先依當日六篇前沿與正式供應商名單排序；估值缺口使本期僅保留產業觀察。",
+  "watchCompanies": [
+    "台達電（2308）",
+    "鴻海（2317）"
+  ]
+}
