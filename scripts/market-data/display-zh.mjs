@@ -74,6 +74,7 @@ export const COMPANY_NAME_ZH = Object.freeze({
   "Global Unichip Corp.":"創意電子",
   "Formosa Petrochemical":"台塑石化",
   "Taishin Financial Holdings":"台新金控",
+  "Yuanta Financial Holding":"元大金控",
   "Foxconn":"鴻海",
   "UMC":"聯華電子"
 });
