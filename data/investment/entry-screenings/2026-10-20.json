@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-20",
+  "cutoffAt": "2026-10-19T21:00:00.000Z",
+  "actualBackfillDate": "2026-10-21",
+  "publishedAsBackfill": true,
+  "marketObservationDate": "2026-10-19",
+  "quoteCurrency": "TWD",
+  "sourceUrls": [
+    "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=html&stockNo=2330",
+    "https://www.tpex.org.tw/",
+    "https://www.reuters.com/world/china/global-markets-global-markets-2026-10-19/"
+  ],
+  "liquidityRule": {
+    "minPreviousTurnoverTwd": 100000000,
+    "minAverage20DayTurnoverTwd": 100000000
+  },
+  "universeLimitation": "四家跨價值鏈初步研究候選缺完整可驗算官方二十交易日資料及估值；非全市場正式排序，不以美元市值代替新台幣成交額。",
+  "crossMarket": "算力出租企業的股權價格與公司債殖利率可以呈現不同走勢；須查看債務到期與利息保障倍數，不能只憑科技股指數研判資本回收。 只可用當日 05:00 前已正式收盤的市場數據；未獲核實不填指數點數。",
+  "candidates": [
+    {
+      "id": "2330",
+      "ticker": "2330",
+      "company": "台積電",
+      "market": "TWSE",
+      "disposition": "pending-data",
+      "previous": {
+        "date": "2026-10-19"
+      },
+      "missingDataReason": "缺 2026-10-19 完整官方開高低收、成交額、有效二十日成交額與收盤、十四期真實波幅和同步 EPS／FCF，不編造買價。",
+      "sourceUrls": [
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=html&stockNo=2330"
+      ]
+    },
+    {
+      "id": "3711",
+      "ticker": "3711",
+      "company": "日月光投控",
+      "market": "TWSE",
+      "disposition": "pending-data",
+      "previous": {
+        "date": "2026-10-19"
+      },
+      "missingDataReason": "缺 2026-10-19 完整官方開高低收、成交額、有效二十日成交額與收盤、十四期真實波幅和同步 EPS／FCF，不編造買價。",
+      "sourceUrls": [
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=html&stockNo=3711"
+      ]
+    },
+    {
+      "id": "2308",
+      "ticker": "2308",
+      "company": "台達電",
+      "market": "TWSE",
+      "disposition": "pending-data",
+      "previous": {
+        "date": "2026-10-19"
+      },
+      "missingDataReason": "缺 2026-10-19 完整官方開高低收、成交額、有效二十日成交額與收盤、十四期真實波幅和同步 EPS／FCF，不編造買價。",
+      "sourceUrls": [
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=html&stockNo=2308"
+      ]
+    },
+    {
+      "id": "2376",
+      "ticker": "2376",
+      "company": "技嘉",
+      "market": "TWSE",
+      "disposition": "pending-data",
+      "previous": {
+        "date": "2026-10-19"
+      },
+      "missingDataReason": "缺 2026-10-19 完整官方開高低收、成交額、有效二十日成交額與收盤、十四期真實波幅和同步 EPS／FCF，不編造買價。",
+      "sourceUrls": [
+        "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=html&stockNo=2376"
+      ]
+    }
+  ],
+  "qualifiedIds": [],
+  "alreadyReachedIds": [],
+  "pendingTouchIds": []
+}

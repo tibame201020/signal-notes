@@ -1,0 +1,136 @@
+{
+  "date": "2026-10-18",
+  "selectionMode": "industry",
+  "sourcePosts": [
+    "daily-world-2026-10-18",
+    "daily-finance-2026-10-18",
+    "daily-ai-2026-10-18",
+    "daily-semiconductor-2026-10-18",
+    "daily-software-2026-10-18",
+    "daily-capital-flows-2026-10-18"
+  ],
+  "beliefPosts": [
+    "huggingface-agent-civilization"
+  ],
+  "signals": [
+    {
+      "id": "semiconductor",
+      "post": "daily-semiconductor-2026-10-18",
+      "claim": "週末並無正常台股收盤，應檢驗先進製程季度財報、記憶體供需、封裝交貨及設備資本支出的各自資料來源日。",
+      "sourceUrls": [
+        "https://investor.tsmc.com/english/quarterly-results/2026/q3",
+        "https://www.reuters.com/world/china/delegates-walked-out-imf-steering-committee-meeting-when-russian-official-spoke-2026-10-17/"
+      ]
+    },
+    {
+      "id": "finance",
+      "post": "daily-finance-2026-10-18",
+      "claim": "休市期間應將上週高槓桿算力公司的股債風險與正式業績並列；重複市值不代表週末出現真實現金進出。",
+      "sourceUrls": [
+        "https://www.reuters.com/world/china/delegates-walked-out-imf-steering-committee-meeting-when-russian-official-spoke-2026-10-17/",
+        "https://www.reuters.com/world/china/anthropics-clark-says-ais-impact-accelerating-quickly-could-vastly-boost-us-gdp-2026-10-17/"
+      ]
+    },
+    {
+      "id": "software",
+      "post": "daily-software-2026-10-18",
+      "claim": "開源授權合規正式可用不代表企業已消除法律及供應鏈風險；需記錄套件來源、授權例外、審核和部署產物。",
+      "sourceUrls": [
+        "https://github.blog/changelog/2026-10-16-open-source-license-compliance-generally-available/"
+      ]
+    },
+    {
+      "id": "capital",
+      "post": "daily-capital-flows-2026-10-18",
+      "claim": "同時點大型企業市值合計差額不能代表基金現金淨流量。",
+      "sourceUrls": [
+        "https://github.com/tibame201020/signal-notes/blob/main/data/market/snapshots/2026-10-18.json"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "tsmc",
+      "company": "台積電",
+      "ticker": "2330",
+      "market": "TWSE",
+      "valueLayer": "晶圓代工與先進封裝",
+      "signalIds": [
+        "semiconductor",
+        "finance"
+      ],
+      "disposition": "watch",
+      "reason": "季度獲利有原始財報支持；未來擴產現金流與股價安全邊際待核實。",
+      "missingValuationReason": "缺原訂截止時點正式同口徑收盤、各年 EPS／自由現金流、股數、資本支出及折現率，無法產生可驗算三情境合理價。"
+    },
+    {
+      "id": "ase",
+      "company": "日月光投控",
+      "ticker": "3711",
+      "market": "TWSE",
+      "valueLayer": "封裝測試",
+      "signalIds": [
+        "semiconductor",
+        "capital"
+      ],
+      "disposition": "watch",
+      "reason": "封裝可能受惠需求，但不能直接套用代工廠獲利，需個別訂單及毛利。",
+      "missingValuationReason": "缺原訂截止時點正式同口徑收盤、各年 EPS／自由現金流、股數、資本支出及折現率，無法產生可驗算三情境合理價。"
+    },
+    {
+      "id": "delta",
+      "company": "台達電",
+      "ticker": "2308",
+      "market": "TWSE",
+      "valueLayer": "資料中心供電與散熱",
+      "signalIds": [
+        "semiconductor",
+        "finance"
+      ],
+      "disposition": "rejected",
+      "reason": "機房需求不等於分部高毛利和實際自由現金流已核實。",
+      "missingValuationReason": "缺原訂截止時點正式同口徑收盤、各年 EPS／自由現金流、股數、資本支出及折現率，無法產生可驗算三情境合理價。"
+    },
+    {
+      "id": "gigabyte",
+      "company": "技嘉",
+      "ticker": "2376",
+      "market": "TWSE",
+      "valueLayer": "伺服器組裝",
+      "signalIds": [
+        "semiconductor",
+        "finance"
+      ],
+      "disposition": "rejected",
+      "reason": "存貨回款與組裝毛利不能用晶片出貨增幅推算。",
+      "missingValuationReason": "缺原訂截止時點正式同口徑收盤、各年 EPS／自由現金流、股數、資本支出及折現率，無法產生可驗算三情境合理價。"
+    },
+    {
+      "id": "acsi",
+      "company": "安碁資訊",
+      "ticker": "6690",
+      "market": "TPEx",
+      "valueLayer": "資安服務",
+      "signalIds": [
+        "software",
+        "finance"
+      ],
+      "disposition": "rejected",
+      "reason": "工具供應商推出功能不等於本公司新增已收款合約。",
+      "missingValuationReason": "缺原訂截止時點正式同口徑收盤、各年 EPS／自由現金流、股數、資本支出及折現率，無法產生可驗算三情境合理價。"
+    }
+  ],
+  "rankedIds": [
+    "tsmc",
+    "ase",
+    "delta",
+    "gigabyte",
+    "acsi"
+  ],
+  "industryReason": "獨立建立五家跨價值鏈候選；缺乏可共同重算的市場及公司 EPS／FCF 資料，保留產業研究而不宣稱個股已低估。",
+  "watchCompanies": [
+    "台積電（2330）",
+    "日月光投控（3711）"
+  ],
+  "historicalComparisonAfterRanking": "今日候選與排序完成後才比較昨日，不讓昨天入選名單決定今天新聞取捨。"
+}
