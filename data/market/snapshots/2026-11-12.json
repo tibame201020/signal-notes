@@ -1,0 +1,2625 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-12",
+  "collected_at": "2026-11-12T01:55:59.394Z",
+  "market_cap": {
+    "global_top50": {
+      "source": {
+        "provider": "CompaniesMarketCap",
+        "url": "https://companiesmarketcap.com/"
+      },
+      "rows": [
+        {
+          "rank": 1,
+          "name": "Apple",
+          "ticker": "",
+          "market_cap_usd": 5168000000000,
+          "market_cap_display": "$ 5.168 T",
+          "price_display": "$355.63",
+          "daily_price_change_pct": 2.04,
+          "country": "🇺🇸 USA",
+          "sector": "Hardware"
+        },
+        {
+          "rank": 2,
+          "name": "NVIDIA",
+          "ticker": "",
+          "market_cap_usd": 4195000000000.0005,
+          "market_cap_display": "$ 4.195 T",
+          "price_display": "$173.73",
+          "daily_price_change_pct": 2.92,
+          "country": "🇺🇸 USA",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 3,
+          "name": "Microsoft",
+          "ticker": "",
+          "market_cap_usd": 3869000000000,
+          "market_cap_display": "$ 3.869 T",
+          "price_display": "$521.12",
+          "daily_price_change_pct": 2.26,
+          "country": "🇺🇸 USA",
+          "sector": "Software/Internet"
+        },
+        {
+          "rank": 4,
+          "name": "Alphabet (Google)",
+          "ticker": "",
+          "market_cap_usd": 3573000000000,
+          "market_cap_display": "$ 3.573 T",
+          "price_display": "$290.63",
+          "daily_price_change_pct": 2,
+          "country": "🇺🇸 USA",
+          "sector": "Software/Internet"
+        },
+        {
+          "rank": 5,
+          "name": "Amazon",
+          "ticker": "",
+          "market_cap_usd": 2878000000000,
+          "market_cap_display": "$ 2.878 T",
+          "price_display": "$266.17",
+          "daily_price_change_pct": 1.74,
+          "country": "🇺🇸 USA",
+          "sector": "Software/Internet"
+        },
+        {
+          "rank": 6,
+          "name": "TSMC",
+          "ticker": "",
+          "market_cap_usd": 2142999999999.9998,
+          "market_cap_display": "$ 2.143 T",
+          "price_display": "$413.35",
+          "daily_price_change_pct": 4.25,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 7,
+          "name": "SpaceX",
+          "ticker": "",
+          "market_cap_usd": 1897000000000,
+          "market_cap_display": "$ 1.897 T",
+          "price_display": "$139.75",
+          "daily_price_change_pct": 2.33,
+          "country": "🇺🇸 USA",
+          "sector": "Industrials/Auto/Aerospace"
+        },
+        {
+          "rank": 8,
+          "name": "Saudi Aramco",
+          "ticker": "",
+          "market_cap_usd": 1678000000000,
+          "market_cap_display": "$ 1.678 T",
+          "price_display": "$6.94",
+          "daily_price_change_pct": 1.64,
+          "country": "🇸🇦 S. Arabia",
+          "sector": "Energy"
+        },
+        {
+          "rank": 9,
+          "name": "Broadcom",
+          "ticker": "",
+          "market_cap_usd": 1647000000000,
+          "market_cap_display": "$ 1.647 T",
+          "price_display": "$345.22",
+          "daily_price_change_pct": 3.99,
+          "country": "🇺🇸 USA",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 10,
+          "name": "Meta Platforms (Facebook)",
+          "ticker": "",
+          "market_cap_usd": 1607000000000,
+          "market_cap_display": "$ 1.607 T",
+          "price_display": "$628.77",
+          "daily_price_change_pct": 1.97,
+          "country": "🇺🇸 USA",
+          "sector": "Software/Internet"
+        },
+        {
+          "rank": 11,
+          "name": "Tesla",
+          "ticker": "",
+          "market_cap_usd": 1544000000000,
+          "market_cap_display": "$ 1.544 T",
+          "price_display": "$390.84",
+          "daily_price_change_pct": 2.91,
+          "country": "🇺🇸 USA",
+          "sector": "Industrials/Auto/Aerospace"
+        },
+        {
+          "rank": 12,
+          "name": "Eli Lilly",
+          "ticker": "",
+          "market_cap_usd": 1280000000000,
+          "market_cap_display": "$ 1.280 T",
+          "price_display": "$1,437",
+          "daily_price_change_pct": 0.35,
+          "country": "🇺🇸 USA",
+          "sector": "Healthcare"
+        },
+        {
+          "rank": 13,
+          "name": "Berkshire Hathaway",
+          "ticker": "",
+          "market_cap_usd": 1249000000000,
+          "market_cap_display": "$ 1.249 T",
+          "price_display": "$588.24",
+          "daily_price_change_pct": 0.84,
+          "country": "🇺🇸 USA",
+          "sector": "Financials"
+        },
+        {
+          "rank": 14,
+          "name": "Samsung",
+          "ticker": "",
+          "market_cap_usd": 1038000000000,
+          "market_cap_display": "$ 1.038 T",
+          "price_display": "$159.41",
+          "daily_price_change_pct": 2.55,
+          "country": "🇰🇷 S. Korea",
+          "sector": "Hardware"
+        },
+        {
+          "rank": 15,
+          "name": "Walmart",
+          "ticker": "",
+          "market_cap_usd": 997030000000,
+          "market_cap_display": "$ 997.03 B",
+          "price_display": "$125.67",
+          "daily_price_change_pct": 0.1,
+          "country": "🇺🇸 USA",
+          "sector": "Consumer/Retail"
+        },
+        {
+          "rank": 16,
+          "name": "Micron Technology",
+          "ticker": "",
+          "market_cap_usd": 917920000000,
+          "market_cap_display": "$ 917.92 B",
+          "price_display": "$811.30",
+          "daily_price_change_pct": 11.89,
+          "country": "🇺🇸 USA",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 17,
+          "name": "JPMorgan Chase",
+          "ticker": "",
+          "market_cap_usd": 911900000000,
+          "market_cap_display": "$ 911.90 B",
+          "price_display": "$343.39",
+          "daily_price_change_pct": 0.39,
+          "country": "🇺🇸 USA",
+          "sector": "Financials"
+        },
+        {
+          "rank": 18,
+          "name": "AMD",
+          "ticker": "",
+          "market_cap_usd": 906800000000,
+          "market_cap_display": "$ 906.80 B",
+          "price_display": "$552.90",
+          "daily_price_change_pct": 7.32,
+          "country": "🇺🇸 USA",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 19,
+          "name": "Visa",
+          "ticker": "",
+          "market_cap_usd": 793990000000,
+          "market_cap_display": "$ 793.99 B",
+          "price_display": "$425.55",
+          "daily_price_change_pct": 0.6,
+          "country": "🇺🇸 USA",
+          "sector": "Financials"
+        },
+        {
+          "rank": 20,
+          "name": "SK Hynix",
+          "ticker": "",
+          "market_cap_usd": 684320000000,
+          "market_cap_display": "$ 684.32 B",
+          "price_display": "$970.43",
+          "daily_price_change_pct": 0.71,
+          "country": "🇰🇷 S. Korea",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 21,
+          "name": "Exxon Mobil",
+          "ticker": "",
+          "market_cap_usd": 680040000000,
+          "market_cap_display": "$ 680.04 B",
+          "price_display": "$166.71",
+          "daily_price_change_pct": 1.36,
+          "country": "🇺🇸 USA",
+          "sector": "Energy"
+        },
+        {
+          "rank": 22,
+          "name": "Johnson & Johnson",
+          "ticker": "",
+          "market_cap_usd": 675030000000,
+          "market_cap_display": "$ 675.03 B",
+          "price_display": "$280.41",
+          "daily_price_change_pct": 0.13,
+          "country": "🇺🇸 USA",
+          "sector": "Healthcare"
+        },
+        {
+          "rank": 23,
+          "name": "ASML",
+          "ticker": "",
+          "market_cap_usd": 591390000000,
+          "market_cap_display": "$ 591.39 B",
+          "price_display": "$1,534",
+          "daily_price_change_pct": 1.76,
+          "country": "🇳🇱 Netherlands",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 24,
+          "name": "Mastercard",
+          "ticker": "",
+          "market_cap_usd": 575610000000,
+          "market_cap_display": "$ 575.61 B",
+          "price_display": "$660.73",
+          "daily_price_change_pct": 0.29,
+          "country": "🇺🇸 USA",
+          "sector": "Financials"
+        },
+        {
+          "rank": 25,
+          "name": "AbbVie",
+          "ticker": "",
+          "market_cap_usd": 521409999999.99994,
+          "market_cap_display": "$ 521.41 B",
+          "price_display": "$294.98",
+          "daily_price_change_pct": 0.37,
+          "country": "🇺🇸 USA",
+          "sector": "Healthcare"
+        },
+        {
+          "rank": 26,
+          "name": "Costco",
+          "ticker": "",
+          "market_cap_usd": 481950000000,
+          "market_cap_display": "$ 481.95 B",
+          "price_display": "$1,088",
+          "daily_price_change_pct": 2.01,
+          "country": "🇺🇸 USA",
+          "sector": "Consumer/Retail"
+        },
+        {
+          "rank": 27,
+          "name": "China Construction Bank",
+          "ticker": "",
+          "market_cap_usd": 468340000000,
+          "market_cap_display": "$ 468.34 B",
+          "price_display": "$1.79",
+          "daily_price_change_pct": 0.25,
+          "country": "🇨🇳 China",
+          "sector": "Financials"
+        },
+        {
+          "rank": 28,
+          "name": "Tencent",
+          "ticker": "",
+          "market_cap_usd": 463930000000,
+          "market_cap_display": "$ 463.93 B",
+          "price_display": "$51.36",
+          "daily_price_change_pct": 2.58,
+          "country": "🇨🇳 China",
+          "sector": "Software/Internet"
+        },
+        {
+          "rank": 29,
+          "name": "CXMT",
+          "ticker": "",
+          "market_cap_usd": 448660000000,
+          "market_cap_display": "$ 448.66 B",
+          "price_display": "$6.34",
+          "daily_price_change_pct": 0.52,
+          "country": "🇨🇳 China",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 30,
+          "name": "Coca-Cola",
+          "ticker": "",
+          "market_cap_usd": 419730000000,
+          "market_cap_display": "$ 419.73 B",
+          "price_display": "$97.57",
+          "daily_price_change_pct": 0.68,
+          "country": "🇺🇸 USA",
+          "sector": "Consumer/Retail"
+        },
+        {
+          "rank": 31,
+          "name": "Chevron",
+          "ticker": "",
+          "market_cap_usd": 416160000000,
+          "market_cap_display": "$ 416.16 B",
+          "price_display": "$213.28",
+          "daily_price_change_pct": 0.98,
+          "country": "🇺🇸 USA",
+          "sector": "Energy"
+        },
+        {
+          "rank": 32,
+          "name": "Palantir",
+          "ticker": "",
+          "market_cap_usd": 415390000000,
+          "market_cap_display": "$ 415.39 B",
+          "price_display": "$172.40",
+          "daily_price_change_pct": 2.12,
+          "country": "🇺🇸 USA",
+          "sector": "Software/Internet"
+        },
+        {
+          "rank": 33,
+          "name": "Oracle",
+          "ticker": "",
+          "market_cap_usd": 400250000000,
+          "market_cap_display": "$ 400.25 B",
+          "price_display": "$128.38",
+          "daily_price_change_pct": 8.82,
+          "country": "🇺🇸 USA",
+          "sector": "Software/Internet"
+        },
+        {
+          "rank": 34,
+          "name": "Roche",
+          "ticker": "",
+          "market_cap_usd": 397620000000,
+          "market_cap_display": "$ 397.62 B",
+          "price_display": "$499.05",
+          "daily_price_change_pct": 0.24,
+          "country": "🇨🇭 Switzerland",
+          "sector": "Healthcare"
+        },
+        {
+          "rank": 35,
+          "name": "Cisco",
+          "ticker": "",
+          "market_cap_usd": 397250000000,
+          "market_cap_display": "$ 397.25 B",
+          "price_display": "$100.76",
+          "daily_price_change_pct": 2.66,
+          "country": "🇺🇸 USA",
+          "sector": "Hardware"
+        },
+        {
+          "rank": 36,
+          "name": "Procter & Gamble",
+          "ticker": "",
+          "market_cap_usd": 388620000000,
+          "market_cap_display": "$ 388.62 B",
+          "price_display": "$167.67",
+          "daily_price_change_pct": 0.59,
+          "country": "🇺🇸 USA",
+          "sector": "Consumer/Retail"
+        },
+        {
+          "rank": 37,
+          "name": "Agricultural Bank of China",
+          "ticker": "",
+          "market_cap_usd": 380140000000,
+          "market_cap_display": "$ 380.14 B",
+          "price_display": "$1.09",
+          "daily_price_change_pct": 0.14,
+          "country": "🇨🇳 China",
+          "sector": "Financials"
+        },
+        {
+          "rank": 38,
+          "name": "Merck",
+          "ticker": "",
+          "market_cap_usd": 362830000000,
+          "market_cap_display": "$ 362.83 B",
+          "price_display": "$147.18",
+          "daily_price_change_pct": 0.59,
+          "country": "🇺🇸 USA",
+          "sector": "Healthcare"
+        },
+        {
+          "rank": 39,
+          "name": "UnitedHealth",
+          "ticker": "",
+          "market_cap_usd": 361040000000,
+          "market_cap_display": "$ 361.04 B",
+          "price_display": "$402.94",
+          "daily_price_change_pct": 0.54,
+          "country": "🇺🇸 USA",
+          "sector": "Healthcare"
+        },
+        {
+          "rank": 40,
+          "name": "ICBC",
+          "ticker": "",
+          "market_cap_usd": 356820000000,
+          "market_cap_display": "$ 356.82 B",
+          "price_display": "$1.00",
+          "daily_price_change_pct": 0.38,
+          "country": "🇨🇳 China",
+          "sector": "Financials"
+        },
+        {
+          "rank": 41,
+          "name": "General Electric",
+          "ticker": "",
+          "market_cap_usd": 355620000000,
+          "market_cap_display": "$ 355.62 B",
+          "price_display": "$342.75",
+          "daily_price_change_pct": 1.43,
+          "country": "🇺🇸 USA",
+          "sector": "Industrials/Auto/Aerospace"
+        },
+        {
+          "rank": 42,
+          "name": "Home Depot",
+          "ticker": "",
+          "market_cap_usd": 350490000000,
+          "market_cap_display": "$ 350.49 B",
+          "price_display": "$351.31",
+          "daily_price_change_pct": 0.09,
+          "country": "🇺🇸 USA",
+          "sector": "Other/Unclassified"
+        },
+        {
+          "rank": 43,
+          "name": "Bank of America",
+          "ticker": "",
+          "market_cap_usd": 349630000000,
+          "market_cap_display": "$ 349.63 B",
+          "price_display": "$50.67",
+          "daily_price_change_pct": 0.02,
+          "country": "🇺🇸 USA",
+          "sector": "Financials"
+        },
+        {
+          "rank": 44,
+          "name": "Bank of China",
+          "ticker": "",
+          "market_cap_usd": 336460000000,
+          "market_cap_display": "$ 336.46 B",
+          "price_display": "$1.04",
+          "daily_price_change_pct": 0.43,
+          "country": "🇨🇳 China",
+          "sector": "Financials"
+        },
+        {
+          "rank": 45,
+          "name": "Intel",
+          "ticker": "",
+          "market_cap_usd": 332180000000,
+          "market_cap_display": "$ 332.18 B",
+          "price_display": "$62.50",
+          "daily_price_change_pct": 7.52,
+          "country": "🇺🇸 USA",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 46,
+          "name": "Applied Materials",
+          "ticker": "",
+          "market_cap_usd": 313530000000,
+          "market_cap_display": "$ 313.53 B",
+          "price_display": "$395.08",
+          "daily_price_change_pct": 6.05,
+          "country": "🇺🇸 USA",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 47,
+          "name": "HSBC",
+          "ticker": "",
+          "market_cap_usd": 308360000000,
+          "market_cap_display": "$ 308.36 B",
+          "price_display": "$90.20",
+          "daily_price_change_pct": 0.36,
+          "country": "🇬🇧 UK",
+          "sector": "Financials"
+        },
+        {
+          "rank": 48,
+          "name": "Philip Morris International",
+          "ticker": "",
+          "market_cap_usd": 306040000000,
+          "market_cap_display": "$ 306.04 B",
+          "price_display": "$196.35",
+          "daily_price_change_pct": 1.08,
+          "country": "🇺🇸 USA",
+          "sector": "Other/Unclassified"
+        },
+        {
+          "rank": 49,
+          "name": "Novartis",
+          "ticker": "",
+          "market_cap_usd": 302780000000,
+          "market_cap_display": "$ 302.78 B",
+          "price_display": "$160.32",
+          "daily_price_change_pct": 1.8,
+          "country": "🇨🇭 Switzerland",
+          "sector": "Other/Unclassified"
+        },
+        {
+          "rank": 50,
+          "name": "Morgan Stanley",
+          "ticker": "",
+          "market_cap_usd": 297930000000,
+          "market_cap_display": "$ 297.93 B",
+          "price_display": "$190.61",
+          "daily_price_change_pct": 1.63,
+          "country": "🇺🇸 USA",
+          "sector": "Other/Unclassified"
+        }
+      ]
+    },
+    "taiwan_top20": {
+      "source": {
+        "provider": "CompaniesMarketCap",
+        "url": "https://companiesmarketcap.com/taiwan/largest-companies-in-taiwan-by-market-cap/"
+      },
+      "rows": [
+        {
+          "rank": 1,
+          "name": "TSMC",
+          "ticker": "",
+          "market_cap_usd": 2142999999999.9998,
+          "market_cap_display": "$ 2.143 T",
+          "price_display": "$413.35",
+          "daily_price_change_pct": 4.25,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 2,
+          "name": "MediaTek",
+          "ticker": "",
+          "market_cap_usd": 200800000000,
+          "market_cap_display": "$ 200.80 B",
+          "price_display": "$125.73",
+          "daily_price_change_pct": 2.38,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 3,
+          "name": "Foxconn (Hon Hai Precision Industry)",
+          "ticker": "",
+          "market_cap_usd": 105690000000,
+          "market_cap_display": "$ 105.69 B",
+          "price_display": "$7.51",
+          "daily_price_change_pct": 0.83,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Electronics/Hardware"
+        },
+        {
+          "rank": 4,
+          "name": "Delta Electronics",
+          "ticker": "",
+          "market_cap_usd": 105130000000,
+          "market_cap_display": "$ 105.13 B",
+          "price_display": "$40.47",
+          "daily_price_change_pct": 1.54,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Electronics/Hardware"
+        },
+        {
+          "rank": 5,
+          "name": "ASE Group",
+          "ticker": "",
+          "market_cap_usd": 83490000000,
+          "market_cap_display": "$ 83.49 B",
+          "price_display": "$37.82",
+          "daily_price_change_pct": 6.6,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 6,
+          "name": "Nan Ya Plastics",
+          "ticker": "",
+          "market_cap_usd": 77860000000,
+          "market_cap_display": "$ 77.86 B",
+          "price_display": "$9.82",
+          "daily_price_change_pct": 1.92,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Materials/Energy"
+        },
+        {
+          "rank": 7,
+          "name": "Fubon Financial",
+          "ticker": "",
+          "market_cap_usd": 65819999999.99999,
+          "market_cap_display": "$ 65.82 B",
+          "price_display": "$4.82",
+          "daily_price_change_pct": 1.88,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Financials"
+        },
+        {
+          "rank": 8,
+          "name": "Cathay Financial Holding",
+          "ticker": "",
+          "market_cap_usd": 50560000000,
+          "market_cap_display": "$ 50.56 B",
+          "price_display": "$3.45",
+          "daily_price_change_pct": 0.88,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Financials"
+        },
+        {
+          "rank": 9,
+          "name": "CTBC Financial Holding",
+          "ticker": "",
+          "market_cap_usd": 44990000000,
+          "market_cap_display": "$ 44.99 B",
+          "price_display": "$2.29",
+          "daily_price_change_pct": 0.54,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Financials"
+        },
+        {
+          "rank": 10,
+          "name": "Unimicron",
+          "ticker": "",
+          "market_cap_usd": 44310000000,
+          "market_cap_display": "$ 44.31 B",
+          "price_display": "$26.93",
+          "daily_price_change_pct": 1.27,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Electronics/Hardware"
+        },
+        {
+          "rank": 11,
+          "name": "Nanya Technology",
+          "ticker": "",
+          "market_cap_usd": 43160000000,
+          "market_cap_display": "$ 43.16 B",
+          "price_display": "$12.51",
+          "daily_price_change_pct": 3.17,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 12,
+          "name": "United Microelectronics",
+          "ticker": "",
+          "market_cap_usd": 40320000000,
+          "market_cap_display": "$ 40.32 B",
+          "price_display": "$16.08",
+          "daily_price_change_pct": 6.91,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 13,
+          "name": "Chunghwa Telecom",
+          "ticker": "",
+          "market_cap_usd": 38030000000,
+          "market_cap_display": "$ 38.03 B",
+          "price_display": "$49.03",
+          "daily_price_change_pct": 0.45,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Telecom"
+        },
+        {
+          "rank": 14,
+          "name": "Quanta Computer",
+          "ticker": "",
+          "market_cap_usd": 36590000000,
+          "market_cap_display": "$ 36.59 B",
+          "price_display": "$8.93",
+          "daily_price_change_pct": 2.68,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Electronics/Hardware"
+        },
+        {
+          "rank": 15,
+          "name": "Global Unichip Corp.",
+          "ticker": "",
+          "market_cap_usd": 34770000000,
+          "market_cap_display": "$ 34.77 B",
+          "price_display": "$259.46",
+          "daily_price_change_pct": 6.92,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Semiconductors"
+        },
+        {
+          "rank": 16,
+          "name": "Taishin Financial Holdings",
+          "ticker": "",
+          "market_cap_usd": 30760000000,
+          "market_cap_display": "$ 30.76 B",
+          "price_display": "$1.22",
+          "daily_price_change_pct": 1.61,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Financials"
+        },
+        {
+          "rank": 17,
+          "name": "Yuanta Financial Holding",
+          "ticker": "",
+          "market_cap_usd": 30720000000,
+          "market_cap_display": "$ 30.72 B",
+          "price_display": "$2.22",
+          "daily_price_change_pct": 1.12,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Other/Unclassified"
+        },
+        {
+          "rank": 18,
+          "name": "Wiwynn",
+          "ticker": "",
+          "market_cap_usd": 30550000000,
+          "market_cap_display": "$ 30.55 B",
+          "price_display": "$52.32",
+          "daily_price_change_pct": 1.19,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Electronics/Hardware"
+        },
+        {
+          "rank": 19,
+          "name": "Accton Technology",
+          "ticker": "",
+          "market_cap_usd": 27860000000,
+          "market_cap_display": "$ 27.86 B",
+          "price_display": "$49.86",
+          "daily_price_change_pct": 2.86,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Electronics/Hardware"
+        },
+        {
+          "rank": 20,
+          "name": "Yageo",
+          "ticker": "",
+          "market_cap_usd": 27300000000,
+          "market_cap_display": "$ 27.30 B",
+          "price_display": "$13.27",
+          "daily_price_change_pct": 1.53,
+          "country": "🇹🇼 Taiwan",
+          "sector": "Electronics/Hardware"
+        }
+      ]
+    }
+  },
+  "sovereign_10y": {
+    "US": {
+      "country": "美國",
+      "yield_pct": 4.986,
+      "source_date": "2026-11-12",
+      "source": {
+        "provider": "Trading Economics",
+        "url": "https://tradingeconomics.com/united-states/government-bond-yield"
+      }
+    },
+    "AU": {
+      "country": "澳洲",
+      "yield_pct": 5.036,
+      "source_date": "2026-11-12",
+      "source": {
+        "provider": "Trading Economics",
+        "url": "https://tradingeconomics.com/australia/government-bond-yield"
+      }
+    },
+    "JP": {
+      "country": "日本",
+      "yield_pct": 2.76,
+      "source_date": "2026-11-12",
+      "source": {
+        "provider": "Trading Economics",
+        "url": "https://tradingeconomics.com/japan/government-bond-yield"
+      }
+    },
+    "DE": {
+      "country": "德國",
+      "yield_pct": 3.3236,
+      "source_date": "2026-11-12",
+      "source": {
+        "provider": "Trading Economics",
+        "url": "https://tradingeconomics.com/germany/government-bond-yield"
+      }
+    },
+    "FR": {
+      "country": "法國",
+      "yield_pct": 4.796,
+      "source_date": "2026-11-12",
+      "source": {
+        "provider": "Trading Economics",
+        "url": "https://tradingeconomics.com/france/government-bond-yield"
+      }
+    },
+    "GB": {
+      "country": "英國",
+      "yield_pct": 5.2305,
+      "source_date": "2026-11-12",
+      "source": {
+        "provider": "Trading Economics",
+        "url": "https://tradingeconomics.com/united-kingdom/government-bond-yield"
+      }
+    },
+    "CN": {
+      "country": "中國",
+      "yield_pct": 1.6059,
+      "source_date": "2026-11-12",
+      "source": {
+        "provider": "Trading Economics",
+        "url": "https://tradingeconomics.com/china/government-bond-yield"
+      }
+    }
+  },
+  "comparisons": {
+    "sovereign_10y": {
+      "US": {
+        "d1_bp": -0.4,
+        "d1_base_date": "2026-11-11",
+        "d3_bp": 11.9,
+        "d3_base_date": "2026-11-09",
+        "d7_bp": 11.1,
+        "d7_base_date": "2026-11-05"
+      },
+      "AU": {
+        "d1_bp": -1.4,
+        "d1_base_date": "2026-11-11",
+        "d3_bp": 1.1,
+        "d3_base_date": "2026-11-09",
+        "d7_bp": 0.7,
+        "d7_base_date": "2026-11-05"
+      },
+      "JP": {
+        "d1_bp": 0.8,
+        "d1_base_date": "2026-11-11",
+        "d3_bp": 11.8,
+        "d3_base_date": "2026-11-09",
+        "d7_bp": -3.1,
+        "d7_base_date": "2026-11-05"
+      },
+      "DE": {
+        "d1_bp": 1.7,
+        "d1_base_date": "2026-11-11",
+        "d3_bp": 7,
+        "d3_base_date": "2026-11-09",
+        "d7_bp": 3.7,
+        "d7_base_date": "2026-11-05"
+      },
+      "FR": {
+        "d1_bp": 0.8,
+        "d1_base_date": "2026-11-11",
+        "d3_bp": 2.4,
+        "d3_base_date": "2026-11-09",
+        "d7_bp": -2.5,
+        "d7_base_date": "2026-11-05"
+      },
+      "GB": {
+        "d1_bp": 2.3,
+        "d1_base_date": "2026-11-11",
+        "d3_bp": 7.5,
+        "d3_base_date": "2026-11-09",
+        "d7_bp": 6.9,
+        "d7_base_date": "2026-11-05"
+      },
+      "CN": {
+        "d1_bp": 0.4,
+        "d1_base_date": "2026-11-11",
+        "d3_bp": 1.3,
+        "d3_base_date": "2026-11-09",
+        "d7_bp": -1.1,
+        "d7_base_date": "2026-11-05"
+      }
+    },
+    "market_cap": {
+      "d1": {
+        "base_date": "2026-11-11",
+        "global_top50": {
+          "matched_count": 50,
+          "total_market_cap_usd": 51433190000000,
+          "total_change_usd": 716370000000,
+          "total_change_pct": 1.412,
+          "companies": [
+            {
+              "rank": 1,
+              "name": "Apple",
+              "ticker": "",
+              "market_cap_usd": 5168000000000,
+              "change_usd": 104000000000,
+              "change_pct": 2.054
+            },
+            {
+              "rank": 2,
+              "name": "NVIDIA",
+              "ticker": "",
+              "market_cap_usd": 4195000000000.0005,
+              "change_usd": 117000000000,
+              "change_pct": 2.869
+            },
+            {
+              "rank": 3,
+              "name": "Microsoft",
+              "ticker": "",
+              "market_cap_usd": 3869000000000,
+              "change_usd": -90000000000,
+              "change_pct": -2.273
+            },
+            {
+              "rank": 4,
+              "name": "Alphabet (Google)",
+              "ticker": "",
+              "market_cap_usd": 3573000000000,
+              "change_usd": 71000000000,
+              "change_pct": 2.027
+            },
+            {
+              "rank": 5,
+              "name": "Amazon",
+              "ticker": "",
+              "market_cap_usd": 2878000000000,
+              "change_usd": -50000000000,
+              "change_pct": -1.708
+            },
+            {
+              "rank": 6,
+              "name": "TSMC",
+              "ticker": "",
+              "market_cap_usd": 2142999999999.9998,
+              "change_usd": 86999999999.99976,
+              "change_pct": 4.232
+            },
+            {
+              "rank": 7,
+              "name": "SpaceX",
+              "ticker": "",
+              "market_cap_usd": 1897000000000,
+              "change_usd": -46000000000,
+              "change_pct": -2.367
+            },
+            {
+              "rank": 8,
+              "name": "Saudi Aramco",
+              "ticker": "",
+              "market_cap_usd": 1678000000000,
+              "change_usd": 27000000000,
+              "change_pct": 1.635
+            },
+            {
+              "rank": 9,
+              "name": "Broadcom",
+              "ticker": "",
+              "market_cap_usd": 1647000000000,
+              "change_usd": 63000000000,
+              "change_pct": 3.977
+            },
+            {
+              "rank": 10,
+              "name": "Meta Platforms (Facebook)",
+              "ticker": "",
+              "market_cap_usd": 1607000000000,
+              "change_usd": -32000000000,
+              "change_pct": -1.952
+            },
+            {
+              "rank": 11,
+              "name": "Tesla",
+              "ticker": "",
+              "market_cap_usd": 1544000000000,
+              "change_usd": 43000000000,
+              "change_pct": 2.865
+            },
+            {
+              "rank": 12,
+              "name": "Eli Lilly",
+              "ticker": "",
+              "market_cap_usd": 1280000000000,
+              "change_usd": 5000000000,
+              "change_pct": 0.392
+            },
+            {
+              "rank": 13,
+              "name": "Berkshire Hathaway",
+              "ticker": "",
+              "market_cap_usd": 1249000000000,
+              "change_usd": 10000000000,
+              "change_pct": 0.807
+            },
+            {
+              "rank": 14,
+              "name": "Samsung",
+              "ticker": "",
+              "market_cap_usd": 1038000000000,
+              "change_usd": 66020000000,
+              "change_pct": 6.792
+            },
+            {
+              "rank": 15,
+              "name": "Walmart",
+              "ticker": "",
+              "market_cap_usd": 997030000000,
+              "change_usd": 950000000,
+              "change_pct": 0.095
+            },
+            {
+              "rank": 16,
+              "name": "Micron Technology",
+              "ticker": "",
+              "market_cap_usd": 917920000000,
+              "change_usd": 97520000000,
+              "change_pct": 11.887
+            },
+            {
+              "rank": 17,
+              "name": "JPMorgan Chase",
+              "ticker": "",
+              "market_cap_usd": 911900000000,
+              "change_usd": 3500000000,
+              "change_pct": 0.385
+            },
+            {
+              "rank": 18,
+              "name": "AMD",
+              "ticker": "",
+              "market_cap_usd": 906800000000,
+              "change_usd": 61820000000,
+              "change_pct": 7.316
+            },
+            {
+              "rank": 19,
+              "name": "Visa",
+              "ticker": "",
+              "market_cap_usd": 793990000000,
+              "change_usd": 4760000000,
+              "change_pct": 0.603
+            },
+            {
+              "rank": 20,
+              "name": "SK Hynix",
+              "ticker": "",
+              "market_cap_usd": 684320000000,
+              "change_usd": 45230000000,
+              "change_pct": 7.077
+            },
+            {
+              "rank": 21,
+              "name": "Exxon Mobil",
+              "ticker": "",
+              "market_cap_usd": 680040000000,
+              "change_usd": 9140000000,
+              "change_pct": 1.362
+            },
+            {
+              "rank": 22,
+              "name": "Johnson & Johnson",
+              "ticker": "",
+              "market_cap_usd": 675030000000,
+              "change_usd": -890000000,
+              "change_pct": -0.132
+            },
+            {
+              "rank": 23,
+              "name": "ASML",
+              "ticker": "",
+              "market_cap_usd": 591390000000,
+              "change_usd": 10240000000,
+              "change_pct": 1.762
+            },
+            {
+              "rank": 24,
+              "name": "Mastercard",
+              "ticker": "",
+              "market_cap_usd": 575610000000,
+              "change_usd": 1650000000,
+              "change_pct": 0.287
+            },
+            {
+              "rank": 25,
+              "name": "AbbVie",
+              "ticker": "",
+              "market_cap_usd": 521409999999.99994,
+              "change_usd": 1929999999.999939,
+              "change_pct": 0.372
+            },
+            {
+              "rank": 26,
+              "name": "Costco",
+              "ticker": "",
+              "market_cap_usd": 481950000000,
+              "change_usd": 9520000000,
+              "change_pct": 2.015
+            },
+            {
+              "rank": 27,
+              "name": "China Construction Bank",
+              "ticker": "",
+              "market_cap_usd": 468340000000,
+              "change_usd": -3140000000,
+              "change_pct": -0.666
+            },
+            {
+              "rank": 28,
+              "name": "Tencent",
+              "ticker": "",
+              "market_cap_usd": 463930000000,
+              "change_usd": -12280000000,
+              "change_pct": -2.579
+            },
+            {
+              "rank": 29,
+              "name": "CXMT",
+              "ticker": "",
+              "market_cap_usd": 448660000000,
+              "change_usd": 19520000000,
+              "change_pct": 4.549
+            },
+            {
+              "rank": 30,
+              "name": "Coca-Cola",
+              "ticker": "",
+              "market_cap_usd": 419730000000,
+              "change_usd": 2840000000,
+              "change_pct": 0.681
+            },
+            {
+              "rank": 31,
+              "name": "Chevron",
+              "ticker": "",
+              "market_cap_usd": 416160000000,
+              "change_usd": 4020000000,
+              "change_pct": 0.975
+            },
+            {
+              "rank": 32,
+              "name": "Palantir",
+              "ticker": "",
+              "market_cap_usd": 415390000000,
+              "change_usd": 8620000000,
+              "change_pct": 2.119
+            },
+            {
+              "rank": 33,
+              "name": "Oracle",
+              "ticker": "",
+              "market_cap_usd": 400250000000,
+              "change_usd": 32430000000,
+              "change_pct": 8.817
+            },
+            {
+              "rank": 34,
+              "name": "Roche",
+              "ticker": "",
+              "market_cap_usd": 397620000000,
+              "change_usd": 970000000,
+              "change_pct": 0.245
+            },
+            {
+              "rank": 35,
+              "name": "Cisco",
+              "ticker": "",
+              "market_cap_usd": 397250000000,
+              "change_usd": 10290000000,
+              "change_pct": 2.659
+            },
+            {
+              "rank": 36,
+              "name": "Procter & Gamble",
+              "ticker": "",
+              "market_cap_usd": 388620000000,
+              "change_usd": -2290000000,
+              "change_pct": -0.586
+            },
+            {
+              "rank": 37,
+              "name": "Agricultural Bank of China",
+              "ticker": "",
+              "market_cap_usd": 380140000000,
+              "change_usd": -5240000000,
+              "change_pct": -1.36
+            },
+            {
+              "rank": 38,
+              "name": "Merck",
+              "ticker": "",
+              "market_cap_usd": 362830000000,
+              "change_usd": -2140000000,
+              "change_pct": -0.586
+            },
+            {
+              "rank": 39,
+              "name": "UnitedHealth",
+              "ticker": "",
+              "market_cap_usd": 361040000000,
+              "change_usd": -1950000000,
+              "change_pct": -0.537
+            },
+            {
+              "rank": 40,
+              "name": "ICBC",
+              "ticker": "",
+              "market_cap_usd": 356820000000,
+              "change_usd": -6130000000,
+              "change_pct": -1.689
+            },
+            {
+              "rank": 41,
+              "name": "General Electric",
+              "ticker": "",
+              "market_cap_usd": 355620000000,
+              "change_usd": 5020000000,
+              "change_pct": 1.432
+            },
+            {
+              "rank": 42,
+              "name": "Home Depot",
+              "ticker": "",
+              "market_cap_usd": 350490000000,
+              "change_usd": 310000000,
+              "change_pct": 0.089
+            },
+            {
+              "rank": 43,
+              "name": "Bank of America",
+              "ticker": "",
+              "market_cap_usd": 349630000000,
+              "change_usd": -70000000,
+              "change_pct": -0.02
+            },
+            {
+              "rank": 44,
+              "name": "Bank of China",
+              "ticker": "",
+              "market_cap_usd": 336460000000,
+              "change_usd": 490000000,
+              "change_pct": 0.146
+            },
+            {
+              "rank": 45,
+              "name": "Intel",
+              "ticker": "",
+              "market_cap_usd": 332180000000,
+              "change_usd": 23220000000,
+              "change_pct": 7.516
+            },
+            {
+              "rank": 46,
+              "name": "Applied Materials",
+              "ticker": "",
+              "market_cap_usd": 313530000000,
+              "change_usd": 17900000000,
+              "change_pct": 6.055
+            },
+            {
+              "rank": 47,
+              "name": "HSBC",
+              "ticker": "",
+              "market_cap_usd": 308360000000,
+              "change_usd": 1090000000,
+              "change_pct": 0.355
+            },
+            {
+              "rank": 48,
+              "name": "Philip Morris International",
+              "ticker": "",
+              "market_cap_usd": 306040000000,
+              "change_usd": 3280000000,
+              "change_pct": 1.083
+            },
+            {
+              "rank": 49,
+              "name": "Novartis",
+              "ticker": "",
+              "market_cap_usd": 302780000000,
+              "change_usd": -5550000000,
+              "change_pct": -1.8
+            },
+            {
+              "rank": 50,
+              "name": "Morgan Stanley",
+              "ticker": "",
+              "market_cap_usd": 297930000000,
+              "change_usd": 4770000000,
+              "change_pct": 1.627
+            }
+          ]
+        },
+        "taiwan_top20": {
+          "matched_count": 20,
+          "total_market_cap_usd": 3261710000000,
+          "total_change_usd": 135110000000,
+          "total_change_pct": 4.321,
+          "companies": [
+            {
+              "rank": 1,
+              "name": "TSMC",
+              "ticker": "",
+              "market_cap_usd": 2142999999999.9998,
+              "change_usd": 86999999999.99976,
+              "change_pct": 4.232
+            },
+            {
+              "rank": 2,
+              "name": "MediaTek",
+              "ticker": "",
+              "market_cap_usd": 200800000000,
+              "change_usd": 12530000000,
+              "change_pct": 6.655
+            },
+            {
+              "rank": 3,
+              "name": "Foxconn (Hon Hai Precision Industry)",
+              "ticker": "",
+              "market_cap_usd": 105690000000,
+              "change_usd": 1080000000,
+              "change_pct": 1.032
+            },
+            {
+              "rank": 4,
+              "name": "Delta Electronics",
+              "ticker": "",
+              "market_cap_usd": 105130000000,
+              "change_usd": 3200000000,
+              "change_pct": 3.139
+            },
+            {
+              "rank": 5,
+              "name": "ASE Group",
+              "ticker": "",
+              "market_cap_usd": 83490000000,
+              "change_usd": 5170000000,
+              "change_pct": 6.601
+            },
+            {
+              "rank": 6,
+              "name": "Nan Ya Plastics",
+              "ticker": "",
+              "market_cap_usd": 77860000000,
+              "change_usd": 7320000000,
+              "change_pct": 10.377
+            },
+            {
+              "rank": 7,
+              "name": "Fubon Financial",
+              "ticker": "",
+              "market_cap_usd": 65819999999.99999,
+              "change_usd": 1470000000,
+              "change_pct": 2.284
+            },
+            {
+              "rank": 8,
+              "name": "Cathay Financial Holding",
+              "ticker": "",
+              "market_cap_usd": 50560000000,
+              "change_usd": 900000000,
+              "change_pct": 1.812
+            },
+            {
+              "rank": 9,
+              "name": "CTBC Financial Holding",
+              "ticker": "",
+              "market_cap_usd": 44990000000,
+              "change_usd": 360000000,
+              "change_pct": 0.807
+            },
+            {
+              "rank": 10,
+              "name": "Unimicron",
+              "ticker": "",
+              "market_cap_usd": 44310000000,
+              "change_usd": 2380000000,
+              "change_pct": 5.676
+            },
+            {
+              "rank": 11,
+              "name": "Nanya Technology",
+              "ticker": "",
+              "market_cap_usd": 43160000000,
+              "change_usd": 2490000000,
+              "change_pct": 6.122
+            },
+            {
+              "rank": 12,
+              "name": "United Microelectronics",
+              "ticker": "",
+              "market_cap_usd": 40320000000,
+              "change_usd": 2610000000,
+              "change_pct": 6.921
+            },
+            {
+              "rank": 13,
+              "name": "Chunghwa Telecom",
+              "ticker": "",
+              "market_cap_usd": 38030000000,
+              "change_usd": 170000000,
+              "change_pct": 0.449
+            },
+            {
+              "rank": 14,
+              "name": "Quanta Computer",
+              "ticker": "",
+              "market_cap_usd": 36590000000,
+              "change_usd": -1070000000,
+              "change_pct": -2.841
+            },
+            {
+              "rank": 15,
+              "name": "Global Unichip Corp.",
+              "ticker": "",
+              "market_cap_usd": 34770000000,
+              "change_usd": 5200000000,
+              "change_pct": 17.585
+            },
+            {
+              "rank": 16,
+              "name": "Taishin Financial Holdings",
+              "ticker": "",
+              "market_cap_usd": 30760000000,
+              "change_usd": 270000000,
+              "change_pct": 0.886
+            },
+            {
+              "rank": 17,
+              "name": "Yuanta Financial Holding",
+              "ticker": "",
+              "market_cap_usd": 30720000000,
+              "change_usd": 1240000000,
+              "change_pct": 4.206
+            },
+            {
+              "rank": 18,
+              "name": "Wiwynn",
+              "ticker": "",
+              "market_cap_usd": 30550000000,
+              "change_usd": 580000000,
+              "change_pct": 1.935
+            },
+            {
+              "rank": 19,
+              "name": "Accton Technology",
+              "ticker": "",
+              "market_cap_usd": 27860000000,
+              "change_usd": 1290000000,
+              "change_pct": 4.855
+            },
+            {
+              "rank": 20,
+              "name": "Yageo",
+              "ticker": "",
+              "market_cap_usd": 27300000000,
+              "change_usd": 920000000,
+              "change_pct": 3.487
+            }
+          ]
+        }
+      },
+      "d3": {
+        "base_date": "2026-11-09",
+        "global_top50": {
+          "matched_count": 49,
+          "total_market_cap_usd": 51433190000000,
+          "total_change_usd": 1616340000000,
+          "total_change_pct": 3.245,
+          "companies": [
+            {
+              "rank": 1,
+              "name": "Apple",
+              "ticker": "",
+              "market_cap_usd": 5168000000000,
+              "change_usd": 193000000000,
+              "change_pct": 3.879
+            },
+            {
+              "rank": 2,
+              "name": "NVIDIA",
+              "ticker": "",
+              "market_cap_usd": 4195000000000.0005,
+              "change_usd": -310999999999.9995,
+              "change_pct": -6.902
+            },
+            {
+              "rank": 3,
+              "name": "Microsoft",
+              "ticker": "",
+              "market_cap_usd": 3869000000000,
+              "change_usd": -71000000000,
+              "change_pct": -1.802
+            },
+            {
+              "rank": 4,
+              "name": "Alphabet (Google)",
+              "ticker": "",
+              "market_cap_usd": 3573000000000,
+              "change_usd": 83000000000,
+              "change_pct": 2.378
+            },
+            {
+              "rank": 5,
+              "name": "Amazon",
+              "ticker": "",
+              "market_cap_usd": 2878000000000,
+              "change_usd": 75000000000,
+              "change_pct": 2.676
+            },
+            {
+              "rank": 6,
+              "name": "TSMC",
+              "ticker": "",
+              "market_cap_usd": 2142999999999.9998,
+              "change_usd": 195999999999.99976,
+              "change_pct": 10.067
+            },
+            {
+              "rank": 7,
+              "name": "SpaceX",
+              "ticker": "",
+              "market_cap_usd": 1897000000000,
+              "change_usd": 74000000000,
+              "change_pct": 4.059
+            },
+            {
+              "rank": 8,
+              "name": "Saudi Aramco",
+              "ticker": "",
+              "market_cap_usd": 1678000000000,
+              "change_usd": -3000000000,
+              "change_pct": -0.178
+            },
+            {
+              "rank": 9,
+              "name": "Broadcom",
+              "ticker": "",
+              "market_cap_usd": 1647000000000,
+              "change_usd": 246000000000,
+              "change_pct": 17.559
+            },
+            {
+              "rank": 10,
+              "name": "Meta Platforms (Facebook)",
+              "ticker": "",
+              "market_cap_usd": 1607000000000,
+              "change_usd": 47000000000,
+              "change_pct": 3.013
+            },
+            {
+              "rank": 11,
+              "name": "Tesla",
+              "ticker": "",
+              "market_cap_usd": 1544000000000,
+              "change_usd": 129000000000,
+              "change_pct": 9.117
+            },
+            {
+              "rank": 12,
+              "name": "Eli Lilly",
+              "ticker": "",
+              "market_cap_usd": 1280000000000,
+              "change_usd": 74000000000,
+              "change_pct": 6.136
+            },
+            {
+              "rank": 13,
+              "name": "Berkshire Hathaway",
+              "ticker": "",
+              "market_cap_usd": 1249000000000,
+              "change_usd": 27000000000,
+              "change_pct": 2.209
+            },
+            {
+              "rank": 14,
+              "name": "Samsung",
+              "ticker": "",
+              "market_cap_usd": 1038000000000,
+              "change_usd": 110730000000,
+              "change_pct": 11.942
+            },
+            {
+              "rank": 15,
+              "name": "Walmart",
+              "ticker": "",
+              "market_cap_usd": 997030000000,
+              "change_usd": 1190000000,
+              "change_pct": 0.119
+            },
+            {
+              "rank": 16,
+              "name": "Micron Technology",
+              "ticker": "",
+              "market_cap_usd": 917920000000,
+              "change_usd": 137240000000,
+              "change_pct": 17.58
+            },
+            {
+              "rank": 17,
+              "name": "JPMorgan Chase",
+              "ticker": "",
+              "market_cap_usd": 911900000000,
+              "change_usd": 23630000000,
+              "change_pct": 2.66
+            },
+            {
+              "rank": 18,
+              "name": "AMD",
+              "ticker": "",
+              "market_cap_usd": 906800000000,
+              "change_usd": 170340000000,
+              "change_pct": 23.13
+            },
+            {
+              "rank": 19,
+              "name": "Visa",
+              "ticker": "",
+              "market_cap_usd": 793990000000,
+              "change_usd": 5410000000,
+              "change_pct": 0.686
+            },
+            {
+              "rank": 20,
+              "name": "SK Hynix",
+              "ticker": "",
+              "market_cap_usd": 684320000000,
+              "change_usd": 81950000000,
+              "change_pct": 13.605
+            },
+            {
+              "rank": 21,
+              "name": "Exxon Mobil",
+              "ticker": "",
+              "market_cap_usd": 680040000000,
+              "change_usd": 3420000000,
+              "change_pct": 0.505
+            },
+            {
+              "rank": 22,
+              "name": "Johnson & Johnson",
+              "ticker": "",
+              "market_cap_usd": 675030000000,
+              "change_usd": 10090000000,
+              "change_pct": 1.517
+            },
+            {
+              "rank": 23,
+              "name": "ASML",
+              "ticker": "",
+              "market_cap_usd": 591390000000,
+              "change_usd": 42270000000,
+              "change_pct": 7.698
+            },
+            {
+              "rank": 24,
+              "name": "Mastercard",
+              "ticker": "",
+              "market_cap_usd": 575610000000,
+              "change_usd": 7000000000,
+              "change_pct": 1.231
+            },
+            {
+              "rank": 25,
+              "name": "AbbVie",
+              "ticker": "",
+              "market_cap_usd": 521409999999.99994,
+              "change_usd": 6490000000,
+              "change_pct": 1.26
+            },
+            {
+              "rank": 26,
+              "name": "Costco",
+              "ticker": "",
+              "market_cap_usd": 481950000000,
+              "change_usd": 15090000000,
+              "change_pct": 3.232
+            },
+            {
+              "rank": 27,
+              "name": "China Construction Bank",
+              "ticker": "",
+              "market_cap_usd": 468340000000,
+              "change_usd": 1570000000,
+              "change_pct": 0.336
+            },
+            {
+              "rank": 28,
+              "name": "Tencent",
+              "ticker": "",
+              "market_cap_usd": 463930000000,
+              "change_usd": -20780000000,
+              "change_pct": -4.287
+            },
+            {
+              "rank": 29,
+              "name": "CXMT",
+              "ticker": "",
+              "market_cap_usd": 448660000000,
+              "change_usd": 19940000000,
+              "change_pct": 4.651
+            },
+            {
+              "rank": 30,
+              "name": "Coca-Cola",
+              "ticker": "",
+              "market_cap_usd": 419730000000,
+              "change_usd": 8170000000,
+              "change_pct": 1.985
+            },
+            {
+              "rank": 31,
+              "name": "Chevron",
+              "ticker": "",
+              "market_cap_usd": 416160000000,
+              "change_usd": 1310000000,
+              "change_pct": 0.316
+            },
+            {
+              "rank": 32,
+              "name": "Palantir",
+              "ticker": "",
+              "market_cap_usd": 415390000000,
+              "change_usd": 28960000000,
+              "change_pct": 7.494
+            },
+            {
+              "rank": 33,
+              "name": "Oracle",
+              "ticker": "",
+              "market_cap_usd": 400250000000,
+              "change_usd": 38290000000,
+              "change_pct": 10.579
+            },
+            {
+              "rank": 34,
+              "name": "Roche",
+              "ticker": "",
+              "market_cap_usd": 397620000000,
+              "change_usd": 11020000000,
+              "change_pct": 2.85
+            },
+            {
+              "rank": 35,
+              "name": "Cisco",
+              "ticker": "",
+              "market_cap_usd": 397250000000,
+              "change_usd": 27240000000,
+              "change_pct": 7.362
+            },
+            {
+              "rank": 36,
+              "name": "Procter & Gamble",
+              "ticker": "",
+              "market_cap_usd": 388620000000,
+              "change_usd": 5260000000,
+              "change_pct": 1.372
+            },
+            {
+              "rank": 37,
+              "name": "Agricultural Bank of China",
+              "ticker": "",
+              "market_cap_usd": 380140000000,
+              "change_usd": -1570000000,
+              "change_pct": -0.411
+            },
+            {
+              "rank": 38,
+              "name": "Merck",
+              "ticker": "",
+              "market_cap_usd": 362830000000,
+              "change_usd": 1110000000,
+              "change_pct": 0.307
+            },
+            {
+              "rank": 39,
+              "name": "UnitedHealth",
+              "ticker": "",
+              "market_cap_usd": 361040000000,
+              "change_usd": 7880000000,
+              "change_pct": 2.231
+            },
+            {
+              "rank": 40,
+              "name": "ICBC",
+              "ticker": "",
+              "market_cap_usd": 356820000000,
+              "change_usd": -4320000000,
+              "change_pct": -1.196
+            },
+            {
+              "rank": 41,
+              "name": "General Electric",
+              "ticker": "",
+              "market_cap_usd": 355620000000,
+              "change_usd": 20240000000,
+              "change_pct": 6.035
+            },
+            {
+              "rank": 42,
+              "name": "Home Depot",
+              "ticker": "",
+              "market_cap_usd": 350490000000,
+              "change_usd": 7820000000,
+              "change_pct": 2.282
+            },
+            {
+              "rank": 43,
+              "name": "Bank of America",
+              "ticker": "",
+              "market_cap_usd": 349630000000,
+              "change_usd": 8630000000,
+              "change_pct": 2.531
+            },
+            {
+              "rank": 44,
+              "name": "Bank of China",
+              "ticker": "",
+              "market_cap_usd": 336460000000,
+              "change_usd": 5800000000,
+              "change_pct": 1.754
+            },
+            {
+              "rank": 45,
+              "name": "Intel",
+              "ticker": "",
+              "market_cap_usd": 332180000000,
+              "change_usd": 33060000000,
+              "change_pct": 11.052
+            },
+            {
+              "rank": 47,
+              "name": "HSBC",
+              "ticker": "",
+              "market_cap_usd": 308360000000,
+              "change_usd": 10700000000,
+              "change_pct": 3.595
+            },
+            {
+              "rank": 48,
+              "name": "Philip Morris International",
+              "ticker": "",
+              "market_cap_usd": 306040000000,
+              "change_usd": -2370000000,
+              "change_pct": -0.768
+            },
+            {
+              "rank": 49,
+              "name": "Novartis",
+              "ticker": "",
+              "market_cap_usd": 302780000000,
+              "change_usd": -4210000000,
+              "change_pct": -1.371
+            },
+            {
+              "rank": 50,
+              "name": "Morgan Stanley",
+              "ticker": "",
+              "market_cap_usd": 297930000000,
+              "change_usd": 14340000000,
+              "change_pct": 5.057
+            }
+          ]
+        },
+        "taiwan_top20": {
+          "matched_count": 18,
+          "total_market_cap_usd": 3261710000000,
+          "total_change_usd": 339060000000,
+          "total_change_pct": 11.601,
+          "companies": [
+            {
+              "rank": 1,
+              "name": "TSMC",
+              "ticker": "",
+              "market_cap_usd": 2142999999999.9998,
+              "change_usd": 195999999999.99976,
+              "change_pct": 10.067
+            },
+            {
+              "rank": 2,
+              "name": "MediaTek",
+              "ticker": "",
+              "market_cap_usd": 200800000000,
+              "change_usd": 34160000000,
+              "change_pct": 20.499
+            },
+            {
+              "rank": 3,
+              "name": "Foxconn (Hon Hai Precision Industry)",
+              "ticker": "",
+              "market_cap_usd": 105690000000,
+              "change_usd": 8440000000,
+              "change_pct": 8.679
+            },
+            {
+              "rank": 4,
+              "name": "Delta Electronics",
+              "ticker": "",
+              "market_cap_usd": 105130000000,
+              "change_usd": 20790000000,
+              "change_pct": 24.65
+            },
+            {
+              "rank": 5,
+              "name": "ASE Group",
+              "ticker": "",
+              "market_cap_usd": 83490000000,
+              "change_usd": 13670000000,
+              "change_pct": 19.579
+            },
+            {
+              "rank": 6,
+              "name": "Nan Ya Plastics",
+              "ticker": "",
+              "market_cap_usd": 77860000000,
+              "change_usd": 19400000000,
+              "change_pct": 33.185
+            },
+            {
+              "rank": 7,
+              "name": "Fubon Financial",
+              "ticker": "",
+              "market_cap_usd": 65819999999.99999,
+              "change_usd": 3569999999.9999924,
+              "change_pct": 5.735
+            },
+            {
+              "rank": 8,
+              "name": "Cathay Financial Holding",
+              "ticker": "",
+              "market_cap_usd": 50560000000,
+              "change_usd": 2710000000,
+              "change_pct": 5.664
+            },
+            {
+              "rank": 9,
+              "name": "CTBC Financial Holding",
+              "ticker": "",
+              "market_cap_usd": 44990000000,
+              "change_usd": 540000000,
+              "change_pct": 1.215
+            },
+            {
+              "rank": 10,
+              "name": "Unimicron",
+              "ticker": "",
+              "market_cap_usd": 44310000000,
+              "change_usd": 7490000000,
+              "change_pct": 20.342
+            },
+            {
+              "rank": 11,
+              "name": "Nanya Technology",
+              "ticker": "",
+              "market_cap_usd": 43160000000,
+              "change_usd": 6690000000,
+              "change_pct": 18.344
+            },
+            {
+              "rank": 12,
+              "name": "United Microelectronics",
+              "ticker": "",
+              "market_cap_usd": 40320000000,
+              "change_usd": 5590000000,
+              "change_pct": 16.096
+            },
+            {
+              "rank": 13,
+              "name": "Chunghwa Telecom",
+              "ticker": "",
+              "market_cap_usd": 38030000000,
+              "change_usd": -640000000,
+              "change_pct": -1.655
+            },
+            {
+              "rank": 14,
+              "name": "Quanta Computer",
+              "ticker": "",
+              "market_cap_usd": 36590000000,
+              "change_usd": -60000000,
+              "change_pct": -0.164
+            },
+            {
+              "rank": 15,
+              "name": "Global Unichip Corp.",
+              "ticker": "",
+              "market_cap_usd": 34770000000,
+              "change_usd": 9180000000,
+              "change_pct": 35.873
+            },
+            {
+              "rank": 16,
+              "name": "Taishin Financial Holdings",
+              "ticker": "",
+              "market_cap_usd": 30760000000,
+              "change_usd": 1040000000,
+              "change_pct": 3.499
+            },
+            {
+              "rank": 17,
+              "name": "Yuanta Financial Holding",
+              "ticker": "",
+              "market_cap_usd": 30720000000,
+              "change_usd": 2180000000,
+              "change_pct": 7.638
+            },
+            {
+              "rank": 18,
+              "name": "Wiwynn",
+              "ticker": "",
+              "market_cap_usd": 30550000000,
+              "change_usd": 3950000000,
+              "change_pct": 14.85
+            }
+          ]
+        }
+      },
+      "d7": {
+        "base_date": "2026-11-05",
+        "global_top50": {
+          "matched_count": 50,
+          "total_market_cap_usd": 51433190000000,
+          "total_change_usd": -396400000000,
+          "total_change_pct": -0.765,
+          "companies": [
+            {
+              "rank": 1,
+              "name": "Apple",
+              "ticker": "",
+              "market_cap_usd": 5168000000000,
+              "change_usd": 89000000000,
+              "change_pct": 1.752
+            },
+            {
+              "rank": 2,
+              "name": "NVIDIA",
+              "ticker": "",
+              "market_cap_usd": 4195000000000.0005,
+              "change_usd": -636999999999.9995,
+              "change_pct": -13.183
+            },
+            {
+              "rank": 3,
+              "name": "Microsoft",
+              "ticker": "",
+              "market_cap_usd": 3869000000000,
+              "change_usd": -258000000000,
+              "change_pct": -6.252
+            },
+            {
+              "rank": 4,
+              "name": "Alphabet (Google)",
+              "ticker": "",
+              "market_cap_usd": 3573000000000,
+              "change_usd": 41000000000,
+              "change_pct": 1.161
+            },
+            {
+              "rank": 5,
+              "name": "Amazon",
+              "ticker": "",
+              "market_cap_usd": 2878000000000,
+              "change_usd": 2000000000,
+              "change_pct": 0.07
+            },
+            {
+              "rank": 6,
+              "name": "TSMC",
+              "ticker": "",
+              "market_cap_usd": 2142999999999.9998,
+              "change_usd": 90999999999.99976,
+              "change_pct": 4.435
+            },
+            {
+              "rank": 7,
+              "name": "SpaceX",
+              "ticker": "",
+              "market_cap_usd": 1897000000000,
+              "change_usd": 52000000000,
+              "change_pct": 2.818
+            },
+            {
+              "rank": 8,
+              "name": "Saudi Aramco",
+              "ticker": "",
+              "market_cap_usd": 1678000000000,
+              "change_usd": -14000000000,
+              "change_pct": -0.827
+            },
+            {
+              "rank": 9,
+              "name": "Broadcom",
+              "ticker": "",
+              "market_cap_usd": 1647000000000,
+              "change_usd": 94000000000,
+              "change_pct": 6.053
+            },
+            {
+              "rank": 10,
+              "name": "Meta Platforms (Facebook)",
+              "ticker": "",
+              "market_cap_usd": 1607000000000,
+              "change_usd": -3000000000,
+              "change_pct": -0.186
+            },
+            {
+              "rank": 11,
+              "name": "Tesla",
+              "ticker": "",
+              "market_cap_usd": 1544000000000,
+              "change_usd": 22000000000,
+              "change_pct": 1.445
+            },
+            {
+              "rank": 12,
+              "name": "Eli Lilly",
+              "ticker": "",
+              "market_cap_usd": 1280000000000,
+              "change_usd": 17000000000,
+              "change_pct": 1.346
+            },
+            {
+              "rank": 13,
+              "name": "Berkshire Hathaway",
+              "ticker": "",
+              "market_cap_usd": 1249000000000,
+              "change_usd": 10000000000,
+              "change_pct": 0.807
+            },
+            {
+              "rank": 14,
+              "name": "Samsung",
+              "ticker": "",
+              "market_cap_usd": 1038000000000,
+              "change_usd": 15000000000.000122,
+              "change_pct": 1.466
+            },
+            {
+              "rank": 15,
+              "name": "Walmart",
+              "ticker": "",
+              "market_cap_usd": 997030000000,
+              "change_usd": -26970000000,
+              "change_pct": -2.634
+            },
+            {
+              "rank": 16,
+              "name": "Micron Technology",
+              "ticker": "",
+              "market_cap_usd": 917920000000,
+              "change_usd": 18180000000,
+              "change_pct": 2.021
+            },
+            {
+              "rank": 17,
+              "name": "JPMorgan Chase",
+              "ticker": "",
+              "market_cap_usd": 911900000000,
+              "change_usd": -23160000000,
+              "change_pct": -2.477
+            },
+            {
+              "rank": 18,
+              "name": "AMD",
+              "ticker": "",
+              "market_cap_usd": 906800000000,
+              "change_usd": 108880000000,
+              "change_pct": 13.645
+            },
+            {
+              "rank": 19,
+              "name": "Visa",
+              "ticker": "",
+              "market_cap_usd": 793990000000,
+              "change_usd": -21960000000,
+              "change_pct": -2.691
+            },
+            {
+              "rank": 20,
+              "name": "SK Hynix",
+              "ticker": "",
+              "market_cap_usd": 684320000000,
+              "change_usd": -4790000000,
+              "change_pct": -0.695
+            },
+            {
+              "rank": 21,
+              "name": "Exxon Mobil",
+              "ticker": "",
+              "market_cap_usd": 680040000000,
+              "change_usd": -10440000000,
+              "change_pct": -1.512
+            },
+            {
+              "rank": 22,
+              "name": "Johnson & Johnson",
+              "ticker": "",
+              "market_cap_usd": 675030000000,
+              "change_usd": 9850000000,
+              "change_pct": 1.481
+            },
+            {
+              "rank": 23,
+              "name": "ASML",
+              "ticker": "",
+              "market_cap_usd": 591390000000,
+              "change_usd": 14690000000,
+              "change_pct": 2.547
+            },
+            {
+              "rank": 24,
+              "name": "Mastercard",
+              "ticker": "",
+              "market_cap_usd": 575610000000,
+              "change_usd": -10410000000,
+              "change_pct": -1.776
+            },
+            {
+              "rank": 25,
+              "name": "AbbVie",
+              "ticker": "",
+              "market_cap_usd": 521409999999.99994,
+              "change_usd": 419999999.99993896,
+              "change_pct": 0.081
+            },
+            {
+              "rank": 26,
+              "name": "Costco",
+              "ticker": "",
+              "market_cap_usd": 481950000000,
+              "change_usd": 18230000000,
+              "change_pct": 3.931
+            },
+            {
+              "rank": 27,
+              "name": "China Construction Bank",
+              "ticker": "",
+              "market_cap_usd": 468340000000,
+              "change_usd": 10190000000,
+              "change_pct": 2.224
+            },
+            {
+              "rank": 28,
+              "name": "Tencent",
+              "ticker": "",
+              "market_cap_usd": 463930000000,
+              "change_usd": -9030000000,
+              "change_pct": -1.909
+            },
+            {
+              "rank": 29,
+              "name": "CXMT",
+              "ticker": "",
+              "market_cap_usd": 448660000000,
+              "change_usd": -19100000000,
+              "change_pct": -4.083
+            },
+            {
+              "rank": 30,
+              "name": "Coca-Cola",
+              "ticker": "",
+              "market_cap_usd": 419730000000,
+              "change_usd": 7610000000,
+              "change_pct": 1.847
+            },
+            {
+              "rank": 31,
+              "name": "Chevron",
+              "ticker": "",
+              "market_cap_usd": 416160000000,
+              "change_usd": -7120000000,
+              "change_pct": -1.682
+            },
+            {
+              "rank": 32,
+              "name": "Palantir",
+              "ticker": "",
+              "market_cap_usd": 415390000000,
+              "change_usd": 1680000000,
+              "change_pct": 0.406
+            },
+            {
+              "rank": 33,
+              "name": "Oracle",
+              "ticker": "",
+              "market_cap_usd": 400250000000,
+              "change_usd": 25170000000,
+              "change_pct": 6.711
+            },
+            {
+              "rank": 34,
+              "name": "Roche",
+              "ticker": "",
+              "market_cap_usd": 397620000000,
+              "change_usd": 9470000000,
+              "change_pct": 2.44
+            },
+            {
+              "rank": 35,
+              "name": "Cisco",
+              "ticker": "",
+              "market_cap_usd": 397250000000,
+              "change_usd": -11240000000,
+              "change_pct": -2.752
+            },
+            {
+              "rank": 36,
+              "name": "Procter & Gamble",
+              "ticker": "",
+              "market_cap_usd": 388620000000,
+              "change_usd": 810000000,
+              "change_pct": 0.209
+            },
+            {
+              "rank": 37,
+              "name": "Agricultural Bank of China",
+              "ticker": "",
+              "market_cap_usd": 380140000000,
+              "change_usd": -3140000000,
+              "change_pct": -0.819
+            },
+            {
+              "rank": 38,
+              "name": "Merck",
+              "ticker": "",
+              "market_cap_usd": 362830000000,
+              "change_usd": -8130000000,
+              "change_pct": -2.192
+            },
+            {
+              "rank": 39,
+              "name": "UnitedHealth",
+              "ticker": "",
+              "market_cap_usd": 361040000000,
+              "change_usd": -6410000000,
+              "change_pct": -1.744
+            },
+            {
+              "rank": 40,
+              "name": "ICBC",
+              "ticker": "",
+              "market_cap_usd": 356820000000,
+              "change_usd": 1590000000,
+              "change_pct": 0.448
+            },
+            {
+              "rank": 41,
+              "name": "General Electric",
+              "ticker": "",
+              "market_cap_usd": 355620000000,
+              "change_usd": 13800000000,
+              "change_pct": 4.037
+            },
+            {
+              "rank": 42,
+              "name": "Home Depot",
+              "ticker": "",
+              "market_cap_usd": 350490000000,
+              "change_usd": -4120000000,
+              "change_pct": -1.162
+            },
+            {
+              "rank": 43,
+              "name": "Bank of America",
+              "ticker": "",
+              "market_cap_usd": 349630000000,
+              "change_usd": -6620000000,
+              "change_pct": -1.858
+            },
+            {
+              "rank": 44,
+              "name": "Bank of China",
+              "ticker": "",
+              "market_cap_usd": 336460000000,
+              "change_usd": 6760000000,
+              "change_pct": 2.05
+            },
+            {
+              "rank": 45,
+              "name": "Intel",
+              "ticker": "",
+              "market_cap_usd": 332180000000,
+              "change_usd": 22480000000,
+              "change_pct": 7.259
+            },
+            {
+              "rank": 46,
+              "name": "Applied Materials",
+              "ticker": "",
+              "market_cap_usd": 313530000000,
+              "change_usd": 20380000000,
+              "change_pct": 6.952
+            },
+            {
+              "rank": 47,
+              "name": "HSBC",
+              "ticker": "",
+              "market_cap_usd": 308360000000,
+              "change_usd": 2740000000,
+              "change_pct": 0.897
+            },
+            {
+              "rank": 48,
+              "name": "Philip Morris International",
+              "ticker": "",
+              "market_cap_usd": 306040000000,
+              "change_usd": -23260000000,
+              "change_pct": -7.063
+            },
+            {
+              "rank": 49,
+              "name": "Novartis",
+              "ticker": "",
+              "market_cap_usd": 302780000000,
+              "change_usd": -8800000000,
+              "change_pct": -2.824
+            },
+            {
+              "rank": 50,
+              "name": "Morgan Stanley",
+              "ticker": "",
+              "market_cap_usd": 297930000000,
+              "change_usd": -5630000000,
+              "change_pct": -1.855
+            }
+          ]
+        },
+        "taiwan_top20": {
+          "matched_count": 19,
+          "total_market_cap_usd": 3261710000000,
+          "total_change_usd": 134690000000,
+          "total_change_pct": 4.307,
+          "companies": [
+            {
+              "rank": 1,
+              "name": "TSMC",
+              "ticker": "",
+              "market_cap_usd": 2142999999999.9998,
+              "change_usd": 90999999999.99976,
+              "change_pct": 4.435
+            },
+            {
+              "rank": 2,
+              "name": "MediaTek",
+              "ticker": "",
+              "market_cap_usd": 200800000000,
+              "change_usd": 18180000000,
+              "change_pct": 9.955
+            },
+            {
+              "rank": 3,
+              "name": "Foxconn (Hon Hai Precision Industry)",
+              "ticker": "",
+              "market_cap_usd": 105690000000,
+              "change_usd": 1730000000,
+              "change_pct": 1.664
+            },
+            {
+              "rank": 4,
+              "name": "Delta Electronics",
+              "ticker": "",
+              "market_cap_usd": 105130000000,
+              "change_usd": 7600000000,
+              "change_pct": 7.792
+            },
+            {
+              "rank": 5,
+              "name": "ASE Group",
+              "ticker": "",
+              "market_cap_usd": 83490000000,
+              "change_usd": 690000000,
+              "change_pct": 0.833
+            },
+            {
+              "rank": 6,
+              "name": "Nan Ya Plastics",
+              "ticker": "",
+              "market_cap_usd": 77860000000,
+              "change_usd": 10370000000.000008,
+              "change_pct": 15.365
+            },
+            {
+              "rank": 7,
+              "name": "Fubon Financial",
+              "ticker": "",
+              "market_cap_usd": 65819999999.99999,
+              "change_usd": 839999999.9999847,
+              "change_pct": 1.293
+            },
+            {
+              "rank": 8,
+              "name": "Cathay Financial Holding",
+              "ticker": "",
+              "market_cap_usd": 50560000000,
+              "change_usd": 450000000,
+              "change_pct": 0.898
+            },
+            {
+              "rank": 9,
+              "name": "CTBC Financial Holding",
+              "ticker": "",
+              "market_cap_usd": 44990000000,
+              "change_usd": 670000000,
+              "change_pct": 1.512
+            },
+            {
+              "rank": 10,
+              "name": "Unimicron",
+              "ticker": "",
+              "market_cap_usd": 44310000000,
+              "change_usd": -590000000,
+              "change_pct": -1.314
+            },
+            {
+              "rank": 11,
+              "name": "Nanya Technology",
+              "ticker": "",
+              "market_cap_usd": 43160000000,
+              "change_usd": 740000000,
+              "change_pct": 1.744
+            },
+            {
+              "rank": 12,
+              "name": "United Microelectronics",
+              "ticker": "",
+              "market_cap_usd": 40320000000,
+              "change_usd": 50000000,
+              "change_pct": 0.124
+            },
+            {
+              "rank": 13,
+              "name": "Chunghwa Telecom",
+              "ticker": "",
+              "market_cap_usd": 38030000000,
+              "change_usd": 40000000,
+              "change_pct": 0.105
+            },
+            {
+              "rank": 14,
+              "name": "Quanta Computer",
+              "ticker": "",
+              "market_cap_usd": 36590000000,
+              "change_usd": -1570000000,
+              "change_pct": -4.114
+            },
+            {
+              "rank": 15,
+              "name": "Global Unichip Corp.",
+              "ticker": "",
+              "market_cap_usd": 34770000000,
+              "change_usd": 5430000000,
+              "change_pct": 18.507
+            },
+            {
+              "rank": 16,
+              "name": "Taishin Financial Holdings",
+              "ticker": "",
+              "market_cap_usd": 30760000000,
+              "change_usd": -350000000,
+              "change_pct": -1.125
+            },
+            {
+              "rank": 17,
+              "name": "Yuanta Financial Holding",
+              "ticker": "",
+              "market_cap_usd": 30720000000,
+              "change_usd": 1280000000,
+              "change_pct": 4.348
+            },
+            {
+              "rank": 18,
+              "name": "Wiwynn",
+              "ticker": "",
+              "market_cap_usd": 30550000000,
+              "change_usd": 20000000,
+              "change_pct": 0.066
+            },
+            {
+              "rank": 20,
+              "name": "Yageo",
+              "ticker": "",
+              "market_cap_usd": 27300000000,
+              "change_usd": -1140000000,
+              "change_pct": -4.008
+            }
+          ]
+        }
+      }
+    }
+  }
+}
